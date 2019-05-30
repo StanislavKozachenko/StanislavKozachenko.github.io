@@ -19,9 +19,7 @@ body {
 	z-index: 10;
 }
 .First_Section {
-	height: 100vh;
 	background-image: url(for_divs/fonforsix.png);
-	background-size: 100%;
 	background-repeat: no-repeat;
 	
 }
