@@ -27,7 +27,10 @@
 		$('.Bottom_Six_1').toggleClass("Bottom_Six_1_1");
 		$('.Bottom_Six_2').toggleClass("Bottom_Six_2_1");
 	}
-
+	function Menu_Check(){
+		$('.Menu').toggleClass('Menu_active');
+		$('.menu-button').toggleClass('menu-button_active');
+	}
 	
 	</script>
 	
@@ -35,6 +38,23 @@
 <body>
 	<div class="Progress"></div>
 	<section class="First_Section" id="Here">
+		<div class="Button menu-button" onclick="Menu_Check()"><span></span>
+</div>
+		<div class="Menu">
+			<ul>
+				<li id="Menu_Li"><a href="#" onclick="Event()" id="Menu_Li_A"><div id="Menu_Li_Div">KREO</div></a></li>
+				<li><a href="#" onclick="Event(), scrollSlow('#Here')">HOME</a></li>
+				<li><a href="#" onclick="Event(), scrollSlow('#Projects')">WORKS</a></li>
+				<li><a href="#" onclick="Event(), scrollSlow('#Service')">SERVICES</a></li>
+				<li><a href="#" onclick="Event(), scrollSlow('#About')">ABOUT</a></li>
+				<li><a href="#" onclick="Event(), scrollSlow('#Contact')">CONTACT</a></li>
+				<li><div id="First_Icons">
+					<div id="Facebook"><a href="#" onclick="Event()"><i class="fa fa-facebook"></i></a></div>
+					<div id="Twitter"><a href="#" onclick="Event()"><i class="fa fa-twitter"></i></a></div>
+					<div id="Google"><a href="#" onclick="Event()"><i class="fa fa-google"></i></a></div>
+				</div></li>
+			</ul>
+		</div>
 		<nav>
 			<ul>
 				<li id="First_Li"><a href="#" onclick="Event()"><div id="First_Li_Div">KREO</div></a></li>
