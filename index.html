@@ -1,11 +1,11 @@
-<!-- By Stanislav Kozachenko -->
+<!-- Здравствуйте! Как дела? -->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>KREO</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="styleforcopysix.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome.css">
 	<link rel="shortcut icon" href="for_divs/icon.png" type="image/x-icon">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -26,6 +26,7 @@
 		$(".Slider_2").toggleClass("Slider_2_1");
 		$('.Bottom_Six_1').toggleClass("Bottom_Six_1_1");
 		$('.Bottom_Six_2').toggleClass("Bottom_Six_2_1");
+		
 	}
 	function Menu_Check(){
 		$('.Menu').toggleClass('Menu_active');
@@ -37,8 +38,7 @@
 </head>
 <body>
 	<div class="Progress"></div>
-	<section class="First_Section" id="Here">
-		<div class="Button menu-button" onclick="Menu_Check()"><span></span>
+	<section class="First_Section" id="Here"><div class="Button menu-button" onclick="Menu_Check()"><span></span>
 </div>
 		<div class="Menu">
 			<ul>
@@ -55,7 +55,8 @@
 				</div></li>
 			</ul>
 		</div>
-		<nav>
+		
+				<nav>
 			<ul>
 				<li id="First_Li"><a href="#" onclick="Event()"><div id="First_Li_Div">KREO</div></a></li>
 				<li><a href="#" onclick="Event()">HOME</a></li>
@@ -308,13 +309,28 @@
 			<div class="Last_Text"><p id="Footer_Text_3">Copyright 2019 KREO</p><p id="Footer_Text_4">Designed by <span id="My_Name">Stanislav Kozachenko</span></p></div>
 		</div>
 	</section>
-	<style>
+
+
+	<script type="text/javascript">
+		const progress = document.querySelector('.Progress');
+		
+		window.addEventListener('scroll', progressBar);
+
+		function progressBar(e){
+			let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			let per = windowScroll / windowHeight * 100;
+			progress.style.width = per + '%';
+			}
+	</script>
+	<style type="text/css">
 		.First_Section {
 	height: 100vh;
 	background-image: url(for_divs/fonforsix.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	}
+	
+}
 .Go_Down {
 	margin-top: 5%;
 	height: 80px;
@@ -364,6 +380,15 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+#Photo_In_Fifrth {
+	height: 200px;
+	width: 200px;
+	background-image: url(for_divs/me.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	box-shadow: 0px 0px 17px 0px orange;
+	border-radius: 10px;
+}
 .Slider_1_Photo {
 	height: 90%;
 	width: 40%;
@@ -388,28 +413,6 @@
 	border-bottom-left-radius: 10px;
 	box-shadow: 0px 0px 45px -12px #000000;
 }
-		#Photo_In_Fifrth {
-	height: 200px;
-	width: 200px;
-	background-image: url(for_divs/me.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	box-shadow: 0px 0px 17px 0px orange;
-	border-radius: 10px;
-}
 	</style>
-
-	<script type="text/javascript">
-		const progress = document.querySelector('.Progress');
-		
-		window.addEventListener('scroll', progressBar);
-
-		function progressBar(e){
-			let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
-			let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			let per = windowScroll / windowHeight * 100;
-			progress.style.width = per + '%';
-			}
-	</script>
 </body>
 </html>
