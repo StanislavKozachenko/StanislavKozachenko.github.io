@@ -6,6 +6,9 @@
 body {
 	overflow-x: hidden;
 }
+.Menu {
+	display: none;
+}
 .Progress {
 	position: fixed;
 	left: 0;
@@ -20,7 +23,7 @@ body {
 	background-image: url(for_divs/fonforsix.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	height: 150vmax;
+	
 }
 .First_Section nav {
 	height: 10%;
@@ -190,7 +193,7 @@ body {
 	width: 355px;
 }
 #Second_Section_Content_1 {
-	background-image: url(for_divs/сontainer_fon_1.png);
+	background-image: url(for_divs/container_fon_1.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -441,7 +444,7 @@ body {
 	width: 20vw;
 	transition: 0.5s;
 	display: flex;
-	transform: translateX(250%);
+	transform: translateX(400%);
 }
 .Slider_2_1 {
 	transition: 0.5s;
@@ -498,8 +501,8 @@ body {
 	position: absolute;
 }
 .Six_Section_Text_1 {
-	transform: translateX(200%);
-	transition: 0.2s;
+	transform: translateX(400%);
+	transition: 0.5s;
 	color: #fff;
 	position: absolute;
 	margin-right: 10%;
@@ -634,7 +637,7 @@ body {
 
 .Icons_In_Footer a {
 	text-decoration: none;
-	border-radius: 300px;
+	border-radius: 50%;
 }
 .Icons_In_Footer i {
 	margin-right: 30px;
@@ -650,14 +653,13 @@ body {
 	border-radius: 30px;
 	color: orange;
 }
-
+#Facebooks {
+	padding-right: 25px;
+	padding-left: 25px;
+}
 #Google {
 	padding-right: 22px;
 	padding-left: 22px;
-}
-#Facebooks {
-	padding-left: 25px;
-	padding-right: 25px;
 }
 .Footer_Text {
 	position: absolute;
@@ -701,3 +703,292 @@ body {
 	color: #fff;
 	font-weight: bold;
 }
+
+/*I-pad*/
+@media (max-width: 1160px) {
+	.First_Section {
+		height: 120vh;
+		width: 100vw;
+		background-size: 200%;
+	}
+	.First_Section nav ul {
+		margin-left: 10%;
+	}
+	#First_Section_Text_1::before {
+		margin-top: 30%;
+	}
+	
+	.Third_Section {
+		height: 250vh;
+	}
+	.Six_Section {
+		height: 90vh;
+	}
+	.Six_Section_Slider  {
+		margin-top: 50%;
+	}
+	.Bottom_Six {
+		margin-top: -5%;
+	}
+	.Slider_1_Photo {
+		background-size: 150%;
+	}
+	.Slider_2_Photo {
+		background-size: 150%;
+	}
+	.Button_To_Up {
+		padding: 10px;
+		margin-top: -3%;
+		border-radius: 5%;
+	}
+	.Icons_In_Footer  {
+		border-bottom-style: none;
+	}
+}
+
+@media (max-width: 1000px){
+	.First_Section {
+		height: 140vh;
+		background-size: 500%;
+
+	}
+	.First_Section nav {
+		height: 0px;
+	}
+	 
+	.First_Section nav ul li {
+	display: none;
+	}
+	.Menu {
+		position: fixed;
+		height: 100vh;
+		width: 45vw;
+		background-color: #2ecc71;
+		z-index: 6;
+		transition: 0.2s;
+		transform: translateX(-100%);
+		display: flex;
+		flex-direction: column;
+	}
+	.Menu_active {
+		transition: 0.2s;
+		transform: translateX(0%);
+	}
+	.Button {
+		position: fixed;
+		height: 40px;
+		width: 40px;
+		border-bottom-right-radius: 20%;
+		background-color: orange;
+		transition: 0.2s;
+		z-index: 10;
+	}
+	.Button:hover {
+		transition: 0.2s;
+	 	cursor: pointer;
+	 	box-shadow: 0px 0px 40px 3px orange;
+	}
+	.menu-button {
+	position: fixed;
+	height: 40px;
+	width: 40px;
+	background-color: orange;
+	}
+	.menu-button span,
+.menu-button span::before,
+.menu-button span::after {
+	position: absolute;
+	height: 2px;
+	width: 20px;
+	top: 50%;
+	left: 50%;
+	margin-top: -1px;
+	margin-left: -10px;	
+	background-color: #fff;
+	transition: 0.3s;
+}
+.menu-button span:before, .menu-button span:after {
+	content: '';
+	background-color: #Fff;
+}
+.menu-button span {
+	background-color: #fff;
+}
+.menu-button span::before {
+	transform: translateY(10px);
+}
+.menu-button span::after {
+	transform: translateY(-10px);
+}
+.menu-button_active span {
+	height: 0;
+}
+.menu-button_active span::before {
+	transition: 0.3s;
+	transform: rotate(45deg);
+}
+.menu-button_active span::after {
+	transition: 0.3s;
+	transform: rotate(-45deg);
+}
+
+		.Menu ul {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			padding-top: 40%;
+		}
+		.Menu ul li:first-child {
+			padding: 5%;
+			background-color: orange;
+			transition: 0.2s;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.Menu ul li:first-child:hover {
+			transition: 0.2s;
+			box-shadow: 0px 0px 30px 5px orange;
+			cursor: pointer;
+		}
+		.Menu ul li:first-child a {
+			text-decoration: none;
+			color: #fff;
+			font-weight: bold;
+			font-size: 30px;
+		}
+		.Menu ul li a {
+			text-decoration: none;
+			font-size: 20px;
+			color: #fff;
+		}
+		.Menu ul li {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		#Menu_Li_A {
+			display: block;
+		}
+		#First_Icons {
+			border: none;
+		}
+		.Menu ul li a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 20px;
+		position: relative;
+	}
+		.Menu ul li a::before {
+		content: ' ';
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 0%;
+		height: 2px;
+		margin-top: 20px;
+		background: orange;
+		transition: 0.2s;
+}
+	.Menu ul li a:hover:before {
+		width: 100%;
+		left: 0;
+}
+
+}
+/* Iphone 6 */ 
+@media (max-width: 600px){
+	
+	
+	#Second_Section_Text_1::before {
+		margin-top: 5%;
+	}
+	.Third_Section_Content_All {
+		margin-top: 20px;
+		margin-right: 50px;
+		margin-bottom: 80px;
+		height: 40%;
+		width: 28%;
+		padding: 20px;
+
+	}
+	.Third_Section {
+		height: 350vh;
+	}
+	#Third_Section_Content_Text_2 {
+		font-size: 15px;
+	}
+	#Fourth_Section_Content_Text_2 {
+		font-size: 15px;
+	}
+	#Main_Six_text {
+		font-size: 20px;
+	}
+	.Six_Section_Slider {
+		padding-top: 30%;
+	}
+	.Slider_1, .Slider_2 {
+	height: 15vh;
+	width: 40vw;
+	transition: 0.5s;
+	display: flex;
+	justify-content: center;
+	margin-left: -20%;
+	align-items: center;
+	margin-top: -5%;
+	}
+	.Slider_2 {
+		width: 40vw;
+		margin-left: -20%;
+	}
+	.Slider_1_Photo {
+		background-size: 250%;
+		
+	}
+	.First_Some_Text {
+		font-size: 15px;
+	}
+	.Button_To_Up {
+		width: 20vw;
+		margin-top: -5%;
+	}
+	.Icons_In_Footer {
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	.Icons_In_Footer i {
+		font-size: 20px;
+		margin: 0;
+	}
+	.Footer_Text {
+		margin-top: 25%;
+	}
+	.Last_Text {
+		margin-right: 5%;
+		margin-left: 5%;
+		margin-top: 5%;
+	}
+}
+@media (max-width: 840px) {
+	#First_Section_Text_1::before {
+		display: none;
+	}
+}
+@media (max-width: 570px){
+	.Third_Section {
+		height: 400vh;
+	}
+	#Fifth_Container_Text_3 {
+		font-size: 18px;
+	}
+	.Fifth_Section {
+		height: 130vh;
+	}
+	.Six_Section {
+		height: 110vh;
+	}
+	.Seven_Section {
+		height: 150vh;
+	}
+	}
