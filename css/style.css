@@ -912,6 +912,9 @@ body {
 /* Iphone 6 */ 
 @media (max-width: 600px){
 	
+	.First_Section {
+		height: 160vh;
+	}
 	
 	#Second_Section_Text_1::before {
 		margin-top: 5%;
