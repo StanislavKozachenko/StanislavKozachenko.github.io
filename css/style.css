@@ -999,3 +999,9 @@ body {
 		height: 150vh;
 	}
 	}
+/*Some Opt.*/
+	@media (max-width: 730px){
+		.First_Section {
+			height: 150vh;
+		}
+	}
