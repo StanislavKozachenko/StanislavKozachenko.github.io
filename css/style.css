@@ -720,8 +720,8 @@ body {
 /*I-pad*/
 @media (max-width: 1160px) {
 	.First_Section {
-		height: 120vh;
-		background-size: 200%;
+		height: 160vh;
+		
 	}
 	.First_Section nav ul {
 		margin-left: 10%;
