@@ -83,6 +83,15 @@ body {
 	height: 30px;
 
 }
+.Go_Down {
+	margin-top: 5%;
+	height: 80px;
+	width: 80px;
+	background-image: url(for_divs/down-arrow.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transition: 0.4s;
+}
 #First_Li_Div {
 	background-color: orange;
 	padding: 10px;
