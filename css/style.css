@@ -245,6 +245,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
 .Third_Section {
 	height: 155vh;
 	background-color: #101417;
@@ -422,8 +423,6 @@ body {
 	height: 90%;
 	width: 40%;
 	background-image: url(for_divs/Lindsey.png);
-	-webkit-background-size: 100%;
-	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	border-top-left-radius: 10px;
@@ -442,6 +441,7 @@ body {
 	align-items: center;
 	text-align: center;
 }
+
 #Slider_1_Text_1 {
 	color: #fff;
 	font-size: 19px;
@@ -468,7 +468,7 @@ body {
 	width: 40%;
 	background-image: url(for_divs/me.png);
 	-webkit-background-size: 100%;
-	background-size: 100%;
+	background-size: 200%;
 	background-repeat: no-repeat;
 	background-position: center;
 	border-top-left-radius: 10px;
@@ -477,6 +477,7 @@ body {
 }
 .Bottom_Six {
 	margin-top: -1%;
+	margin-left: -5%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -487,8 +488,19 @@ body {
 	width: 20px;
 	border-radius: 300px;
 	margin: 10px;
-}
 
+}
+.Slider_1, .Slider_2 {
+	height: 100px;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.Slider_1 {
+	margin: auto;
+}
 .Bottom_Six_1 {
 	height: 20px;
 	width: 20px;
@@ -720,8 +732,8 @@ body {
 /*I-pad*/
 @media (max-width: 1160px) {
 	.First_Section {
-		height: 160vh;
-		
+		height: 120vh;
+		background-size: 200%;
 	}
 	.First_Section nav ul {
 		margin-left: 10%;
@@ -758,7 +770,7 @@ body {
 	}
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1024px){
 	.First_Section {
 		height: 140vh;
 		background-size: 500%;
@@ -910,11 +922,8 @@ body {
 
 }
 /* Iphone 6 */ 
-@media (max-width: 600px){
+@media (max-width: 375px){
 	
-	.First_Section {
-		height: 160vh;
-	}
 	
 	#Second_Section_Text_1::before {
 		margin-top: 5%;
