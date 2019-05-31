@@ -1000,7 +1000,7 @@ body {
 	}
 	}
 /*Some Opt.*/
-	@media (max-width: 730px){
+	@media (min-width: 730px){
 		.First_Section {
 			height: 150vh;
 		}
