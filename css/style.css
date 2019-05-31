@@ -4,10 +4,12 @@
 	font-family: sans-serif;
 }
 .MAINBOX {
-	overflow-x: hidden !important;
+	overflow-x: hidden !important;;
 }
+
 body {
 	overflow-x: hidden !important;
+	width: 100%;
 }
 .Menu {
 	display: none;
@@ -22,7 +24,9 @@ body {
 	z-index: 10;
 }
 .First_Section {
+	height: 100vh;
 	background-image: url(for_divs/fonforsix.png);
+	background-size: 100%;
 	background-repeat: no-repeat;
 	
 }
@@ -387,7 +391,7 @@ body {
 .Six_Section_Slider {
 	margin-top: 2%;
 	height: 20%;
-	width: 9999px;
+	
 	margin-top: 25%;
 }
 .Six_Section_Slider ul {
@@ -445,7 +449,7 @@ body {
 	width: 20vw;
 	transition: 0.5s;
 	display: flex;
-	transform: translateX(400%);
+	transform: translateX(-500%);
 }
 .Slider_2_1 {
 	transition: 0.5s;
@@ -502,7 +506,7 @@ body {
 	position: absolute;
 }
 .Six_Section_Text_1 {
-	transform: translateX(400%);
+	transform: translateX(-300%);
 	transition: 0.5s;
 	color: #fff;
 	position: absolute;
