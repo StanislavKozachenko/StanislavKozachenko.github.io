@@ -9,7 +9,6 @@
 
 body {
 	overflow-x: hidden !important;
-	width: 100%;
 }
 .Menu {
 	display: none;
@@ -397,12 +396,12 @@ body {
 .Six_Section_Slider ul {
 	position: absolute;
 	display: flex;
-	margin-left: 39vw;
+	margin-left: 39%;
 	list-style: none;
 }
 .Slider_1 {
 	height: 10vh;
-	width: 20vw;
+	width: 20%;
 	transition: 0.5s;
 	display: flex;
 }
@@ -446,7 +445,7 @@ body {
 }
 .Slider_2 {
 	height: 10vh;
-	width: 20vw;
+	width: 20%;
 	transition: 0.5s;
 	display: flex;
 	transform: translateX(-500%);
@@ -713,7 +712,6 @@ body {
 @media (max-width: 1160px) {
 	.First_Section {
 		height: 120vh;
-		width: 100vw;
 		background-size: 200%;
 	}
 	.First_Section nav ul {
@@ -767,7 +765,7 @@ body {
 	.Menu {
 		position: fixed;
 		height: 100vh;
-		width: 45vw;
+		width: 45%;
 		background-color: #2ecc71;
 		z-index: 6;
 		transition: 0.2s;
@@ -933,19 +931,8 @@ body {
 	.Six_Section_Slider {
 		padding-top: 30%;
 	}
-	.Slider_1, .Slider_2 {
-	height: 15vh;
-	width: 40vw;
-	transition: 0.5s;
-	display: flex;
-	justify-content: center;
-	margin-left: -20%;
-	align-items: center;
-	margin-top: -5%;
-	}
-	.Slider_2 {
-		width: 40vw;
-		margin-left: -20%;
+	.Slider_1 {
+		height: 100px;
 	}
 	.Slider_1_Photo {
 		background-size: 250%;
@@ -955,7 +942,7 @@ body {
 		font-size: 15px;
 	}
 	.Button_To_Up {
-		width: 20vw;
+		width: 25%;
 		margin-top: -5%;
 	}
 	.Icons_In_Footer {
