@@ -124,8 +124,7 @@ body {
 }
 #First_Section_Text_1::before {
 	content: ' ';
-	position: absolute;
-	margin-top: 15%;
+	top: 0;
 	left: 0;
 	height: 3px;
 	width: 70%;
@@ -160,7 +159,7 @@ body {
 	width: 100px;
 }
 .Second_Section {
-	height: 150vmax 140vmin;
+	height: 140vh;
 	background-color: #101417;
 
 }
@@ -722,62 +721,184 @@ body {
 	color: #fff;
 	font-weight: bold;
 }
-
-/*I-pad*/
-@media (max-width: 1160px) {
+/*Laptop L */
+@media (max-width: 1440px) and (min-width: 1024px){
 	.First_Section {
+		background-size: 100%;
+		height: 60vh;
+	}
+	.Second_Section_Content {
+	margin-left: 5%;
+}
+	.Second_Section_Content_All {
+	padding: 65px;
+}
+	.Second_Section {
+		height: 200vh;
+	}
+	.Some_Inputs input {
+		font-size: 20px;
+	}
+	.Seven_Section {
 		height: 120vh;
-		background-size: 200%;
 	}
-	.First_Section nav ul {
-		margin-left: 10%;
-	}
-	#First_Section_Text_1::before {
-		margin-top: 30%;
-	}
-	
 	.Third_Section {
-		height: 250vh;
+		height: 100vh;
+	}
+	.Fifth_Section {
+		height: 70vh;
 	}
 	.Six_Section {
+		height: 50vh;
+	}
+	.First_Some_Text {
+		font-size: 25px;
+	}
+	.Seven_Section {
 		height: 90vh;
 	}
-	.Six_Section_Slider  {
-		margin-top: 50%;
-	}
-	.Bottom_Six {
-		margin-top: -5%;
-	}
-	.Slider_1_Photo {
-		background-size: 150%;
-	}
-	.Slider_2_Photo {
-		background-size: 150%;
-	}
 	.Button_To_Up {
-		padding: 10px;
-		margin-top: -3%;
-		border-radius: 5%;
+		margin-top: -2%;
+		width: 20%;
+		font-size: 25px;
+		height: 70px;
 	}
-	.Icons_In_Footer  {
-		border-bottom-style: none;
+	#Footer_Text_2 {
+		font-size: 25px;
+	}
+	#Footer_Text_4 {
+		font-size: 20px;
+		
+	}
+	#Third_Section_Content_Text_2 {
+		font-size: 22px;
+	}
+	#My_Name {
+		font-family: arial;
+	}
+	.Last_Section {
+		height: 40vh;
+	}
+	#Fifth_Container_Text_3 {
+		font-size: 25px;
+	}
+	#Slider_1_Text_2 {
+		font-size: 17px;
+		font-family: Arial;
 	}
 }
-
-@media (max-width: 1024px){
-	.First_Section {
-		height: 140vh;
-		background-size: 500%;
-
+/*Laptop*/
+@media (max-width: 1024px) and (min-width: 780px){
+	nav {
+		margin-left: -5%;	
 	}
-	.First_Section nav {
+	.First_Section {
+		background-size: 120%;
+	}
+	.Second_Section_Content_All {
+		padding: 30px;
+	}
+	.Second_Section {
+		height: 180vh;
+	}
+	.Third_Section {
+		height: 130vh;
+	}
+	.Six_Section {
+		height: 60vh;
+	}
+	.Six_Section_Slider {
+		margin-top: 40%;
+	}
+	.Slider_1, .Slider_2 {
+		margin-left: calc(100% - 50% - 80px);
+	}
+	.Button_To_Up {
+		width: 20%;
+		font-size: 19px;
+		height: 80px;
+		margin-top: -3%;
+	}
+	.Footer_Text {
+		margin-top: 20%;
+	}
+	.Last_Section {
+		height: 50vh;
+	}
+}
+/*Tablet*/
+@media (max-width: 780px) and (min-width: 425px) {
+	
+	.First_Section {
+		height: 100vh;
+		background-size: 170%;
+		}
+
+ 	.Second_Section_Content {
+ 		margin-left: 5%;
+ 	}
+ 	#Second_Section_Text_1::before {
+ 		margin-top: 5%;
+ 	}
+ 	.Second_Section_Content_All {
+ 		padding: 20px;
+ 		height: 250px;
+ 		width: 250px;
+ 	 	}
+ 	.Second_Section {
+ 		height: 200vh;
+ 	}
+ 	.Third_Section {
+ 		height: 270vh;
+ 	}
+ 	#Fourth_Section_Content_Text_2 {
+ 		font-size: 18px;
+ 	}
+ 	.Fourth_Section_Content_All {
+ 		height: 40%;
+ 		width: 35%;
+ 	}
+ 	.Fifth_Section {
+ 		height: 90vh;
+ 	}
+ 	#Third_Section_Content_Text_2 {
+ 		font-size: 18px;
+ 	}
+ 	.Six_Section_Text, .Six_Section_Text_1 {
+ 		font-size: 23px;
+ 	}
+ 	.Six_Section_Slider {
+ 		margin-top: 45%;
+ 	}
+ 	.Six_Section {
+ 		height: 80vh;
+ 	}
+ 	.Some_Inputs {
+ 		margin-top: 2%;
+ 	}
+ 	.Icons_In_Footer i {
+ 		font-size: 25px;
+ 	}
+ 	.Button_To_Up {
+ 		height: 65px;
+ 		margin-top: -4%;
+ 		width: 20%;
+ 	}
+ 	.Footer_Text {
+ 		margin-top: 20%;
+ 	}
+ 	.Slider_1, .Slider_2 {
+ 		margin-left: 7%;
+ 	}
+}
+@media (max-width: 768px){
+	nav {
 		height: 0px;
 	}
-	 
 	.First_Section nav ul li {
 	display: none;
 	}
-	.Menu {
+		.Menu {
 		position: fixed;
 		height: 100vh;
 		width: 45%;
@@ -913,95 +1034,69 @@ body {
 		width: 100%;
 		left: 0;
 }
-
 }
-/* Iphone 6 */ 
-@media (max-width: 375px){
-	
-	
-	#Second_Section_Text_1::before {
-		margin-top: 5%;
+@media (max-width: 500px) and (min-width: 375px){
+	#First_Section_Text_1 {
+		font-size: 45px;
 	}
-	.Third_Section_Content_All {
-		margin-top: 20px;
-		margin-right: 50px;
-		margin-bottom: 80px;
-		height: 40%;
-		width: 28%;
-		padding: 20px;
-
+	#First_Section_Text_2 {
+		font-size: 16px;
 	}
-	.Third_Section {
-		height: 350vh;
-	}
-	#Third_Section_Content_Text_2 {
-		font-size: 15px;
-	}
-	#Fourth_Section_Content_Text_2 {
-		font-size: 15px;
-	}
-	#Main_Six_text {
-		font-size: 20px;
-	}
-	.Six_Section_Slider {
-		padding-top: 30%;
-	}
-	.Slider_1 {
-		height: 100px;
-	}
-	.Slider_1_Photo {
+	.First_Section {
+		height: 120vh;
 		background-size: 250%;
-		
+
 	}
-	.First_Some_Text {
-		font-size: 15px;
+	#Second_Section_Text_1::before {
+		margin-top: 8%;
 	}
-	.Button_To_Up {
-		width: 25%;
-		margin-top: -5%;
+	.Second_Section_Content_All {
+		height: 150px;
+		width: 150px;
 	}
-	.Icons_In_Footer {
-		padding-top: 5%;
-		padding-bottom: 5%;
+	.Second_Section {
+		height: 180vh;
 	}
-	.Icons_In_Footer i {
-		font-size: 20px;
-		margin: 0;
-	}
-	.Footer_Text {
-		margin-top: 25%;
-	}
-	.Last_Text {
-		margin-right: 5%;
-		margin-left: 5%;
-		margin-top: 5%;
-	}
-}
-@media (max-width: 840px) {
-	#First_Section_Text_1::before {
-		display: none;
-	}
-}
-@media (max-width: 570px){
-	.Third_Section {
-		height: 400vh;
-	}
-	#Fifth_Container_Text_3 {
+	#Third_Section_Content_Text_1, #Fourth_Section_Content_Text_1 {
 		font-size: 18px;
 	}
+	#Third_Section_Content_Text_2, #Fourth_Section_Content_Text_2 {
+		font-size: 15px;
+	}
+	.Third_Section_Content_All, .Fourth_Section_Content_All {
+		margin-right: 25px;
+		width: 40%;
+	}
+	.Third_Section {
+		height: 300vh;
+	}
+	.Fourth_Section_Content {
+		margin-top: 5%;
+	}
+	#Fifth_Container_Text_1 {
+		font-size: 25px;
+		margin-top: 2%;
+	}
+	#Fifth_Container_Text_3 {
+		font-size: 16px;
+	}	
 	.Fifth_Section {
-		height: 130vh;
+		height: 120vh;
+	}
+	.Six_Section_Text, .Six_Section_Text_1 {
+		font-size: 17px;
+
 	}
 	.Six_Section {
-		height: 110vh;
+		height: 90vh;
 	}
-	.Seven_Section {
-		height: 150vh;
+	.Six_Section_Slider {
+		margin-top: 75%;
 	}
+	.Slider_1, .Slider_2 {
+		margin-left: 15%;
 	}
-/*Some Opt.*/
-	@media (min-width: 730px){
-		.First_Section {
-			height: 150vh;
-		}
+	.Icons_In_Fifth {
+		margin-top: 10%;
 	}
+}
