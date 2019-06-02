@@ -1010,7 +1010,7 @@ nav {
 			justify-content: center;
 			align-items: center;
 			list-style: none;
-			padding-top: 30%;
+			padding-top: 50%;
 		}
 		.Menu ul li:first-child {
 			padding: 5%;
@@ -1173,7 +1173,7 @@ nav {
 		background-size: 390%;
 	}
 	.Menu ul {
-		margin-top: 30%;
+		margin-top: 50%;
 	}
 	.Menu ul li a {
 		font-size: 19px;
