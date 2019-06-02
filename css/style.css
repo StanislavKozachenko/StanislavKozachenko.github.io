@@ -69,6 +69,9 @@ body {
 	width: 100%;
 	left: 0;
 }
+nav {
+	margin-left: 5%;
+}
 #First_Icons {
 	margin-left: 5%;
 	border-left: 1px solid #fff;
