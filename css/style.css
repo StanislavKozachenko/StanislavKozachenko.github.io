@@ -1345,3 +1345,15 @@ nav {
 		height: 120vh;
 	}
 }
+@media screen and (max-width: 319px){
+	.Seven_Section {
+		height: 210vh;
+	}
+	.Button_To_Up {
+		margin-top: -4%;
+	}
+	.Third_Section {
+		height: 320vh;
+	}
+}
+
