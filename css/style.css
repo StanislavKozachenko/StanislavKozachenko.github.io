@@ -1078,7 +1078,7 @@ nav {
 	}
 	.First_Section {
 		height: 120vh;
-		background-size: 250%;
+		background-size: 300%;
 
 	}
 	#Second_Section_Text_1::before {
@@ -1170,7 +1170,7 @@ nav {
 @media screen and (max-width: 375px) and (min-width: 320px){
 	.First_Section {
 		height: 160vh;
-		background-size: 390%;
+		background-size: 440%;
 	}
 	.Menu ul {
 		margin-top: 50%;
