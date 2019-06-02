@@ -1202,7 +1202,7 @@ nav {
 	}
 }
 /*Mobile S*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
 	#First_Section_Text_1 {
 		font-size: 40px;
 	}
