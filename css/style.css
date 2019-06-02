@@ -1217,7 +1217,7 @@ nav {
 		margin-top: 9%;
 	}
 	.Second_Section {
-		height: 140vh;
+		height: 160vh;
 	}
 	.Second_Section_Content {
 		margin-right: 10%
@@ -1237,7 +1237,7 @@ nav {
 		font-size: 12px;
 	}
 	.Third_Section {
-		height: 280vh;
+		height: 310vh;
 	}
 	.Fourth_Section_Content {
 		display: flex;
@@ -1276,7 +1276,7 @@ nav {
 		font-size: 15px;
 	}
 	.Six_Section_Slider {
-		margin-top: 115%;
+		margin-top: 95%;
 	}
 	.Slider_1, .Slider_2 {
 		width: 150px;
@@ -1342,6 +1342,6 @@ nav {
 		margin-top: 100%;
 	}
 	.Last_Section {
-		height: 100vh;
+		height: 120vh;
 	}
 }
