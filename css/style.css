@@ -1217,7 +1217,7 @@ nav {
 		margin-top: 9%;
 	}
 	.Second_Section {
-		height: 160vh;
+		height: 140vh;
 	}
 	.Second_Section_Content {
 		margin-right: 10%
@@ -1237,7 +1237,7 @@ nav {
 		font-size: 12px;
 	}
 	.Third_Section {
-		height: 310vh;
+		height: 250vh;
 	}
 	.Fourth_Section_Content {
 		display: flex;
@@ -1323,7 +1323,7 @@ nav {
 
 	}
 	.Seven_Section {
-		height: 180vh;
+		height: 150vh;
 	}
 	.Button_To_Up {
 		width: 40%;
@@ -1342,7 +1342,7 @@ nav {
 		margin-top: 100%;
 	}
 	.Last_Section {
-		height: 120vh;
+		height: 100vh;
 	}
 }
 @media screen and (max-width: 319px){
