@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.mainSection {
+	height: 100vh;
+	background-color: #282923;
+
+}
+.topText {
+	display: flex;
+	justify-content: center;
+	padding: 2% 0;
+	color: #fff;
+	font-size: 30px;
+	background-color: #333333;
+	text-align: center;
+}
+
+.Today, .who {
+	color: #fff;
+	font-size: 30px;
+	margin: 5% 5%;
+}
+@media screen and (max-width: 530px){
+	.topText {
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 400px){
+	.Today, .who {
+		font-size: 25px;
+	}
+}
