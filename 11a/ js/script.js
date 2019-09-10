@@ -31,8 +31,6 @@ let myp = {
 
 //
 let tp = document.getElementById('thisperson');
-let tp_1 = document.getElementById('thisperson_2');
-let tp_2 = document.getElementById('thisperson_3');
 
 if(day == 1 || day == 2 || day == 3 || day == 4 || day == 5) {	
 
