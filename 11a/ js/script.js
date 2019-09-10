@@ -31,10 +31,12 @@ let myp = {
 
 //
 let tp = document.getElementById('thisperson');
+let tp_1 = document.getElementById('thisperson_2');
+let tp_2 = document.getElementById('thisperson_3');
 
 if(day == 1 || day == 2 || day == 3 || day == 4 || day == 5) {	
 
- myp.d0 = new Date('September 1, 2019'); // Пуск сайта.
+ myp.d0 = new Date('September 2, 2019'); // Пуск сайта.
 	 myp.d1 = new Date();
 	 myp.dt = Math.round((myp.d1.getTime() - myp.d0.getTime()) / (1000*60*60*24));	
 
@@ -85,7 +87,11 @@ console.log(myp.week);
 		tp.innerHTML = classnames.n12;
 	}
 
+
+
 }
+
+
 if(day == 0 || day == 6) {	
-	tp.innerHTML = 'Сегодня выходной.';
+	tp.innerHTML = 'Отдыхаем.';
 }
