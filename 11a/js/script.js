@@ -1,6 +1,7 @@
 let today = document.getElementById('todayis');
 let time = document.getElementById('time');
 let date = new Date();
+moment.locale('ru');
 let day = date.getDay();
 today.innerHTML = moment().format("DD MM YYYY");
 time.innerHTML = moment().format('LT');
@@ -38,21 +39,21 @@ if(day == 1 || day == 2 || day == 3 || day == 4 || day == 5) {
 
  myp.d0 = new Date('September 2, 2019'); // Пуск сайта.
 	 myp.d1 = new Date();
-	 myp.dt = Math.round((myp.d1.getTime() - myp.d0.getTime()) / (1000*60*60*24));	
+	 myp.dt = Math.ceil((myp.d1.getTime() - myp.d0.getTime()) / (1000*60*60*24));	
 
 	myp.fromDate = myp.d0;
 	myp.toDate = myp.d1;
-	CalculateWeekendDays();
-	function CalculateWeekendDays(){
+
+	
    
 		console.log(myp.fromDate + 'br' + myp.toDate);
-    while(myp.fromDate < myp.toDate){
+    while(myp.fromDate <= myp.toDate){
         myp.fromDate.setDate(myp.fromDate.getDate() + 1);
         if(myp.fromDate.getDay() == 0 || myp.fromDate.getDay() == 6){
             ++myp.week;
         }
     }
-}
+
 	
 console.log(myp.week);
 
@@ -60,6 +61,7 @@ console.log(myp.week);
 
 
 	myp.dt-=myp.week;
+	console.log(myp.dt);
 		
 	if(myp.dt % 12 == 1) {
 		tp.innerHTML = classnames.n1;
