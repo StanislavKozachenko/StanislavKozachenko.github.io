@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+  	<script src="js/jquery.bxslider.js"defer></script>	
+ 
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+		<link rel="shortcut icon" href="img/img-32.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/script.js" defer></script>
+	<title>Викторина</title>
+</head>
+<body>
+	<nav>
+		<ul>
+				<li class="liInNav" id="firstliNav">Короткевич</li>
+				<li class="liInNav liPosAbs" id="secondliNav"><a class="ainNav" href="index.html">Жизнь писателя</a></li>
+				<li class="liInNav liPosAbs"><a class="ainNav" href="rogachev.html">Короткевич и Рогачёв</a></li>
+				<li class="liInNav liPosAbs"><a class="ainNav" href="aphorisms.html">Афоризмы</a></li>
+				<li class="liInNav liPosAbs"><a class="ainNav" href="read.html">Можно почитать</a></li>
+				<li class="liInNav liPosAbs"><a class="ainNav" href="road.html">По дорогам писателя</a></li>
+				<li class="liInNav liPosAbs"><a class="ainNav" href="museum.html">Виртуальный музей</a></li>
+				<li class="liInNav liPosAbs"><a class="ainNav" href="quiz.html">Викторина</a></li>
+			</ul>	
+	</nav>
+	<section id="fQuiz">
+		<div class="about">
+			<p class="name">Викторина</p>
+			<div class="imgquiz">			
+			</div>
+			<div class="explain">Предлагаем ответить на вопросы и узнать, знаете ли вы произведения белорусского классика.</div>
+			<div class="quiz">
+				<div class="quiz_all quiz_1">
+					<div class="quiz_top_text"><span class="first_letter">1</span>/10</div>
+					<div class="quiz_bg_all quiz_bg_1"><span class="question">Кто такой Андрей Белорецкий?</span></div>
+					<div class="quiz_what">
+						<div class="what_v_all" id="1_q" onclick="checkid(this)">Вор, который придумал хитрый план, чтобы завладеть чужим замком и имуществом.</div>
+						<div class="what_v_all" id="2_q" onclick="checkid(this)">Князь, потерявший молодую жену.</div>
+						<div class="what_v_all" id="3_q" onclick="checkid(this)">Старый отец, который помогает сыну спасти деревню от голода.</div>
+						<div class="what_v_all" id="4_q" onclick="checkid(this)">Молодой ученый-фольклорист, занимающийся сбором легенд, а в итоге находит жену.</div>
+					</div>
+				</div>
+				<div class="quiz_all quiz_2">
+					<div class="quiz_top_text"><span class="first_letter">2</span>/10</div>
+					<div class="quiz_bg_all quiz_bg_2"><span class='question'>Женщина везет помилование мужу, чтобы его не расстреляли. Ее задерживают, а в тюрьму посылают приказ поторопиться с приговором. Чем завершается история?</span></div>
+					<div class="quiz_what">
+						<div class="what_v_all" id="5_q" onclick="checkid(this)">Она опаздывает на 10 минут.</div>
+						<div class="what_v_all" id="6_q" onclick="checkid(this)">Ей мешает успеть буря.</div>
+						<div class="what_v_all" id="7_q" onclick="checkid(this)">Мужа расстреливают на день раньше.</div>
+						<div class="what_v_all" id="8_q" onclick="checkid(this)">Она успевает в последний момент благодаря помощи капитана, который не знал о приказе.</div>
+					</div>
+				</div>
+				<div class="quiz_all quiz_3">
+					<div class="quiz_top_text"><span class="first_letter">3</span>/10</div>
+					<div class="quiz_bg_all quiz_bg_3"><span class='question'>Действие которого произведения происходит в только что освобожденном от нацистов Киеве?</span></div>
+					<div class="quiz_what">
+						<div class="what_v_all" id="9_q" onclick="checkid(this)">"Чозения"</div>
+						<div class="what_v_all" id="10_q" onclick="checkid(this)">"Лазурь и золото дня"</div>
+						<div class="what_v_all" id="11_q" onclick="checkid(this)">"Листья каштанов"</div>
+						<div class="what_v_all" id="12_q" onclick="checkid(this)">"Гость приходит на рассвете рассвете"</div>
+					</div>
+				</div>
+				<div class="quiz_all quiz_4">
+					<div class="quiz_top_text"><span class="first_letter">4</span>/10</div>
+					<div class="quiz_bg_all quiz_bg_4"><span class='question'>Короткевич был очень привязан к деду, который рассказывал ему белорусские легенды и предания. В одном из произведений писателя дед стал прототипом героя:</span></div>
+					<div class="quiz_what">
+						<div class="what_v_all" id="13_q" onclick="checkid(this)">Данилы Загорского-Вежи, в романе "Колосья под серпом твоим"</div>
+						<div class="what_v_all" id="14_q" onclick="checkid(this)">Капитана Юрия Горова, в рассказе "Паром на бурной реке"</div>
+						<div class="what_v_all" id="15_q" onclick="checkid(this)">Андрея Белорецкого, в повести "Дикая охота короля Стаха"</div>
+						<div class="what_v_all" id="16_q" onclick="checkid(this)">Родители в сказке "бессильны отец"</div>
+					</div>
+				</div>
+				<div class="quiz_all quiz_5">
+					<div class="quiz_top_text"><span class="first_letter">5</span>/10</div>
+					<div class="quiz_bg_all quiz_bg_5"><span class='question'>Кто из этих героев не фигурирует в повести "Дикая охота короля Стаха"?</span></div>
+					<div class="quiz_what">
+						<div class="what_v_all" id="17_q" onclick="checkid(this)">Григорий Дубатовк</div>
+						<div class="what_v_all" id="18_q" onclick="checkid(this)">Надежда Яновская</div>
+						<div class="what_v_all" id="19_q" onclick="checkid(this)">Антон Космич</div>
+						<div class="what_v_all" id="20_q" onclick="checkid(this)">Алесь Ворона</div>
+					</div>
+				</div>
+				<div class="quiz_all quiz_6">
+					<div class="quiz_top_text"><span class="first_letter">6</span>/10</div>
+					<div class="quiz_bg_all quiz_bg_6"><span class='question'>Почему в сказке Короткевича "Чертов клад" черт испугался кошки и убежал из дома, в котором жил и мучал хозяина?</span></div>
+					<div class="quiz_what">
+						<div class="what_v_all" id="21_q" onclick="checkid(this)">Кошка обманула черта, и он попал в чан с кипятком</div>
+						<div class="what_v_all" id="22_q" onclick="checkid(this)">Кошка была черной, это плохая примета</div>
+						<div class="what_v_all" id="23_q" onclick="checkid(this)">На самом деле, это был медведь, черт перепутал</div>
+						<div class="what_v_all" id="24_q" onclick="checkid(this)">Кошка чуть не откусила черту хвост, так как перепутала с мышью</div>
+					</div>
+				</div>
+				<div class="quiz_all quiz_7">
+					<div class="quiz_top_text"><span class="first_letter">7</span>/10</div>
+					<div class="quiz_bg_all quiz_bg_7"><span class='question'>Чем пугали маленькую Аленку в произведении "Как звяргаюцца идолы"?</span></div>
+					<div class="quiz_what">
+						<div class="what_v_all" id="25_q" onclick="checkid(this)">Тем, что не дадут сладкого</div>
+						<div class="what_v_all" id="26_q" onclick="checkid(this)">Призраком</div>
+						<div class="what_v_all" id="27_q" onclick="checkid(this)">Пылесосом</div>
+						<div class="what_v_all" id="28_q" onclick="checkid(this)">Тьмой</div>
+					</div>
+				</div>
+				<div class="quiz_all quiz_8">
+					<div class="quiz_top_text"><span class="first_letter">8</span>/10</div>
+					<div class="quiz_bg_all quiz_bg_8"><span class='question'>Что это за стих?</span></div>
+					<div class="quiz_what">
+						<div class="what_v_all" id="29_q" onclick="checkid(this)">"Беларуская песня"</div>
+						<div class="what_v_all" id="30_q" onclick="checkid(this)">"Калумбы зямлі незнаёмай"</div>
+						<div class="what_v_all" id="31_q" onclick="checkid(this)">"На Беларусі Бог жыве"</div>
+						<div class="what_v_all" id="32_q" onclick="checkid(this)">"Бацькаўшчына"</div>
+					</div>
+				</div>
+				<div class="quiz_all quiz_9">
+					<div class="quiz_top_text"><span class="first_letter">9</span>/10</div>
+					<div class="quiz_bg_all quiz_bg_9"><span class='question'>С какого произведения эта цитата: "Хто не памятае мінулага, хто забывае мінулае – асуджаны зноў перажыць яго. Безліч разоў".</span></div>
+					<div class="quiz_what">
+						<div class="what_v_all" id="33_q" onclick="checkid(this)">"Зброя"</div>
+						<div class="what_v_all" id="34_q" onclick="checkid(this)">"Хрыстос прызямліўся ў Гародні"</div>
+						<div class="what_v_all" id="35_q" onclick="checkid(this)">"Чорны замак Альшанскі"</div>
+						<div class="what_v_all" id="36_q" onclick="checkid(this)">"Каласы пад сярпом тваім"</div>
+					</div>
+				</div>
+				<div class="quiz_all quiz_10">
+					<div class="quiz_top_text"><span class="first_letter">10</span>/10</div>
+					<div class="quiz_bg_all quiz_bg_10"><span class='question'>Протяните диалог из произведения "Ладья отчаяния": - Эй, братцы, вам говорю. Или же Бог дал белорусу клюв, чтобы он пищал? - А для чего?</span></div>
+					<div class="quiz_what">
+						<div class="what_v_all" id="37_q" onclick="checkid(this)">Говорить языком предков.</div>
+						<div class="what_v_all" id="38_q" onclick="checkid(this)">Молиться и не говорить лишнего.</div>
+						<div class="what_v_all" id="39_q" onclick="checkid(this)">Щелкать орехи да целоваться.</div>
+						<div class="what_v_all" id="40_q" onclick="checkid(this)">Есть картошку да играть на дудке.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
