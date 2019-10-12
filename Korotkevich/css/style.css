@@ -187,7 +187,7 @@ nav ul {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	height: 400px;
+	height: 55vh;
 }
 .ab_1_bg {
 	padding: 25px;
@@ -195,7 +195,6 @@ nav ul {
 	width: 42%;
 	margin: 0% 5%;
 	margin-right: 10%;
-	height: 100%;
 	background-image: url(../img/fon.png);
 	-webkit-background-size: cover;
 	background-repeat: no-repeat;
@@ -207,7 +206,7 @@ nav ul {
 	font-size: 2.3vh;
 }
 .ab_all_bg_img {
-	padding: 25px;
+	padding: 15px;
 	height: 55vh;
 	width: 30%;
 	background-size: cover;
@@ -758,6 +757,7 @@ nav ul {
 	-webkit-box-shadow: 0 0 5px #c5c5c5;
 	        box-shadow: 0 0 5px #c5c5c5;
 	color: #171509;
+	display: none;
 }
 .modul-about {
 	margin: 5% 15%;
