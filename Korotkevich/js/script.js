@@ -7,6 +7,7 @@
     		adaptiveHeight: false,
     		auto: true,
     		pause: 4000,
+        preloadImages: 'visible'
         }
     	);
   });
@@ -17,7 +18,8 @@
     		infiniteLoop: true,
     		adaptiveHeight: false,
     		auto: true,
-    		pause: 4000
+    		pause: 4000,
+        preloadImages: 'visible'
     	}
     	);
 
@@ -29,9 +31,24 @@
     		infiniteLoop: true,
     		adaptiveHeight: false,
     		auto: true,
-    		pause: 4000
+    		pause: 4000,
+        preloadImages: 'visible',
+
     	}
     	);
+
+  });
+     $(document).ready(function(){
+    $('.slider_01').bxSlider(
+      {
+        speed: 600,
+        infiniteLoop: true,
+        adaptiveHeight: false,
+        auto: true,
+        pause: 2500,
+        preloadImages: 'visible',
+      }
+      );
 
   });
 //
