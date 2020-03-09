@@ -37,7 +37,7 @@ let tp_2 = document.getElementById('thisperson_3');*/
 
 if(day == 1 || day == 2 || day == 3 || day == 4 || day == 5) {	
 
- myp.d0 = new Date('September 1, 2019'); // Пуск сайта.
+ myp.d0 = new Date('September 2, 2019'); // Пуск сайта.
 	 myp.d1 = new Date();
 	 myp.dt = Math.ceil((myp.d1.getTime() - myp.d0.getTime()) / (1000*60*60*24));	
 
