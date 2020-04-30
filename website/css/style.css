@@ -42,48 +42,37 @@
 @keyframes animate {
 	0% {
 		box-shadow: 0 0 5px 1px #18A6D8;
-
 	}
 	25% {
-		box-shadow: 0 0 10px 2px #18A6D8;
-	
+		box-shadow: 0 0 10px 2px #18A6D8;	
 	}
 	50% {
-		box-shadow: 0 0 20px 3px #18A6D8;
-		
+		box-shadow: 0 0 20px 3px #18A6D8;		
 	}
 	75% {
-		box-shadow: 0 0 10px 2px #18A6D8;
-		
+		box-shadow: 0 0 10px 2px #18A6D8;		
 	}
 	100% {
-		box-shadow: 0 0 5px 1px #18A6D8;
-	
+		box-shadow: 0 0 5px 1px #18A6D8;	
 	}
 }
 @keyframes animate_2 {
 	0% {
 		box-shadow: 0 0 5px 1px rgb(251, 171, 126);
-
 	}
 	25% {
-		box-shadow: 0 0 10px 2px rgb(251, 171, 126);
-	
+		box-shadow: 0 0 10px 2px rgb(251, 171, 126);	
 	}
 	50% {
-		box-shadow: 0 0 20px 3px rgb(251, 171, 126);
-		
+		box-shadow: 0 0 20px 3px rgb(251, 171, 126);		
 	}
 	75% {
-		box-shadow: 0 0 10px 2px rgb(251, 171, 126);
-		
+		box-shadow: 0 0 10px 2px rgb(251, 171, 126);		
 	}
 	100% {
-		box-shadow: 0 0 5px 1px rgb(251, 171, 126);
-	
+		box-shadow: 0 0 5px 1px rgb(251, 171, 126);	
 	}
 }
-
 ::-webkit-scrollbar {
     width: 15px;
 } 
@@ -379,7 +368,7 @@ body {
 	transition: 1s;
 	backface-visibility: hidden;
 	color: #fff;
-	padding: 15px;
+	padding: 30px;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
