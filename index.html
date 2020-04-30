@@ -1,433 +1,121 @@
-<!-- Здравствуйте! Как дела? -->
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<meta name='viewport' content='width=device-width,initial-scale=1'>
-	<title>KREO</title>
+	<link rel="shortcut icon" href="img/icon.png">
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<link rel="shortcut icon" href="for_divs/icon.png" type="image/x-icon">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script type="text/javascript">
-	function Event(){
-		event.preventDefault();
-	}
-		function scrollSlow(id){
-	var offset = 0;
-	$('html, body').animate({
-		scrollTop: $(id).offset ().top - offset
-	}, 500);
-	return false;
-}	 
-	function Change(){
-		$(".Six_Section_Text").toggleClass("Six_Section_Text_1_1_1");
-		$(".Slider_1").toggleClass("Slider_1_1_1");
-		$(".Six_Section_Text_1").toggleClass("Six_Section_Text_1_2_2");
-		$(".Slider_2").toggleClass("Slider_2_1");
-		$('.Bottom_Six_1').toggleClass("Bottom_Six_1_1");
-		$('.Bottom_Six_2').toggleClass("Bottom_Six_2_1");
-		
-	}
-	function Menu_Check(){
-		$('.Menu').toggleClass('Menu_active');
-		$('.menu-button').toggleClass('menu-button_active');
-	}
-	
-	</script>
-	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/script.js" defer></script>
+	<script src="js/jquery.js" ></script>	
+	<script src="js/sweetalert.js" defer></script>
+	<script src="js/bootstrap.min.js"></script>
+	<title>Kozachenko Company</title>
 </head>
 <body>
-	<div class="MAINBOX">
 	<div class="Progress"></div>
-	<section class="First_Section" id="Here"><div class="Button menu-button" onclick="Menu_Check()"><span></span>
-</div>
-		<div class="Menu">
-			<ul>
-				<li id="Menu_Li"><a href="#" onclick="Event()" id="Menu_Li_A"><div id="Menu_Li_Div">KREO</div></a></li>
-				<li><a href="#" onclick="Event(), scrollSlow('#Here')">HOME</a></li>
-				<li><a href="#" onclick="Event(), scrollSlow('#Projects')">WORKS</a></li>
-				<li><a href="#" onclick="Event(), scrollSlow('#Service')">SERVICES</a></li>
-				<li><a href="#" onclick="Event(), scrollSlow('#About')">ABOUT</a></li>
-				<li><a href="#" onclick="Event(), scrollSlow('#Contact')">CONTACT</a></li>
-				<li><div id="First_Icons">
-					<div id="Facebook"><a href="#" onclick="Event()"><i class="fa fa-facebook"></i></a></div>
-					<div id="Twitter"><a href="#" onclick="Event()"><i class="fa fa-twitter"></i></a></div>
-					<div id="Google"><a href="#" onclick="Event()"><i class="fa fa-google"></i></a></div>
-				</div></li>
-			</ul>
+	<div class="Anchor" id="Anchor" onclick="scrollSlow('#top')">&uArr;</div>
+	<div class="bg_one" id="top">
+		<div class="bg_one-bg"></div>
+	<nav>
+		<div class="justify-content-md-center container-fluid navbar">
+			<div class="col col-lg-4"><div class="mainName">Kozachenko Company</div></div>
+			<div class="col col-md-auto"><a href="#" class="btn btn_top" onclick="Off(), scrollSlow('#Team')">Наша команда</a></div>
+			<div class="col col-md-auto"><a href="#" class="btn btn_top" onclick="Off(), scrollSlow('#Goals')">Наши цели</a></div>
+			<div class="col col-md-auto"><a href="#" class="btn btn_top" onclick="Off(), scrollSlow('#Usl')">Услуги</a></div>
+			<div class="col col-md-auto"><a href="#" class="btn btn_top" onclick="Off(), scrollSlow('#FiveAb')">О нас</a></div>
+			<div class="col col-md-auto"><a href="#" class="btn btn_top" onclick="Off(), scrollSlow('#footer')">Связаться с нами</a></div>
 		</div>
-		
-				<nav>
-			<ul>
-				<li id="First_Li"><a href="#" onclick="Event()"><div id="First_Li_Div">KREO</div></a></li>
-				<li><a href="#" onclick="Event()">HOME</a></li>
-				<li><a href="#" onclick="Event(), scrollSlow('#Projects')">WORKS</a></li>
-				<li><a href="#" onclick="Event(), scrollSlow('#Service')">SERVICES</a></li>
-				<li><a href="#" onclick="Event(), scrollSlow('#About')">ABOUT</a></li>
-				<li><a href="#" onclick="Event(), scrollSlow('#Contact')">CONTACT</a></li>
-				<li><div id="First_Icons">
-					<div id="Facebook"><a href="#" onclick="Event()"><i class="fa fa-facebook"></i></a></div>
-					<div id="Twitter"><a href="#" onclick="Event()"><i class="fa fa-twitter"></i></a></div>
-					<div id="Google"><a href="#" onclick="Event()"><i class="fa fa-google"></i></a></div>
-				</div></li>
-			</ul>
-		</nav>
-		<div class="First_Section_Text">
-			<p id="First_Section_Text_1">We are a small design studio dedicated to build great digital products.</p>
-			<p id="First_Section_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</p>
-			<div class="Go_Down">
-				
-			</div>	
-		</div>
-	</section>
-	<section class="Second_Section">
-		<div class="Second_Section_Text" id="Projects">
-			<p id="Second_Section_Text_1">OUR LATEST PROJECTS.</p>
-			<p id="Second_Section_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</p>
-		</div>
-		<div class="Second_Section_Content">
-			<div class="Second_Section_Content_All" id="Second_Section_Content_1"></div>
-			<div class="Second_Section_Content_All" id="Second_Section_Content_2"></div>
-			<div class="Second_Section_Content_All" id="Second_Section_Content_3"></div>
-			<div class="Second_Section_Content_All" id="Second_Section_Content_4"></div>
-			<div class="Second_Section_Content_All" id="Second_Section_Content_5"></div>
-			<div class="Second_Section_Content_All" id="Second_Section_Content_6"></div>
-			<div class="Second_Section_Content_All" id="Second_Section_Content_7"></div>
-			<div class="Second_Section_Content_All" id="Second_Section_Content_8"></div>
-		</div>
-	</section>
-	<section class="Third_Section">
-		<div class="Second_Section_Text">
-			<p id="Second_Section_Text_1">OUR AWESOME SERVICES.</p>
-			<p id="Second_Section_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</p>
-		</div>
-		<div class="Third_Section_Content" id="Service">
-			<div class="Third_Section_Content_All">
-				<p id="Third_Section_Content_Text_1">Marketing</p>
-				<p id="Third_Section_Content_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
+	</nav>
+			<div class="textOne">	
+				<div class="col col-md-auto abouttxt">Мы создаём не просто сайты. <br>Мы создаём будущее!</div><br>
+				<div class="col col-md-auto secondAboutTxt">Веб-студия с трёхлетним опытом работы.<br> Лучшие там, где лучшие.</div>
+				<div class="col col-md-auto aboutBtn" onclick="Off(), scrollSlow('#Usl')">Подробнее</div>
 			</div>
 
-			<div class="Third_Section_Content_All">
-				<p id="Third_Section_Content_Text_1">Videography</p>
-				<p id="Third_Section_Content_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
+	</div>
+	<div class="bg_two">
+		<div class="container-fluid justify-content-md-center twoTopText" id="Team">Наша команда</div>
+		<div class="col col-md-auto aboutMe">
+			<div class="top-img"></div>
+			<div class="about-name">Stanislav Kozachenko</div>
+			<div class="about-doing">Веб-разработчик. <br>Основатель компании <b>Kozachenko Company</b>.</div>
+		</div>
+	</div>
+	<div class="bg_three">
+		<div class="container-fluid justify-content-md-center twoTopText" id="Goals">Наши цели</div>
+		<div class="container-fluid twoTopText2">Мы понимаем ваши требования и предоставляем качественные работы.</div>
+		<div class="ourfocus">
+			<div class="col col-md-3 ourfocus_module">
+					<div class="of_icon" id="of_i_1"></div>
+					<div class="of_name">Удобный интерфейс</div>
+					<div class="of_desr">Удобный интерфейс делает пользование сайтом максимально простым, удобным, понятным и комфортным.</div>
 			</div>
-
-			<div class="Third_Section_Content_All">
-				<p id="Third_Section_Content_Text_1">Photography</p>
-				<p id="Third_Section_Content_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
+			<div class="col col-md-3 ourfocus_module">
+					<div class="of_icon" id="of_i_2"></div>
+					<div class="of_name">Приятный дизайн</div>
+					<div class="of_desr">Приятный дизайн привлекает внимание пользователей и делает графический интерфейс одним из главных атрибутов.</div>
 			</div>
-
-			<div class="Third_Section_Content_All">
-				<p id="Third_Section_Content_Text_1">Branding</p>
-				<p id="Third_Section_Content_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
-			</div>
-
-			<div class="Third_Section_Content_All">
-				<p id="Third_Section_Content_Text_1">Web Design</p>
-				<p id="Third_Section_Content_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
-			</div>
-
-			<div class="Third_Section_Content_All">
-				<p id="Third_Section_Content_Text_1">Web Development</p>
-				<p id="Third_Section_Content_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
+			<div class="col col-md-3 ourfocus_module">
+					<div class="of_icon" id="of_i_3"></div>
+					<div class="of_name">Адаптивность</div>
+					<div class="of_desr">Адаптивность позовляет просматривать сайт с любого устройства, что позволит привлекать больше пользователей.</div>
 			</div>
 		</div>
-	</section>
-	<section class="Fourth_Section" id="About">
-		<div class="Second_Section_Text">
-			<p id="Second_Section_Text_1">WHO WE ARE.</p>
-			<p id="Second_Section_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</p>
+	</div>
+	<div class="bg_four">
+		<div class="container-fluid justify-content-md-center twoTopText" id="Usl">Услуги</div>
+			<div class="ourfocus ourfocus_two">
+			<div class="col col-md-3 ourfocus_module_1">
+					<div class="ourfocus_t_front" id="land">
+						<span class="about_f">Одностраничный сайт</span>
+						<div class="front_wrapper_1">							
+						</div>
+					</div>
+					<div class="ourfocus_t_back">
+						<span class="about_f_desc">Сайт составляет лишь одну страницу, на которой описана вся необходимая информация. Может быть использован как сайт-визитка для компании, либо какой-либо организации.</span>
+					</div>
+			</div>
+			<div class="col col-md-3 ourfocus_module_1">
+					<div class="ourfocus_t_front" id="many">
+						<span class="about_f">Многостраничный сайт</span>
+						<div class="front_wrapper_1" id="many_1">							
+						</div>
+					</div>
+					<div class="ourfocus_t_back">
+						<span class="about_f_desc">Состоит из нескольких связанных страниц. Используется как сайт для крупного проекта, где необходимо наличие нескольких страниц для правильного расположения информации.</span>
+					</div>
+			</div>
+			<div class="col col-md-3 ourfocus_module_1">
+					<div class="ourfocus_t_front" id='fixes'>
+						<span class="about_f">Доработки по сайту</span>
+							<div class="front_wrapper_1">							
+						</div>
+					</div>
+					<div class="ourfocus_t_back">
+						<span class="about_f_desc">Если нужно исправить, добавить, переделать, улучшить, то этот является отличным вариантом для решения поставленных задач. Мы поможем решить поставленные задачи и модифицировать веб-сайт.</span>
+					</div>
+			</div>
+	</div>
+	</div>	
+	<div class="bg_five">
+		<div class="bg_five-bg"></div>
+		<div class="container-fluid justify-content-md-center twoTopText" id="FiveAb">О нас</div>
+		<div class="about-us">
+			<div class="about-us-txt">Цель компании Kozachenko <b>Company</b> - реализовать желания всех её клиентов.<br><span id="add_1">Мы будем рады, если Ваши желания превратятся в Ваши возможности!<br> Всегда готовы к сорудничеству.</span></div>
+			<div class="write-us" id="btn_send">Написать нам</div>
 		</div>
-		<div class="Fourth_Section_Content">
-			<div class="Fourth_Section_Content_All">
-				<p id="Fourth_Section_Content_Text_1">Our Process</p>
-				<p id="Fourth_Section_Content_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
-			</div>
-
-			<div class="Fourth_Section_Content_All">
-				<p id="Fourth_Section_Content_Text_1">Our Approach</p>
-				<p id="Fourth_Section_Content_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
-			</div>
-
-			<div class="Fourth_Section_Content_All">
-				<p id="Fourth_Section_Content_Text_1">Our Goal</p>
-				<p id="Fourth_Section_Content_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
-			</div>
-
-			<div class="Fourth_Section_Content_All">
-				<p id="Fourth_Section_Content_Text_1">Our Mission</p>
-				<p id="Fourth_Section_Content_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
-			</div>
-		</div>
-	</section>
-	<section class="Fifth_Section" id="Team">
-		<div class="Second_Section_Text">
-			<p id="Second_Section_Text_1">MEET OUT TEAM.</p>
-			</div>
-			<div class="Fifth_Container">
-				<div id="Photo_In_Fifrth"></div>
-				<p id="Fifth_Container_Text_1">Stanislav Kozachenko</p>
-				<p id="Fifth_Container_Text_2">Lead Developer</p>
-				<p id="Fifth_Container_Text_3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<div class="Icons_In_Fifth">
-					<a href="#" onclick="Event()"><div id="Facebook_In_Five"><i class="fa fa-facebook"></i></div></a>
-					<a href="#" onclick="Event()"><div id="Twitter_In_Five"><i class="fa fa-twitter"></i></div></a>
-					<a href="#" onclick="Event()"><div id="Google_In_Five"><i class="fa fa-google"></i></div></a>
-					<a href="#" onclick="Event()"><div id="Skype_In_Five"><i class="fa fa-skype"></i></div></a>
-					<a href="#" onclick="Event()"><div id="YouTube_In_Five"><i class="fa fa-youtube"></i></div></a>
+	</div>
+	<div class="footer" id="footer">
+			<div class="footer-txt">
+				<div class="col col-md-7 mainName footer-name">Kozachenko Company<br><span id="Rights">All Rights Reserved, 2020</span></div>
+				<div class="write-to">
+				<div class="write-to-0">Написать нам</div><div class="mail">			
+					<div class="write-to-1">Наша почта</div><div class="mail-s">stanislavkozachenko@mail.ru</div>
 				</div>
 			</div>
-	</section>
-	<section class="Six_Section">
-		<div class="Main_Six_Section_Text"><div class="Six_Section_Text">
-			<p id="Main_Six_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam praesentium delectus id quia est ipsum, commodi maiores sed impedit. Temporibus soluta, iste sit quo rem ea molestias. Accusamus, perferendis, similique.</span><span>Veritatis dolorum cum numquam assumenda inventore distinctio ipsam voluptatibus sint laborum aut nihil totam voluptas omnis quod at, quas optio libero magni. Deleniti explicabo dolorem ipsum nesciunt, expedita, dolores cupiditate.</span></p>
 		</div>
-		<div class="Six_Section_Text_1">
-			<p id="Main_Six_text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam praesentium delectus id quia est ipsum, commodi maiores sed impedit. Temporibus soluta, iste sit quo rem ea molestias. Accusamus, perferendis, similique.</span><span>Veritatis dolorum cum numquam assumenda inventore distinctio ipsam voluptatibus sint laborum aut nihil totam voluptas omnis quod at, quas optio libero magni. Deleniti explicabo dolorem ipsum nesciunt, expedita, dolores cupiditate.</span></p>
-		</div></div>
-
-		<div class="Six_Section_Slider" id="Contact">
-			<ul>
-				<li><div class="Slider_1">
-					<div class="Slider_1_Photo"></div><div class="Slider_1_Text">
-					<p id="Slider_1_Text_1">Lindsey Stirling</p>
-					<p id="Slider_1_Text_2">Singer</p></div>
-				</div></li>
-				<li><div class="Slider_2">
-					<div class="Slider_2_Photo"></div><div class="Slider_1_Text">
-					<p id="Slider_1_Text_1">Stanislav Kozachenko</p>
-					<p id="Slider_1_Text_2">Developer</p></div>
-				</div></li>
-			</ul>
-		</div>
-		<div class="Bottom_Six">
-			<a href="#" onclick="Event(), Change()"><div class="Bottom_Six_1"></div></a>
-			<a href="#" onclick="Change(), Event()"><div class="Bottom_Six_2"></div></a>
-		</div>
-	</section>
-	<section class="Seven_Section">
-		<div class="Second_Section_Text">
-			<p id="Second_Section_Text_1">GET IN TOUCH WITH US.</p>
-			</div>
-		<div class="Under_Up_Text"></div>
-		<div class="Seven_Content">
-			<div class="Some_Inputs">
-				<input type="text" class="Inputs_All Input_1" placeholder="Name" maxlength="100">
-				<input type="text" class="Inputs_All Input_2" placeholder="Email" maxlength="100">
-				<input type="text" class="Inputs_All Input_3" placeholder="Subject" maxlength="200">
-				<input type="text" class="Inputs_All Input_4" placeholder="Message" maxlength="500">
-				<a href="#" onclick="Event()" class="button_in_seven"><div>SUBMIT</div></a>
-			</div>
-			<div class="Some_Text">
-				<p class="First_Some_Text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque possimus necessitatibus illo ea. Possimus porro et doloribus nemo, dolorem corrupti cum magni molestiae voluptas assumenda deserunt, asperiores mollitia, reprehenderit quaerat.</span><span>Quod neque tenetur libero culpa perferendis aliquam, unde id vel a. Fugit iste, commodi sint enim saepe dolor distinctio obcaecati veniam ea quisquam eaque consequuntur ut cupiditate officia totam maxime!</span></p>
-				<p class="Second_Some_Text">Come Visit</p>
-				<p class="First_Some_Text">3240 Nikaragua<br>Vash. US<br>93432 US</p>
-				<p class="Second_Some_Text">Contact Numbers</p>
-				<p class="First_Some_Text">Phone: (873)7237 5323<br>Mobile: (3244)234 5345<br>Fax: (3243)22343 3243</p>
-			</div>
-		</div>
-	</section>
-	<section class="Last_Section">
-		<a href="#Here" onclick="Event(), scrollSlow('#Here')" class="Button_To_Up"><div>BACK TO TOP</div></a>
-		<div class="Icons_In_Footer">
-			<a href="#" onclick="Event()"><i class="fa fa-vk"></i></a>
-			<a href="#" onclick="Event()"><i class="fa fa-facebook" id="Facebooks"></i></a>
-			<a href="#" onclick="Event()"><i class="fa fa-twitter"></i></a>
-			<a href="#" onclick="Event()"><i class="fa fa-instagram"></i></a>
-			<a href="#" onclick="Event()"><i class="fa fa-google" id="Google"></i></a>
-			<a href="#" onclick="Event()"><i class="fa fa-youtube"></i></a>
-		</div>
-		<div class="Footer_Text">
-			<p id="Footer_Text_1">KREO</p>
-			<p id="Footer_Text_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, itaque. Ad, perspiciatis enim saepe! Laborum qui, vel et aut tempora assumenda quos dignissimos sint labore, reiciendis nihil cumque odio fugiat.</p>
-			<div class="Last_Text"><p id="Footer_Text_3">Copyright 2019 KREO</p><p id="Footer_Text_4">Designed by <span id="My_Name">Stanislav Kozachenko</span></p></div>
-		</div>
-	</section>
-
-
-	<script type="text/javascript">
-		const progress = document.querySelector('.Progress');
-		
-		window.addEventListener('scroll', progressBar);
-
-		function progressBar(e){
-			let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
-			let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			let per = windowScroll / windowHeight * 100;
-			progress.style.width = per + '%';
-			}
-	</script>
-	<style type="text/css">
-	.First_Section {
-	background-image: url(for_divs/fonforsix.png);
-	
-}
-		
-.Go_Down {
-	margin-top: 5%;
-	height: 80px;
-	width: 80px;
-	background-image: url(for_divs/down-arrow.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	transition: 0.4s;
-}
-#Second_Section_Content_1 {
-	background-image: url(for_divs/container_fon_1.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#Second_Section_Content_2 {
-	background-image: url(for_divs/container_fon_2.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#Second_Section_Content_3 {
-	background-image: url(for_divs/container_fon_3.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#Second_Section_Content_4 {
-	background-image: url(for_divs/container_fon_4.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#Second_Section_Content_5 {
-	background-image: url(for_divs/container_fon_5.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#Second_Section_Content_6 {
-	background-image: url(for_divs/container_fon_6.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#Second_Section_Content_7 {
-	background-image: url(for_divs/container_fon_7.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#Second_Section_Content_8 {
-	background-image: url(for_divs/container_fon_8.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-#Photo_In_Fifrth {
-	height: 200px;
-	width: 200px;
-	background-image: url(for_divs/me.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	box-shadow: 0px 0px 17px 0px orange;
-	border-radius: 10px;
-}
-.Slider_1_Photo {
-	height: 90%;
-	width: 40%;
-	background-image: url(for_divs/Lindsey.png);
-	-webkit-background-size: 100%;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	box-shadow: 0px 0px 45px -12px #000000;
-}
-.Slider_2_Photo {
-	height: 90%;
-	width: 40%;
-	background-image: url(for_divs/me.png);
-	-webkit-background-size: 100%;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	box-shadow: 0px 0px 45px -12px #000000;
-
-}
-@media (max-width: 500px) and (min-width: 375px){
-	#Photo_In_Fifrth {
-		height: 150px;
-		width: 150px;
-	}
-}
-		@media screen and (max-width: 320px) {
-	#Photo_In_Fifrth {
-		height: 120px;
-		width: 120px;
-	}
-}
-
-	</style>
-</div>
+</div>	
 </body>
 </html>
