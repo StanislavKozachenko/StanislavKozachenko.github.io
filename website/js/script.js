@@ -23,6 +23,15 @@ jQuery(document).ready(function(){
 			}
 		
 		}	*/
+		$('.burger-menu').click(function(e) {
+			$('.burger-menu, .menu').toggleClass('active');
+			$('body').toggleClass('lock');
+		});
+		$('.topbar').click(function(e){
+			$('.menu').toggleClass('active');
+			$('.burger-menu').removeClass('active');
+		});
+
 });
 
 function Off (e){
@@ -60,6 +69,3 @@ btn_send.addEventListener('click', function(){
 		})
 	});
 });
-
-
-
