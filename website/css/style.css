@@ -935,4 +935,7 @@ body {
 		display: none;
 		transition: .2s;
 	}
+	.navbar {
+		margin-bottom: 0;
+	}
 }
