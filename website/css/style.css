@@ -775,6 +775,9 @@ body {
 	.aboutBtn {
 		font-size: 1.8vw !important;
 	}
+	.ourfocus_module {
+		border: rgb(20%, 20%, 20%, 0.3) 0.2px  solid;
+	}
 	/**/
 }
 @media (max-width: 470px){
@@ -903,7 +906,7 @@ body {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: #5FD4F6;
+		background-color: #0C98D3;
 		padding-top: 15%;
 		padding-left: 5%;
 		transition: .2s;
