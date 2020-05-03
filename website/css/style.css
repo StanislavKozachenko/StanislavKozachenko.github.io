@@ -25,7 +25,6 @@
 	bottom: 0;
 	margin: 3%;
 	height: 50px;
-	margin-right: 50px;
 	width: 50px;
 	border-radius: 50%;
 	background-color: #18A6D8;
@@ -740,6 +739,79 @@ body {
 }
 @media (max-width: 560px){
 	.ourfocus_module_1, .ourfocus_module {
-	height: 55%;
+		height: 60%;
+		margin-top: -10%;
+	}
 }
+@media (max-width: 470px){
+	.ourfocus_module_1, .ourfocus_module {
+		height: 55%;
+		margin-top: -10%;
+	}
+	.of_icon {
+		width: 50px;
+		height: 50px;
+	} 
+	.about-doing {
+		font-size: 2.2vw !important;
+	}
+	.twoTopText2 {
+		font-size: 1.8vw;
+	}
+	.ourfocus_t_back {
+		padding: 10px;
+	}
+	.top-img {
+		height: 100px !important;
+		width: 100px !important;
+}
+	.ourfocus {
+		height: 300px;
+	}
+	.write-to-1, .mail-s {
+		font-size: 1.8vw;
+		padding: 5px;
+	}
+	.write-to-0 {
+		font-size: 2vw;
+	}
+	.of_desr {
+		width: 100%;
+	}
+	.ourfocus .col {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+
+}
+@media (max-width: 350px){
+	.about_f_desc {
+		font-size: 1.8vw;
+	}
+	.ourfocus_module_1, .ourfocus_module  {
+		height: 70% !important;
+	}
+	.ourfocus_two, .ourfocus {
+		height: 200px;
+	}	
+	.of_desr {
+		font-size: 1.5vw;
+	}
+	.ourfocus .col {
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+	.ourfocus_module, .ourfocus_module_1 {
+		margin: 5px;
+	}
+	.write-to-1, .mail-s {
+		font-size: 2vw;
+		padding: 5px;
+	}
+	.write-to-0 {
+		font-size: 2.5vw;
+	}
+	.footer-txt {
+		padding-left: 42px;
+	}
 }
