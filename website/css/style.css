@@ -748,6 +748,9 @@ body {
 		height: 60%;
 		margin-top: -10%;
 	}
+	.ourfocus_module:hover {
+		margin-top: -13% !important;
+	}
 	/**/
 	.burger-menu {
 		height: 15px !important;
@@ -850,6 +853,9 @@ body {
 	}
 	.aboutBtn, .write-us {
 		padding: 5px !important;
+	}
+	.ourfocus_module:hover {
+		margin-top: -3% !important;
 	}
 }
 /**/
