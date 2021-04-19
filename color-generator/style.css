@@ -15,6 +15,8 @@
 	background-color: #18A6D8;
 	color: #fff;
 	display: flex;
+	text-align: center;
+	align-content: center;
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0 0 5px 1px #18A6D8;
