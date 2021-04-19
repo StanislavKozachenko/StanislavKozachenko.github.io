@@ -7,7 +7,7 @@ const btn = document.querySelector('.brn');
 const randomColorBlock = document.querySelectorAll('.box');
 
 function RandomHexColorCode(){
-	var chars = '0123456789abcdef';
+	var chars = '0123456789ABCDEF';
 	var colorLength = 6;
 	var color = "";
 
