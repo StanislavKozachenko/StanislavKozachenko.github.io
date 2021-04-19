@@ -41,3 +41,4 @@ jQuery(document).ready(function($){
 		$temp.remove();
 	});
 });
+addColor();
