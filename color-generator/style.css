@@ -166,14 +166,18 @@
 	padding: 30px;
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-.back_box {
-	background: #2B619C;
-	transform: rotateY(180deg);
+	box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 .front_box {
-	align-items: center !important;
+	background: #2B619C;
+	transform: rotateY(180deg);
 	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.back_box {
+	align-items: center !important;
 }
 .box {
 	display: flex;
@@ -184,11 +188,11 @@
 .box:hover {
 	cursor: pointer;
 }
-.box:hover .front_box {
+.box:hover .back_box {
 	transform: rotateY(180deg);
 	transition: 1s;
 }
-.box:hover .back_box {
+.box:hover .front_box {
 	transform: rotateY(360deg);
 	transition: 1s;
 }
