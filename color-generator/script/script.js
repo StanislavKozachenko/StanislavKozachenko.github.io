@@ -29,16 +29,13 @@ function addColor(){
 		var newColor = RandomHexColorCode();
 		e.style.backgroundColor = newColor;
 		e.innerHTML = newColor;
-	})
-}
-jQuery(document).ready(function($){
-		$('.box').click(function() {
-		var $text_copy = $(this);
-		var $temp = $("<input>");
-		$("body").append($temp);
-		$temp.val($text_copy.text()).select();
-		document.execCommand("copy");
-		$temp.remove();
 	});
-});
+}
+function scrollSlow(id){
+		var offset = 0;
+		$('html, body').animate({
+			scrollTop: $(id).offset ().top - offset
+		}, 500);
+		return false;
+}
 addColor();
