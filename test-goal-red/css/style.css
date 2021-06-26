@@ -379,6 +379,7 @@ display: none;
 	color: #73869D;
 }
 .button2 {
+	background: #F8F9FB;
 	width: 100%;
 	margin: 20px 0;
 }
@@ -557,7 +558,6 @@ display: none;
 		justify-content: center;
 	}
 	.centerBlock {
-		margin: 0 10%;
 		margin-top: 10%;
 	}
 	.footerImg {
