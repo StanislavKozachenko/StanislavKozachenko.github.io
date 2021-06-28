@@ -27,10 +27,10 @@ header {
 	padding-top: 16px;
 	padding-bottom: 16px;
 }
-.row {
+/*.row {
 	margin: 0 !important;
 }
-
+*/
 footer {
 	margin: 0 auto;
 	height: 2.821%;
@@ -176,7 +176,6 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	height: 80%;
-	margin-left: 30px;
 	margin-top: 10px;
 }
 .content-1, .content-2 {
@@ -265,9 +264,9 @@ footer {
 	padding-right: 0;
 }
 .contentBlock {
-	padding: 0 7.567%;
-	padding-top: 5.1%;
-	padding-bottom: 1.7%;
+	padding: 0 40px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 	background: #FFFFFF;
 	border: 0.5px solid rgba(220, 222, 227, 0.8);
 	box-sizing: border-box;
@@ -326,33 +325,17 @@ footer {
 	border: 0.5px solid #F0F0F0;
 }
 .bottomElementLine {
+	border: 0.3px solid #DCDEE3;
+	box-sizing: border-box;
 	border-radius: 5px;
+	height: 5px;
+	margin-top: 7px;
 }
-.myRange2  {
-	position: relative;
-   	background-color: #DCDEE3;
-   	border-radius: 5px;
-   	height: 5px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 100%;
-    outline: none;
-    border: none;
-}
-.myRange2::before {
-	position: absolute;
-	content: "";
+.bottomElementLine span {
+	display: block;
 	background: #73869D;
-    cursor: pointer;
-    width: 67.7%;
-    left: 0;
-    height: 5px;
-    -webkit-appearance: none;
-     border: none;
-}
-.myRange2::-webkit-slider-thumb {
-	display: none;
+	border-radius: 5px;
+	height: 100%;
 }
 .bottomButton {
 	margin-top: 5.744%;
@@ -371,12 +354,15 @@ footer {
 	color: #73869D;
 }
 .info {
-	margin-top: 20px;
+	margin: 20px 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.info p {
+.info a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
 	margin: 0;
 	padding-left: 4%;
 	font-style: normal;
@@ -384,6 +370,10 @@ footer {
 	font-size: 10px;
 	line-height: 31px;
 	color: #73869D;
+}
+.info a p {
+	height: 100%;
+	margin-bottom: 0;
 }
 .button2 {
 	background: #F8F9FB;
@@ -470,7 +460,7 @@ footer {
 	}
 	.centerBlockElement {
 		width: 100%;
-		margin: 30px 0;
+		margin: 10px 0;
 	}
 	.topSide {
 		flex-direction: column;
@@ -482,7 +472,7 @@ footer {
 		font-size: 10px;
 	}
 	.centerBlock {
-		margin-top: 10%;
+		margin-top: 20px;
 	}
 	footer {
 		flex-direction: column;
@@ -511,7 +501,7 @@ footer {
 @media(max-width: 500px) and (min-width: 400px){
 	.centerBlockElement {
 		width: 100%;
-		margin: 50px 0;
+		margin: 20px 0;
 	}
 	.button2 {
 		margin-top: 40px;
@@ -545,7 +535,7 @@ footer {
 		margin: 10px 0;
 	}
 	.centerBlockElement {
-		width: 45%;
+		width: 47%;
 	}
 	.topSide {
 		flex-direction: column;
@@ -622,8 +612,8 @@ footer {
 }
 @media(min-width: 1000px) and (max-width: 1180px) {
 	.centerBlockElement {
-		margin-bottom: 60px;
-		margin-top: 40px;
+		margin-bottom: 10px;
+		margin-top: 20px;
 	}
 }
 @media(max-width: 768px){
