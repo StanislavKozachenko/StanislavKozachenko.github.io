@@ -27,7 +27,9 @@ header {
 	padding-top: 16px;
 	padding-bottom: 16px;
 }
-
+.row {
+	margin: 0 !important;
+}
 
 footer {
 	margin: 0 auto;
@@ -52,7 +54,6 @@ footer {
 }
 .topBlock {
 	margin: 0 auto;
-	margin-top: 1.693%;
 	height: 20%;
 	display: flex;
 }
@@ -70,7 +71,7 @@ footer {
 	margin-bottom: 0;
 }
 .custom-checkbox{
-display: none;
+	display: none;
 }
 .custom-checkbox+.secret-label{
 	display: inline-block;
@@ -116,7 +117,7 @@ display: none;
 	border: 1px solid #F1F3F6;
 	border-radius: 5px;
 	height: 60px;
-	width: 250px;
+	width: 100%;
 	font-style: normal;
 	font-weight: 900;
 	font-size: 25px;
@@ -124,7 +125,6 @@ display: none;
 	text-align: center;
 }
 #topSlider {
-	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -174,6 +174,7 @@ display: none;
 .blocks {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	height: 80%;
 	margin-left: 30px;
 	margin-top: 10px;
@@ -182,6 +183,13 @@ display: none;
 	height: 80%;
 }
 .block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+.mainLabel {
 	padding-right: 10px;
 	height: 40px;
 	width: 47%;
@@ -193,9 +201,9 @@ display: none;
 	border-radius: 3px;
 	align-items: center;
 	margin: 0 5px;
+	margin-right: 0;
 	outline: none;
 }
-
 .textBlock3 {
 	margin: 0;
 	font-style: normal;
@@ -237,14 +245,13 @@ display: none;
 }
 .centerBlock {
 	margin: 0 auto;
-	margin-top: 2.257%;
+	margin-top: 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .centerBlockElement {
 	width: 32%;
-	height: 470px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
@@ -282,7 +289,7 @@ display: none;
 	color: #DCDEE3;
 }
 .centerSide {
-	margin-top: 8.72%;
+	margin-top: 50px;
 	height: 65.31%;
 }
 .centerElementText {
@@ -321,7 +328,7 @@ display: none;
 .bottomElementLine {
 	border-radius: 5px;
 }
-#myRange2  {
+.myRange2  {
 	position: relative;
    	background-color: #DCDEE3;
    	border-radius: 5px;
@@ -333,7 +340,7 @@ display: none;
     outline: none;
     border: none;
 }
-#myRange2::before {
+.myRange2::before {
 	position: absolute;
 	content: "";
 	background: #73869D;
@@ -344,7 +351,7 @@ display: none;
     -webkit-appearance: none;
      border: none;
 }
-#myRange2::-webkit-slider-thumb {
+.myRange2::-webkit-slider-thumb {
 	display: none;
 }
 .bottomButton {
@@ -364,7 +371,7 @@ display: none;
 	color: #73869D;
 }
 .info {
-	margin-top: 5.1%;
+	margin-top: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -384,7 +391,7 @@ display: none;
 	margin: 20px 0;
 }
 #hr-bottom {
-	margin-top: 2.03%;
+	margin-top: 20px;
 	border: 1px solid #DCDEE3;
 	height: 0px;
 	left: 0px;
@@ -457,7 +464,7 @@ display: none;
 		margin-left: 0;
 		flex-wrap: wrap;
 	}
-	.block {
+	.mainLabel {
 		width: 100%;
 		margin: 10px 0;
 	}
@@ -533,7 +540,7 @@ display: none;
 		margin-left: 0;
 		flex-wrap: wrap;
 	}
-	.block {
+	.mainLabel {
 		width: 100%;
 		margin: 10px 0;
 	}
@@ -557,7 +564,7 @@ display: none;
 		justify-content: center;
 	}
 	.centerBlock {
-		margin-top: 10%;
+		margin-top: 20px;
 	}
 	.footerImg {
 		display: flex;
@@ -592,7 +599,7 @@ display: none;
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	.block {
+	.mainLabel {
 		width: 45%;
 	}
 	footer {
@@ -607,6 +614,8 @@ display: none;
 	 	flex-direction: line;
 		justify-content: space-between;
 	}
+}
+@media(max-width: 1000px){
 	.blockElement-2 {
 		border: none;
 	}
@@ -615,9 +624,6 @@ display: none;
 	.centerBlockElement {
 		margin-bottom: 60px;
 		margin-top: 40px;
-	}
-	.blockElement-2 {
-		border: none;
 	}
 }
 @media(max-width: 768px){
@@ -633,5 +639,4 @@ display: none;
 	.blockElement-2 {
 		border: none;
 	}
-}
 }
