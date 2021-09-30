@@ -1,0 +1,167 @@
+@media (max-width: 1000px){ /*440*/
+	.top_block_examples_content {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+		color: #1C3F77;
+	}
+	.examples_top_block {
+		padding-top: 70px;
+	}
+	.eduacation_plans_main_block_element_name {
+		background: #1C3F77;
+		border-radius: 10px;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #FFFFFF;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 20px;
+	}
+	.mobile_adapt_table {
+		-webkit-transition: .4s;
+		-o-transition: .4s;
+		transition: .4s;
+		display: block;
+	}
+	.eduacation_plans_main_block_element_main_content table {
+		display: none;
+	}
+	.year_info, .year_drop {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 22px;
+		color: #25416C;
+	}
+	.mobile_table_block {
+		-webkit-transition: .4s;
+		-o-transition: .4s;
+		transition: .4s;
+	}
+	.mobile_table_block_name {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 22px;
+		color: #25416C;
+	}
+	.mobile_adapt_table {
+		width: 100%;
+		margin-top: 18px;
+	}
+	.mobile_table_name {
+		z-index: 10;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding: 8px 20px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		background: #E7F1FA;
+		border-radius: 10px;
+	}
+	.mobile_table_block {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.mobile_table_block_drop_content, .mobile_table_name {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		width: 100%;
+	}
+	.mobile_alert {
+		-webkit-transform: translateY(-2px) rotate(0);
+		    -ms-transform: translateY(-2px) rotate(0);
+		        transform: translateY(-2px) rotate(0);
+		-webkit-transition: .2s;
+		-o-transition: .2s;
+		transition: .2s;
+	}
+	.mobile_alert_open {
+		-webkit-transition: .4s;
+		-o-transition: .4s;
+		transition: .4s;
+		-webkit-transform: translateY(2px) rotate(180deg);
+		    -ms-transform: translateY(2px) rotate(180deg);
+		        transform: translateY(2px) rotate(180deg);
+	}
+	.relation__drop {
+		-webkit-transition: .4s;
+		-o-transition: .4s;
+		transition: .4s;
+		z-index: 2;
+		position: relative;
+		width: 100%;
+	}
+	.mobile_table_block_drop {
+		opacity: 0;
+		-webkit-transform: translateY(-300px);
+		    -ms-transform: translateY(-300px);
+		        transform: translateY(-300px);
+		-webkit-transition: .4s;
+		-o-transition: .4s;
+		transition: .4s;
+		position: absolute;
+		top: 100%;
+		margin: 0 20px;
+	}
+	.mobile_table_block_drop_open {
+		margin-top: 5px;
+		position: static;
+		-webkit-transform: translateY(0px);
+		    -ms-transform: translateY(0px);
+		        transform: translateY(0px);
+		opacity: 1;
+		-webkit-transition: .4s;
+		-o-transition: .4s;
+		transition: .4s;
+	}
+	.table_hr {
+		margin: 5px 0;
+	}
+	.mobile_table_block {
+		overflow: hidden;
+		margin-top: 10px;
+	}
+	.mobile_table_block:first-child {
+		margin-top: 0;
+	}
+	.table_bottom_text {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #25416C;
+	}
+	.foreign_students {
+		background-color: #fff;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 22px;
+		color: #25416C;
+	}
+}
