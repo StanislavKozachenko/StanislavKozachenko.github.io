@@ -2,6 +2,8 @@
 	background-color: #fff;
 }
 .map {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
 	margin-top: 53px;
 	height: 530px;
 }
