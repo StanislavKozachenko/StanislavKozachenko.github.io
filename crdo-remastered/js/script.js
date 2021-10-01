@@ -44,6 +44,8 @@ function scrollSlow(id){
     $('.footerClass').load("templates/footer.html");
     $('.middle_block_slider').load("templates/courses-slider.html");
 $(document).ready(function(){
+
+
     $('.mobile_table_name').click(function(){
         $('.relation__drop > .mobile_table_block_drop', $(this).parent()).toggleClass('mobile_table_block_drop_open');
         $('.mobile_alert', $(this).parent()).toggleClass('mobile_alert_open');
@@ -93,16 +95,4 @@ const $block3 = $('.hr_courses').first().clone();
 $('.show_more_btn').click(function() {
     $(".courses_examples_block").append($block3.clone());
     $(".courses_examples_block").append($block2.clone());
-});
-$(document).ready(function(){
-     $("#coursesSlider .owl-carousel").owlCarousel({
-       loop:true,
-       items: 1,
-       autoplay:true,
-       smartSpeed:1000, 
-       autoplayTimeout:8000,
-       margin: 15,
-       dots:true,
-       navText: false,
-     });
 });
