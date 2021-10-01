@@ -63,16 +63,6 @@ $(document).ready(function(){
            $('.nav_menu_burger').removeClass('disable');
         });
     });
-    $("#coursesSlider .owl-carousel").owlCarousel({
-	loop:true,
-    items: 1,
-    autoplay:true,
-    smartSpeed:1000, 
-    autoplayTimeout:8000,
-    margin: 15,
-    dots:true,
-    navText: false,
-  });
     $('.user_data').click(function(){
         $(".user_data").removeClass('user_data_clicked');
         $('.feedback_content_element_add_text').css("opacity", "0");
@@ -103,4 +93,16 @@ const $block3 = $('.hr_courses').first().clone();
 $('.show_more_btn').click(function() {
     $(".courses_examples_block").append($block3.clone());
     $(".courses_examples_block").append($block2.clone());
+});
+$(document).ready(function(){
+     $("#coursesSlider .owl-carousel").owlCarousel({
+       loop:true,
+       items: 1,
+       autoplay:true,
+       smartSpeed:1000, 
+       autoplayTimeout:8000,
+       margin: 15,
+       dots:true,
+       navText: false,
+     });
 });
