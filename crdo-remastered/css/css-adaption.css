@@ -385,8 +385,8 @@
 		transition: .4s;
 	}
 	nav {
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
 	}
 	.nav_menu_burger_active span {
 		-webkit-transition: .2s;
