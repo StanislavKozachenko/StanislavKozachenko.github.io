@@ -5,9 +5,6 @@
 	.top_header, .top_header_logo_content {
 		height: 53px;
 	}
-	.top_header_logo_content {
-		width: auto;
-	}
 	.top_adapt_two {
 		display: none !important;
 		font-family: Montserrat;
