@@ -228,8 +228,8 @@
 	position: relative;
 }
 .fadeMainBlock {
-	width: 100vw;
-	height: 120%;
+	width: 200%;
+	max-width: 100vw;
 	position: absolute;	
 	left: -43%;
 	top: -12%;
