@@ -165,27 +165,35 @@
 /*Animation*/
 @-webkit-keyframes girl_falling {
 	0% {
-		top: -200px;
+		top: -300px;
+		left: 357px;
+	}
+	50% {
+		top: 40px;
 		left: 357px;
 	}
 	100% {
-		top: 40px;
+		top: -300px;
 		left: 357px;
 	}
 }
 @keyframes girl_falling {
 	0% {
-		top: -200px;
+		top: -300px;
+		left: 357px;
+	}
+	50% {
+		top: 40px;
 		left: 357px;
 	}
 	100% {
-		top: 40px;
+		top: -300px;
 		left: 357px;
 	}
 }
 .girl_falling {
-	-webkit-animation: 2s linear girl_falling;
-	        animation: 2s linear girl_falling;
+	-webkit-animation: 6s infinite linear girl_falling;
+	        animation: 6s infinite linear girl_falling;
 	-webkit-animation-delay: .5s;
 	        animation-delay: .5s;
 	-webkit-animation-fill-mode: forwards;
