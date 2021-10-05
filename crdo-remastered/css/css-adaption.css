@@ -1,4 +1,10 @@
 @media (max-width: 1000px){ /*440*/
+	.on_desk {
+		display: none;
+	}
+	.onMobile {
+		display: block;
+	}
 	.block_feedback_animation {
 		display: none;
 	}
@@ -352,6 +358,7 @@
 		width: 260px;
 	}
 	.top_block_nav_text_main {
+		margin-right: 50px;
 		-webkit-transition: .2s;
 		-o-transition: .2s;
 		transition: .2s;
