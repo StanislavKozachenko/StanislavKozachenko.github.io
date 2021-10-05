@@ -129,8 +129,8 @@
 .features_block_content:nth-child(7, 8){
 	margin-bottom: 0;
 }
-.feedback {
-	margin-top: 20px;
+.feedback_organization {
+	margin-top: 20px !important;
 }
 /*Animation*/
 .top_block_org_img {
