@@ -39,10 +39,6 @@ function scrollSlow(id){
         $('.top_block_nav_logo_bg').css("opacity", "1");
     }
 });*/
-    $('.top_header').load("templates/header.html");
-    $('.feedback').load("templates/feedback.html");
-    $('.footerClass').load("templates/footer.html");
-    $('.middle_block_slider').load("templates/courses-slider.html");
 $(document).ready(function(){
     $('.mobile_table_name').click(function(){
         $('.relation__drop > .mobile_table_block_drop', $(this).parent()).toggleClass('mobile_table_block_drop_open');
@@ -82,7 +78,7 @@ jQuery(function($){
   });
 });
 const $block = $('.news_content_blocks_element').first().clone();
-$('.news_content_btn').click(function() {
+$('.news_content_btn_2').click(function() {
     $(".news_content_blocks").append($block.clone());
     $(".news_content_blocks").append($block.clone());
     $(".news_content_blocks").append($block.clone());
