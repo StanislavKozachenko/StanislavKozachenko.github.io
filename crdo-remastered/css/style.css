@@ -376,7 +376,7 @@ nav {
 }
 .middle_block_element_padding_bottom {
 	width: 466px;
-	margin: 0 16px;
+	margin: 0 4px;
 }
 .middle_block_2 {
 	margin-top: 50px;
@@ -397,6 +397,7 @@ nav {
 	margin-left: 19px;
 }
 .middle_block_2_top_side {
+	margin-right: 20px;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 600;
@@ -452,6 +453,16 @@ nav {
 	height: 2px;
 	width: 100%;
 	margin-top: 15px;
+}
+.hr_2{
+	background: #EC7955;
+	box-shadow: 0px 0px 3px rgba(236, 121, 85, 0.25);
+	border-radius: 2px;
+}
+.hr_3{
+	background: #4DAE74;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+	border-radius: 2px;
 }
 .middle_block_element__1 {
 	background: #EFF7FF;
@@ -551,8 +562,10 @@ nav {
 	width: 13px;
 	border-radius: 50%;
  	border: 2.2px solid #1C3F77 !important;
+ 	transition: .2s;
 }
 .owl-dots button.active {
+	transition: .2s;
 	background-color: #1C3F77 !important;
 }
 .courses_slider_class {
@@ -642,7 +655,7 @@ nav {
 	width: 100%;
 }
 .feedback {
-	margin-top: 50px;
+	margin-top: 50px !important;
 	background-color: #E7F1FA;
 }
 .feedback_left_side, .feedback_right_side {
@@ -705,7 +718,7 @@ nav {
 	border-radius: 10px;
 }
 .feedback_right_bottom_text {
-	margin-top: 22px;
+	margin-top: 15px;
 }
 .feedback_right_bottom_button {
 	margin-top: 15px;
@@ -718,6 +731,7 @@ nav {
 .user_text {
 	height: 220px;
 	resize: none;
+	margin-bottom: 0;
 }
 .news_top_text {
 	margin-top: 54px;
@@ -1034,4 +1048,7 @@ footer {
 .menu_functions {
 	position: static;
 	z-index: 5;
+}
+.onMobile {
+	display: none;
 }
