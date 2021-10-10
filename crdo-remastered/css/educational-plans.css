@@ -22,10 +22,8 @@
 	padding: 9px 0;
 	padding-left: 18px;
 }
-.eduacation_plans_main_block_element_main_content table tr:first-child {
+.eduacation_plans_main_block_element_main_content table tr:first-child td{
 	background-color: #E7F1FA;
-	width: 100%;
-	border-radius: 10px;
 }
 .eduacation_plans_main_block_element_main_content table {
 	margin-top: 10px;

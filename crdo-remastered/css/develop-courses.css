@@ -87,6 +87,9 @@
 	color: #1C3F77;
 	margin-bottom: 20px;
 }
+.price_list_content_main_block_element span:last-child {
+	margin-bottom: 0;
+}
 .price_list_name {
 	padding-top: 28px;
 	font-family: Montserrat;
@@ -452,4 +455,81 @@
 .six_fade {
 	-webkit-animation-delay: 14.3s;
 	        animation-delay: 14.3s;
+}
+/*Anim*/
+@keyframes anim_dev_one {
+	0% {
+		opacity: 0.4;
+		transform: translateX(-10px) scale(0.7);
+	}
+	50% {
+		opacity: 1;
+		transform: translateX(0px) scale(0.9);
+	}
+	100% {
+		opacity: 0.4;
+		transform: translateX(-10px) scale(0.7);
+	}
+}
+.dev_img_main_block {
+	position: relative;
+}
+.dev_img_anim_element {
+	transition: .2s;
+	position: absolute;
+	transform: scale(0.9);
+}
+.dev_img_anim_element-1 {
+	animation-delay: .2s;
+	animation: 4s infinite linear anim_dev_one;
+	top: 15px;
+	left: 10px;
+}
+.dev_img_anim_element-2 {
+	top: 55px;
+	left: 40px;
+}
+.dev_img_anim_element-3 {
+	top: 80px;
+	left: 274px;
+}
+.dev_img_anim_element-4 {
+	top: 170px;
+	left: 274px;
+}
+.dev_img_anim_element-5 {
+	top: 192px;
+	left: 317px;
+}
+.dev_img_anim_element-6 {
+	top: 115px;
+	left: 347px;
+}
+.dev_img_anim_element-7 {
+	top: 100px;
+	left: 348px;
+}
+.dev_img_anim_element-8 {
+	top: 176px;
+	left: 488px;
+}
+.dev_img_anim_element-9 {
+	top: 226px;
+	left: 447px;
+}
+.dev_img_anim_element-10 {
+	top: 201px;
+	left: 499px;
+}
+.dev_img_anim_element-11 {
+	top: 134px;
+	left: 524px;
+}
+.dev_img_anim_element-12 {
+	top: 135px;
+	left: 585px;
+}
+.dev_img_anim_element-13 {
+	top: 135px;
+	left: 607px;
 }
