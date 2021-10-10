@@ -85,7 +85,7 @@
 	        justify-content: flex-start;
 }
 .accomp_third_bottom_side {
-	margin-top: 65px;
+	margin-top: 53px;
 }
 .accomp_third_block {
 	display: -webkit-box;
@@ -119,9 +119,10 @@
 	display: flex;
 	-ms-flex-pack: distribute;
 	    justify-content: space-around;
+	    margin: 0 130px;
 }
 .accomp_third_block_content {
-	margin-top: 65px;
+	margin-top: 35px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

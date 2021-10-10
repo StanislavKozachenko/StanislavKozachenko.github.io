@@ -1,4 +1,10 @@
 @media (max-width: 1000px){ /*440*/
+	#bottom_padding {
+		margin-bottom: 7px;
+	}
+	.price_list_content_main_block_element span {
+		margin-bottom: 7px;
+	}
 	.top_block_backgroundImg {
 		content: url(../img/bg_mobile_dev.svg);
 	}
@@ -29,6 +35,9 @@
 	.price_list, .middle_block_slider, .feedback, .footerClass {
 		position: relative;
 		z-index: 100;
+	}
+	.middle_block_slider  {
+		margin-top: 15px;
 	}
 	.top_adapt_two {
 		display: block !important;
