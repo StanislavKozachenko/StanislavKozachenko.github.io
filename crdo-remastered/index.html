@@ -15,8 +15,8 @@
 	</script>	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-	<title>ЦРДО</title>
 	<script src="js/script.js" defer></script>
+	<title>ЦРДО</title>
 </head>
 <body>
 	<section class="wrapper">
@@ -74,7 +74,6 @@
 			</div>
 		</div>
 		<div class="middle_block_slider container"></div>
-		<div class="feedback container-fluid"></div>
 		<div class="news container">
 			<div class="middle_block_content_top_text news_top_text">Новости</div>
 			<div class="news_content">
@@ -88,6 +87,7 @@
 								</div>
 							</a>
 						</div>
+						<div class="hr_adapt"></div>
 						<div class="news_content_blocks_element">
 							<a href="news-example.html" class="news_content_block_element_href">
 								<div class="news_content_blocks_element_image"><img src="img/news_block_img.svg"></div>
@@ -97,6 +97,7 @@
 								</div>
 							</a>
 						</div>
+						<div class="hr_adapt"></div>
 						<div class="news_content_blocks_element">
 							<a href="news-example.html" class="news_content_block_element_href">
 								<div class="news_content_blocks_element_image"><img src="img/news_block_img.svg"></div>
@@ -112,53 +113,10 @@
 					</div>
 			</div>
 		</div>
+		<div class="feedback container-fluid"></div>
 		<footer class="footerClass"></footer>
 	</section>
-
-	<script type="text/javascript">
-		$('.top_header').load("templates/header.html");
-   		$('.feedback').load("templates/feedback.html");
-    	$('.footerClass').load("templates/footer.html");
-    	$('.middle_block_slider').load("templates/courses-slider.html");
-		$(document).ready(function(){
-			$(window).on("scroll", function () {
-    var scrolled = $(this).scrollTop();
-    if( scrolled > 47 ) {
-        $('.top_header').addClass('scrolled');
-        $('.top_block_nav_logo_bg').css("opacity", "0");
-        $('.top_header_logo_content').css("justify-content", "flex-start");
-        $('.top_header_logo').css("transform", "translateY(0)");
-        $('.nav_menu_burger').css("transform", "translateY(0)");
-    }   
-    if( scrolled <= 47 ) {     
-        $('.top_header').removeClass('scrolled');
-        $('.top_block_nav_logo_bg').css("opacity", "1");
-        $('.top_header_logo_content').css("justify-content", "center");
-       	$('.top_header_logo').css("transform", "translateY(-7px)");
-        $('.nav_menu_burger').css("transform", "translateY(-7px)");
-    }
-});
-		});
-		$('.mobile_table_name').click(function(){
-        $('.relation__drop > .mobile_table_block_drop', $(this).parent()).toggleClass('mobile_table_block_drop_open');
-        $('.mobile_alert', $(this).parent()).toggleClass('mobile_alert_open');
-    });
-    $('.alert_burger').click(function(){
-        $('.burger_drop_menu', $(this).parent()).toggleClass("burger_drop_menu_off");
-        $('.burger_drop_menu', $(this).parent()).toggleClass("burger_drop_menu_static");
-        $('.alert_arrow', $(this).parent()).toggleClass("alert_arrow_active");
-    });
-    $('.nav_menu_burger').click(function(){
-        $('.alerts_burger').toggleClass("dsplayNn");
-        $('.nav_burger_menu_main').toggleClass("nav_burger_menu_main_active");
-        $('.nav_burger_menu_main').toggleClass('nav_burger_menu_main_open');
-        setTimeout(function(){$('.nav_menu_burger').delay().toggleClass("nav_menu_burger_active");},1)
-        $(".top_out_btn").addClass('disable');
-        $(".burger_btn").click(function(){
-           $('.nav_menu_burger').removeClass('disable');
-        });
-    });
-	</script>
+	<script src="js/script-js.js"></script>
 </body>
 <style type="text/css">
 	.top_header, .top_header_logo_content {
