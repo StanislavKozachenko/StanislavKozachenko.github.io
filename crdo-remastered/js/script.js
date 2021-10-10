@@ -1,7 +1,3 @@
-        $('.top_header').load("templates/header.html");
-        $('.feedback').load("templates/feedback.html");
-        $('.footerClass').load("templates/footer.html");
-        $('.middle_block_slider').load("templates/courses-slider.html");
 function removeClassNav(){
 		$('.nav_menu_link').removeClass("nav_menu_link_open");
 		$('.top_menu_drop').removeClass('top_menu_drop_active');
@@ -21,31 +17,6 @@ $(document).on('click', '.nav_menu_link', function(){
 	$('.menu_functions', this).addClass('menu_functions_active');
     $('.add_corner', this).addClass('add_corner_open');
     $('.add_corner_open').css("transition", ".4s");
-});
-$(document).ready(function(){
-                $("#coursesSlider .owl-carousel").owlCarousel({
-                    loop:true,
-                    items: 1,
-                    autoplay:true,
-                    smartSpeed:1000, 
-                    autoplayTimeout:2000,
-                    margin: 15,
-                    dots:true,
-                    navText: false,
-                    responsive: {
-                        1000: {
-                            autoplayTimeout:4000,
-                        }
-                    }
-                });
-});
-function Event(){
-        event.preventDefault();
-}
-$(document).ready(function(){
-    $(".menu_fun").click(function() {
-        Event();
-    })
 });
 /*$(document).mouseup(function(e) {
     var container = $(".nav_menu_link");
@@ -90,13 +61,6 @@ $(document).ready(function(){
            $('.nav_menu_burger').removeClass('disable');
         });
     });
-    $('.user_data').click(function(){
-        $(".user_data").removeClass('user_data_clicked');
-        $('.feedback_content_element_add_text').css("opacity", "0");
-        $('.feedback_content_element_add_text', $(this).parent()).css("opacity", "1");
-        $('.feedback_content_element_add_text', $(this).parent()).css("transition", ".2s");
-        $(this).addClass('user_data_clicked');
-});
 jQuery(function($){
   $(document).mouseup(function (e){ // событие клика по веб-документу
     var div = $(".user_data"); // тут указываем ID элемента
