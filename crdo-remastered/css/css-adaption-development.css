@@ -1,4 +1,7 @@
 @media (max-width: 1000px){ /*440*/
+	.dev_img_anim_element  {
+		display: none;
+	}
 	#bottom_padding {
 		margin-bottom: 7px;
 	}
