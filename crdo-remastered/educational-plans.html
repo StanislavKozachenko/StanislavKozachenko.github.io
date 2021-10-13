@@ -223,13 +223,14 @@
 		<footer class="footerClass"></footer>
 	</section>
 </body>
-	<script type="text/javascript">
-		$('.top_header').load("templates/header.html");
-   		$('.feedback').load("templates/feedback.html");
-    	$('.footerClass').load("templates/footer.html");
-    	$('.middle_block_slider').load("templates/courses-slider.html");
-	</script>
 <script type="text/javascript">
-	$('.mobile_adapt_table').load("templates/mobile-table.html")
+	$('.mobile_adapt_table').load("templates/mobile-table.html", function(){
+			$(document).ready(function(){
+			$('.mobile_table_name').click(function(){
+			$('.relation__drop > .mobile_table_block_drop', $(this).parent()).toggleClass('mobile_table_block_drop_open');
+	        $('.mobile_alert', $(this).parent()).toggleClass('mobile_alert_open');
+	    });
+	});
+			});
 </script>
 </html>
