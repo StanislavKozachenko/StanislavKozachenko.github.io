@@ -1,4 +1,4 @@
-@media (max-width: 1000px){ /*440*/
+@media (max-width: 767px){ /*440*/
 	.news_content_blocks_element_image img {
 		display: none;
 	}

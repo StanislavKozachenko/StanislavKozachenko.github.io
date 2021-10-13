@@ -84,4 +84,19 @@
 	.hr_courses {
 		margin: 15px 0;
 	}
+	.button_show_more {
+		margin-top: 0;
+	}	
+	.show_more_btn {
+		margin: 20px 0;
+		background: #1C3F77;
+		border-radius: 10px;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: #FFFFFF;
+		padding: 8px 13px;
+	}
 }
