@@ -6,12 +6,8 @@ $(document).ready(function(){
 			$(document).ready(function(){
 			    $(".menu_fun").click(function() {
 			        Event();
-			    })
+			    });
 			});
-				$('.mobile_table_name').click(function(){
-      			$('.relation__drop > .mobile_table_block_drop', $(this).parent()).toggleClass('mobile_table_block_drop_open');
-		        $('.mobile_alert', $(this).parent()).toggleClass('mobile_alert_open');
-		    });
 		    $('.alert_burger').click(function(){
 		        $('.burger_drop_menu', $(this).parent()).toggleClass("burger_drop_menu_off");
 		        $('.burger_drop_menu', $(this).parent()).toggleClass("burger_drop_menu_static");
@@ -62,7 +58,7 @@ $(document).ready(function(){
                     items: 1,
                     autoplay:true,
                     smartSpeed:1000, 
-                    autoplayTimeout:2000,
+                    autoplayTimeout: 3000,
                     margin: 15,
                     dots:true,
                     navText: false,
