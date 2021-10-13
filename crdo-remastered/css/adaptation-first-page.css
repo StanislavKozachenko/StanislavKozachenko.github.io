@@ -4,7 +4,7 @@
 				right: 540px !important;
 	}
 	.container {
-		max-width: calc(100vw * 0.5) !important;
+		max-width: calc(100vw * 0.7) !important;
 	}
 }
 @media(max-width: 424px) and (max-width: 1199px){
