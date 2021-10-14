@@ -7,6 +7,9 @@ $(document).ready(function(){
 			    $(".menu_fun").click(function() {
 			        Event();
 			    });
+			    $('.alert_burger').click(function(){
+					Event();
+			    });
 			});
 		    $('.alert_burger').click(function(){
 		        $('.burger_drop_menu', $(this).parent()).toggleClass("burger_drop_menu_off");
