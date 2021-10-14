@@ -56,7 +56,7 @@
 		display: none;
 	}
 	.top_block_org_img img {
-		width: auto;
+		width: 270px;
 	}
 	.img_org {
 		content: url(../img/organization-bg-mobile.svg);
@@ -66,5 +66,8 @@
 	}
 	.features_block_content {
 		margin-top: 10px;
+	}
+	.top_block_org_content  {
+		padding-top: 120px;
 	}
 }

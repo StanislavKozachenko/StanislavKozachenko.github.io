@@ -1,13 +1,22 @@
-@media(min-width: 1800px) and (min-width: 1200px){
+@media(min-width: 1600px) {
 	.top_block_backgroundImg {
 		content: url(../img/bg-top-large.svg);
-				right: 540px !important;
+				right: 240px !important;
 	}
 	.container {
 		max-width: calc(100vw * 0.7) !important;
 	}
 }
-@media(max-width: 424px) and (max-width: 1199px){
+@media(max-width: 1899px) and (min-width: 1600px){
+	.top_block_backgroundImg {
+		content: url(../img/bg-top-large.svg);
+		right: 00px !important;
+	}
+	.container {
+		max-width: calc(100vw * 0.8) !important;
+	}
+}
+@media(min-width: 424px) and (max-width: 1199px){
 	.wrapper_footer {
 		padding: 0;
 	}

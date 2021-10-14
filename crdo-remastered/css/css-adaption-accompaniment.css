@@ -3,9 +3,9 @@
 		display: none;
 	}
 	.top_img_acc {
-		-webkit-transform: translateX(40px);
-		    -ms-transform: translateX(40px);
-		        transform: translateX(40px);
+		-webkit-transform: translateX(50px) translateY(-8px);
+		    -ms-transform: translateX(50px) translateY(-8px);
+		        transform: translateX(50px) translateY(-8px);
 		content: url(../img/acoompaniment-bg-mobile.svg);
 	}
 	.top_block_text_up {
@@ -26,7 +26,7 @@
 		display: none;
 	}
 	.top_block_accomp {
-		padding-top: 50px;
+		padding-top: 60px;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;

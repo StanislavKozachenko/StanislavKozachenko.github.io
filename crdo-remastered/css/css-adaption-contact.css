@@ -1,4 +1,7 @@
 @media (max-width: 1000px){ /*440*/
+	.feedback_content_element_add_text {
+		padding: 0px 2px;
+	}
 	.map {
 		margin-top: 5px;
 	}

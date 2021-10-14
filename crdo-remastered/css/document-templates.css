@@ -54,8 +54,15 @@
 	display: block;
 	height: 100%;
 	width: 100%;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
 }
 .document_templates_main_block_element_content ul li a:hover {
 	text-decoration: none;
 	color: #25416C;
+	font-weight: bold;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
 }

@@ -42,9 +42,6 @@
 	.middle_block_slider  {
 		margin-top: 15px;
 	}
-	.top_adapt_two {
-		display: block !important;
-	}
 	.top_adapt_one {
 		display: none;
 	}
@@ -297,5 +294,10 @@
 	}
 	.top_block_backgroundImg {
 		margin-top: 132px;
+	}
+}
+@media(max-width: 767px){
+	.top_adapt_two {
+		display: block !important;
 	}
 }

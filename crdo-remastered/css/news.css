@@ -1,0 +1,6 @@
+@media(max-width: 767px){
+		.news_content_blocks_element_image img {
+		display: block !important;
+		margin-top: 10px;
+	}
+}
