@@ -7,11 +7,11 @@ $(document).ready(function(){
 			    $(".menu_fun").click(function() {
 			        Event();
 			    });
-			    $('.alert_burger').click(function(){
+			    $('.alert_burger_on').click(function(){
 					Event();
 			    });
 			});
-		    $('.alert_burger').click(function(){
+		    $('.alert_burger_on').click(function(){
 		        $('.burger_drop_menu', $(this).parent()).toggleClass("burger_drop_menu_off");
 		        $('.burger_drop_menu', $(this).parent()).toggleClass("burger_drop_menu_static");
 		        $('.alert_arrow', $(this).parent()).toggleClass("alert_arrow_active");
