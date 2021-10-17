@@ -104,21 +104,49 @@
 		-webkit-animation-delay: 0.2s;
 		        animation-delay: 0.2s;
 	}
+	.one_fade  {
+			-webkit-animation-delay: .5s;
+	        animation-delay: .5s;
+	}
+	.two_fade  {
+			-webkit-animation-delay: 3s;
+	        animation-delay: 3s;
+	}
+	.one_fade_img {
+			-webkit-animation-delay: 2s;
+	        animation-delay: 2s
+	}
 	.five_fade_img {
-		-webkit-animation-delay: 10.4s;
-		        animation-delay: 10.4s;
+		-webkit-animation-delay: 8.4s;
+		        animation-delay: 8.4s;
 	}
 	.six_fade {
-		-webkit-animation-delay: 11s;
-		        animation-delay: 11s;
+		-webkit-animation-delay: 8.5s;
+		        animation-delay: 8.5s;
+	}
+	.four_fade  {
+				-webkit-animation-delay: 6s;
+		        animation-delay: 6s;
 	}
 	.three_fade_img {
-		-webkit-animation-delay: 7s;
-		        animation-delay: 7s;
+		-webkit-animation-delay: 5.7s;
+		        animation-delay: 5.7s;
 	}
 	.four_fade_img {
-		-webkit-animation-delay: 9.3s;
-		        animation-delay: 9.3s;
+		-webkit-animation-delay: 7.3s;
+		        animation-delay: 7.3s;
+	}
+	.two_fade_img  {
+			-webkit-animation-delay: 3.5s;
+	        animation-delay: 3.5s;
+	}
+	.three_fade  {
+			-webkit-animation-delay: 4.5s;
+	        animation-delay: 4.5s;
+	}
+	.five_fade {
+		-webkit-animation-delay: 8.5s;
+		        animation-delay: 8.5s;
 	}
 	.one_img {
 		content: url(../img/dev_block_1_image_mobile.svg);
@@ -135,6 +163,9 @@
 	.five_img {
 		content: url(../img/dev_block_5_image_mobile.svg);
 	}
+	.dev_image_block  {
+		margin-top: 20px;
+	}
 	.text_in_dev_block_name {
 		font-family: Montserrat;
 		font-style: normal;
@@ -144,6 +175,8 @@
 		color: #1C3F77;
 	}
 	.dev_block_main {
+		margin-top: 60px;
+		margin-bottom: 0;
 		margin-right: 20px;
 	}
 	.text_in_dev_block_description {

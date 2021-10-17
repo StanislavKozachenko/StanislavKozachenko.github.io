@@ -1,6 +1,21 @@
-@media (max-width: 1000px){ /*440*/
+@media (max-width: 999px){ /*440*/
+	.telephone_icon, .icon_rel {
+		max-width: 68px;
+		border-radius: 50%;
+	}
 	.telephone_icon {
-		display: none;
+		top: 55px;
+		right: 27px;
+	}
+	.beep_1 {
+		top: 15px;
+		right: 15px;
+		max-width: 19px;
+	}
+	.beep_2 {
+		top: 9px;
+		right: 9px;
+		max-width: 25px;
 	}
 	.second_block_org_content_element {
 		font-family: Montserrat;
@@ -58,9 +73,6 @@
 	.top_block_org_img img {
 		width: 270px;
 	}
-	.img_org {
-		content: url(../img/organization-bg-mobile.svg);
-	}
 	.second_block_org, .features_block {
 		margin-top: 20px;
 	}
@@ -69,5 +81,33 @@
 	}
 	.top_block_org_content  {
 		padding-top: 120px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1440px) {
+	.top_block_text_bottom {
+		margin-top: 46px;
+	}
+	.top_block_org_img img {
+		width: 500px;
+	}
+	.icon_rel {
+		width: 130px !important;
+	}
+	.telephone_icon {
+		top: 94px;
+		right: 41px;
+	}
+	.top_block_text_bottom {
+		font-size: 16px;
+	}
+	.beep_1 {
+		top: 32px;
+		right: 32px;
+		max-width: 30px;
+	}
+	.beep_2 {
+		top: 20px;
+		right: 20px;
+		max-width: 40px;
 	}
 }

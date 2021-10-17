@@ -1,4 +1,4 @@
-@media (max-width: 1000px){ /*440*/
+@media (max-width: 999px){ /*440*/
 	.examples_top_block {
 		padding-top: 70px;
 	}
@@ -98,5 +98,10 @@
 		line-height: 20px;
 		color: #FFFFFF;
 		padding: 8px 13px;
+	}
+}
+@media (min-width: 1000px) and (max-width: 1350px){
+	.courses_examples_block_element_img img {
+		max-width: 350px;
 	}
 }
