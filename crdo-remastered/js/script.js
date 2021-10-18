@@ -58,7 +58,7 @@ $(document).ready(function(){
         }
     });
             $('.anchor').click(function(){
-                scrollSlow("#wrpper");
+                scrollSlow(".wrapper");
             })
 });
 $(document).ready(function(){
