@@ -662,3 +662,9 @@
 		display: none;
 	}
 }
+@media(min-width: 425px) and (max-width: 767px){
+	.nav_burger_menu_main_active {
+		width: 113%;
+		left: -6%;
+	}
+}
