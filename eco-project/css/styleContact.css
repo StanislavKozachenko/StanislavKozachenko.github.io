@@ -1,0 +1,187 @@
+.hr-top-line {
+	padding-top: 5px;
+}
+.hr-top-line img {
+	width: 100%;
+	height: 5px;
+}
+.contactMainBlockTopSide {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 25px;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	        -ms-flex-wrap: wrap;
+	            flex-wrap: wrap;
+}
+.contactMainBlockTopSideElement {
+	background: #EFF2F6;
+	border-radius: 8px;
+	padding-bottom: 33px;
+	margin-bottom: 30px;
+}
+.textTop-1 {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 41px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+.textTop-2 {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	color: #444546;
+}
+.textCenter-1 {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 21px;
+	color: #CACFD7;
+}
+.textCenter-2-3, .textBottom-3  {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 26px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	text-transform: uppercase;
+	color: #444546;
+}
+.textCenter-2-3:hover {
+	color: #444546;
+}
+.textBottom-1 {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 21px;
+	color: #CACFD7;
+}
+.textBottom-2 {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 12px;
+	color: #444546;
+}
+.buttonToggle {
+	display: none;
+}
+.contactMainBlockTopSideElement, .contactMainBlockText {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.contactMainBlockText {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 33px;
+}
+.contactMainBlockTopSideElementTextTop, .contactMainBlockTopSideElementTextCenter, .contactMainBlockTopSideElementTextBottom  {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.contactMainBlockTopSideElementTextCenter, .contactMainBlockTopSideElementTextBottom {
+	margin-top: 25px;
+}
+.contactMainBlockTopSide {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.contactMainBlockBottomSide {
+	margin-top: 30px;
+}
+.contactMainBlockBottomSide img {
+	width: 100%;
+}
+.SocialNetworks {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin-top: 7px;
+}
+.alertsSocial {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;	
+}
+.alertsSocial div {
+	margin-right: 25px;
+}
+.showOn {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+	-webkit-text-decoration-line: none;
+	        text-decoration-line: none;
+	text-transform: uppercase;
+	color: #305EA2;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+.showOn:hover {
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	text-decoration: underline;
+	color: #305EA2;
+}
+.map-disable {
+	display: none;
+}
+.map-active {
+	display: block;
+}

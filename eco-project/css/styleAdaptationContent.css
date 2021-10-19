@@ -1,0 +1,100 @@
+@media(max-width: 1199px) {
+	.contentTopBlock  {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column !important;
+		    flex-direction: column !important;
+		}
+	.contentTopBlockImg img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.contentAchBlock  {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		        -webkit-box-pack: justify;
+		            -ms-flex-pack: justify;
+		                justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.contentAchBlockElement {
+		margin: 30px 0;
+	}
+	.contentTopBlockText {
+		margin-top: 30px;
+	}
+	.contentMiddleText-1 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.contactContentText {
+		font-size: 25px;
+		line-height: 35px;
+		margin: 0 20px;
+	}
+	
+}
+@media(max-width: 767px){
+	.contentAchBlockElement {
+		max-width: 300px;
+		width: 100%;
+	}
+}
+@media(min-width: 768px) and (max-width: 1199px){
+	.contentAchBlock {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+	.contentAchBlockElementMiddleSide {
+		font-size: 70px;
+	}
+	.contentAchBlockElementTextSide {
+		font-size: 16px;
+		line-height: 35px;
+	}
+	.contentAchBlockElement {
+		height: 300px;
+	}
+}
+@media(max-width: 1023px){
+	.contactContentInputs-Up {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.contactContentInputs-Up input {
+		width: 100%;
+		margin: 10px 0;
+	}
+	.contactContentInputs {
+		margin: 0 20px;
+	}
+	#input-1, #input-2 {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.contantBtn {
+		margin: 0 20px;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1999px){
+	.contentAchBlock {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+	.contentTopBlock  {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+}

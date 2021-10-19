@@ -1,0 +1,65 @@
+.newsCarouselElement {
+	width: 31%;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+.newsCarouselElement:hover .carouselElementSource a {
+	text-decoration: underline;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+.carouselElementImg img {
+	max-width: 100%;
+}
+.newsCarousel {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-top: 50px;
+}
+#paddingLess {
+	margin-top: 0;
+}
+.showMore {
+	width: 100%;
+	padding: 17px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: #F8FAFD;
+	border: 1px solid #CACFD7;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	cursor: pointer;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	margin-bottom: 50px;
+}
+.showMore:hover {
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	background-color: #EFF2F6;
+}
+.showMoreContent {
+	display: none;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+}
+.btnDisable {
+	display: none;
+}

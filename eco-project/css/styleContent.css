@@ -1,0 +1,401 @@
+.linkLine {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-top: 80px;
+	flex-wrap: wrap;
+}
+.linkLine a {
+	text-decoration: none;
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	color: #CACFD7;
+}
+.linkLine img {
+	margin: 0 9px;
+}
+.linkLine a:hover {
+	text-decoration: none;
+	color: #CACFD7;
+}
+.linkLine a.linkActive {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	color: #305EA2;
+}
+.contentAchBlockElement {
+	max-width: 100%;
+}
+.mainSection {
+	background-color: #F8FAFD;
+	z-index: 2;
+	position: relative;
+}
+.contentTopBlock {
+	margin-top: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.contentTopBlockText {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	line-height: 41px;
+	text-transform: uppercase;
+	color: #444546;
+	-webkit-transform: translateY(-50px);
+	    -ms-transform: translateY(-50px);
+	        transform: translateY(-50px);
+}
+.contentMiddleBlock {
+	margin-top: 50px;
+	position: relative;
+}
+.middleBlockIcon {
+	position: absolute;
+	top: -80px;
+	left: 2%;
+	z-index: -1;
+}
+.middleTextUl {
+	list-style-image: url(../img/contentBlockUlMarkup.svg);
+	margin-top: 25px;
+}
+.middleTextUl li {
+	margin: 14px;
+	margin-left: 21px;
+	padding-left: 14px;
+}
+.contentMiddleBlockText {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;
+}
+.contentMiddleText-1 {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 41px;
+	text-transform: uppercase;
+	color: #444546;
+	margin: 6px 0;
+}
+#paddingMiddleContent {
+	margin-top: 30px;
+}
+.contentMiddleText-2, .contentMiddleText-3 {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	color: #444546;
+}
+.contentMiddleText-2 {
+	margin: 6px 0;
+}
+.contentMiddleText-3  {
+	margin: 14px 0;
+}
+.contentAchBlockElement {
+	background: #EFF2F6;
+	border-radius: 5px;
+	height: 400px;
+	width: 31%;
+}
+.contentAchBlock {
+	margin-top: 60px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.contentAchBlockElementTopSide {
+	height: 20%;
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 139.2%;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #DFE3E9;
+	margin-top: 12px;
+	margin-right: 15px;
+	text-align: right;
+}
+.contentAchBlockElementMiddleSide {
+	height: 26%;
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 101px;
+	line-height: 81px;
+	text-transform: uppercase;
+	color: #CACFD7;
+	text-align: center;
+}
+.contentAchBlockElementTextSide {
+	height: 54%;
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 41px;
+	text-transform: uppercase;
+	color: #444546;
+	text-align: center;
+}
+.contentAchBlockElement {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.contactContent {
+	position: relative;
+	background: #EFF2F6;
+	margin-top: 54px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.contactImg {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+.contactContentText {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	line-height: 51px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #305EA2;
+}
+.contactContentInputs input::-webkit-input-placeholder {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+.contactContentInputs input::-moz-placeholder {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+.contactContentInputs input:-ms-input-placeholder {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+.contactContentInputs input::-ms-input-placeholder {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+.contactContentInputs input::placeholder {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+
+.contactContentInputs input, .contactContentInputs textarea {
+	background: #F8FAFD;
+	outline: none;
+	border: none;
+	padding: 29px 23px;
+	padding-right: 0;
+}
+.contactContentInputs-Up {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.contactContentInputs-Up input {
+	width: 48%;
+}
+#input-1 {
+	margin-right: 15.5px;
+}
+#input-2 {
+	margin-left: 15.5px;
+}
+.contactContentText, .contactContentInputs, .contantBtn  {
+	z-index: 2;
+	margin: 0 71px;
+}
+.contactContentInputs {
+	margin-top: 35px;
+}
+#input-3 {
+	margin-top: 23px;
+	width: 100%;
+	height: 200px;
+}
+.contactContentInputs textarea::-webkit-input-placeholder {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+.contactContentInputs textarea::-moz-placeholder {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+.contactContentInputs textarea:-ms-input-placeholder {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+.contactContentInputs textarea::-ms-input-placeholder {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+.contactContentInputs textarea::placeholder {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+.contantBtn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding-bottom: 33px;
+}
+.contactBtnText {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 16px;
+	letter-spacing: 0.05em;
+	color: #CACFD7;
+	margin: 30px 0;
+}
+.contactBtnButton {
+	border: none;
+	background: #305EA2;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 29px 0;
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	-webkit-transition: background 9999999s;
+	-o-transition: background 9999999s;
+	transition: background 9999999s;
+	cursor: pointer;
+}
+button, 
+button:active, 
+button:focus {
+    outline: none !important;
+}
+.contactBtnButton:active {
+	background-color: #CACFD7 !important;
+	-webkit-transition: background 0s;
+	-o-transition: background 0s;
+	transition: background 0s;
+}

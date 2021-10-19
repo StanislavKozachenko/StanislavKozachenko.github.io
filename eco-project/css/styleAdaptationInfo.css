@@ -1,0 +1,23 @@
+@media(max-width: 767px){
+	.carouselElementImg img {
+		width: 100%;
+	}
+}
+@media(max-width: 992px){
+	.newsCarouselElement {
+		width: 48%;
+	}
+	.carouselElementImg img {
+		width: 100%;
+	}
+}
+@media(max-width: 767px){
+		.newsCarouselElement {
+		width: 100% !important;
+	}
+}
+@media(max-width: 992px) and (min-width: 768px){
+		.newsCarouselElement {
+		width: 48% !important;
+	}
+}

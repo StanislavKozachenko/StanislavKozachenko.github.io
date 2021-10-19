@@ -1,0 +1,34 @@
+@media(max-width: 767px){
+	.contactMainBlockTopSide {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		        -ms-flex-wrap: wrap;
+		            flex-wrap: wrap;
+	}
+	.contactMainBlockTopSideElement {
+		max-width: 100%;
+		margin: 5px 0;
+	}
+	.contactMainBlockTopSide {
+		margin-top: 0 !important;
+	}
+}
+@media(min-width: 768px) and (max-width: 991px){
+	.lastElement {
+		width: 100% !important;
+		margin: 0 25%;
+	}
+}
+@media(min-width: 992px) and (max-width: 1200px){
+	.contactMainBlockTopSideElement {
+		width: 31%;
+	}
+}

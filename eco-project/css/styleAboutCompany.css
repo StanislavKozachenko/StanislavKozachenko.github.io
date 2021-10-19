@@ -1,0 +1,179 @@
+.specializationTextUp, .specializationListTextMain {
+	height: 100%;
+	display: block;
+}
+.specializationListText {
+	display: block;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.specializationListTextMain {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.specialization {
+	margin-top: 85px;
+}
+.specializationList {
+	margin-top: 80px;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.carouselSertificationElement {
+	cursor: pointer;
+	border: solid 8.24px #305EA2;
+	position: relative;
+	z-index: 2;
+}
+.loopIcon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	visibility: hidden;
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+}
+.openImg {
+	display: block;
+	z-index: 10;
+	position: relative;
+}
+.openImg::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+	background-color: #fff;
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+	z-index: 5;
+}
+.openImg:hover .loopIcon {
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	visibility: visible;
+}
+.openImg:hover:before {
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transition: .4s;
+	-o-transition: .4s;
+	transition: .4s;
+}
+.aboutTopBlock {
+	width: 400px;
+}
+.companyImg {
+	width: 100%;
+}
+.middleBlockText {
+	align-items: flex-end;
+}
+.specializationList img {
+	position: absolute;
+	right: 0;
+	top: -180px;
+	z-index: -1;
+}
+.specializationListTop, .specializationListBottom {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	  width: 50%;
+}
+.specializationListText {
+	margin-bottom: 48px;Как
+}
+.specializationTextUp {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CACFD7;
+}
+.specializationListTextMain {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 25px;
+	color: #444546;
+	padding-left: 20px;
+}
+.aboutTopBlock {
+	position: relative;
+}
+.aboutCompanyText {
+	position: absolute;
+	top: 140px;
+	left: 140px;
+	width: 60%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.aboutCompanyTextUp {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 31px;
+	line-height: 139.2%;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #444546;
+	margin-bottom: 29px;
+}
+.aboutCompanyTextMiddle {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #444546;
+	padding-left: 9px;
+	border-left: 2px solid #EFF2F6;
+	margin-bottom: 50px;
+}
+.aboutCompanyTextDown {
+	font-family: Neo Sans Pro;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #444546;
+}
+#nonHighText {
+	margin-bottom: 9px;
+}

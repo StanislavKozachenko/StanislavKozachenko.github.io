@@ -1,0 +1,91 @@
+@media (max-width: 1024px){
+	.contactMainBlock  {
+		margin-top: 50px;
+	}
+	.contentAchBlock {
+		margin-top: 0 !important;
+	}
+	.companyImg {
+		content: url("../img/mobileVersionAboutCompanyImg-3.svg");
+	}
+	.aboutCompanyText {
+	    position: absolute;
+	    top: 30px;
+	    left: 60px;
+	    width: 60%;
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	        -ms-flex-direction: column;
+	            flex-direction: column;
+	}
+	.aboutCompanyTextUp {
+		font-size: 25px;
+		margin-bottom: 15px;
+	}
+	.aboutCompanyTextMiddle {
+		font-size: 20px;
+		margin-bottom: 10px;
+		line-height: 20px;
+	}
+	.aboutCompanyTextDown {
+		line-height: 19px;
+		font-size: 11px;
+	}
+	.specializationList {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.partnersText {
+		font-size: 25px;
+	}
+	.specializationList img {
+		height: 300px;
+		width: 300px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+	.specializationList {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+	.specializationListText {
+		margin-bottom: 0;
+	}
+	.specializationListTextMain {
+		padding-bottom: 50px;
+	}
+}
+@media (min-width: 375px) and (max-width: 1024px){
+	.aboutCompanyText {
+	    top: 160px;
+	    left: 80px;
+	    width: 60%;
+	}
+}
+@media (min-width: 425px) and (max-width: 1024px){
+	.aboutCompanyText {
+	    top: 160px;
+	    left: 95px;
+	    width: 60%;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+	.aboutCompanyText {
+	    top: 100px;
+	    left: 125px;
+	    width: 60%;
+	}
+	.companyImg {
+		content: url(../img/aboutCompany.svg);
+	}
+	.aboutTopBlock  {
+		padding-top: 0;
+	}
+}
