@@ -5,4 +5,4 @@ You can open this site on: StanislavKozachenko.github.io.
 
 Have a nice day. :)
 -----
-VK: https://vk.com/stasyambaru
+VK: https://vk.com/kzchnko
