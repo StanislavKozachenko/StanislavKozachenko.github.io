@@ -1,8 +1,8 @@
 $(document).ready(function(){
-        $('.top_header').load("templates/header.html", function(){
-			function Event(){
+		function Event(){
 			        event.preventDefault();
-			}
+		}
+        $('.top_header').load("templates/header.html", function(){
 			$(document).ready(function(){
 			    $(".menu_fun").click(function() {
 			        Event();
@@ -28,13 +28,71 @@ $(document).ready(function(){
 		    });
         });
         $('.feedback').load("templates/feedback.html", function(){
-        	$('.user_data').click(function(){
+        	function validateEmail(email) {
+			    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			    return re.test(String(email).toLowerCase());
+			}
+        	$('.user_data').click(function funct(){
 		        $(".user_data").removeClass('user_data_clicked');
 		        $('.feedback_content_element_add_text').css("opacity", "0");
 		        $('.feedback_content_element_add_text', $(this).parent()).css("opacity", "1");
 		        $('.feedback_content_element_add_text', $(this).parent()).css("transition", ".2s");
 		        $(this).addClass('user_data_clicked');
 		});
+        	    $(".feedback_right_bottom_button").click(function(){
+        			if ($('.user_fio').val().length == 0 || $('.user_email').val().length == 0 || $('.user_text').val().length == 0) {
+        				if($('.user_fio').val().length == 0){
+        					$('.user_fio').css("box-shadow","inset 0px 0px 1px 1.1px #ea9542");
+        					$('.user_fio').css("border","1px solid #ea9542");
+        					$('.feedback_content_element_add_text', $('.user_fio').parent()).css("color", "#ea9542");
+        				}
+        				if($('.user_email').val().length == 0){
+        					$('.user_email').css("box-shadow","inset 0px 0px 1px 1.1px #ea9542");
+        					$('.user_email').css("border","1px solid #ea9542");
+        					$('.feedback_content_element_add_text', $('.user_email').parent()).css("color", "#ea9542");
+        				}
+        				if($('.user_text').val().length == 0){
+        					$('.user_text').css("box-shadow","inset 0px 0px 1px 1.1px #ea9542");
+        					$('.user_text').css("border","1px solid #ea9542");
+        					$('.feedback_content_element_add_text', $('.user_text').parent()).css("color", "#ea9542");
+        				}
+        				$(this).css("background-color", "#ea9542");
+        				$(this).css("box-shadow", "0px 0px 3px #ea9542");
+        				Event();
+        			}
+        			$(".feedback").click(function(){
+						if ($('.user_fio').val().length != 0 && $('.user_email').val().length != 0 && $('.user_text').val().length != 0){
+							$(".feedback_right_bottom_button").css("background-color", "#1C3F77");
+        					$(".feedback_right_bottom_button").css("box-shadow", "0px 0px 3px #406aad");
+						}
+						if($('.user_fio').val().length != 0){
+        					$('.user_fio').css("box-shadow","inset 0px 0px 1px 1.1px #1C3F77");
+        					$('.user_fio').css("border","1px solid #1C3F77");
+        					$('.feedback_content_element_add_text', $('.user_fio').parent()).css("color", "#1C3F77");
+        				}
+        				if($('.user_email').val().length != 0){
+        					if (validateEmail($('.user_email').val())) {
+    							$('.user_email').css("box-shadow","inset 0px 0px 1px 1.1px #1C3F77");
+        						$('.user_email').css("border","1px solid #1C3F77");
+        						$('.feedback_content_element_add_text', $('.user_email').parent()).css("color", "#1C3F77");
+        					} else
+        					{
+        						$('.user_email').css("box-shadow","inset 0px 0px 1px 1.1px #ea9542");
+        						$('.user_email').css("border","1px solid #ea9542");
+        						$('.feedback_content_element_add_text', $('.user_email').parent()).css("color", "#ea9542");
+        						$(".feedback_right_bottom_button").css("background-color", "#ea9542");
+		        				$(".feedback_right_bottom_button").css("box-shadow", "0px 0px 3px #ea9542");
+		        				Event();
+        					}
+
+        				}
+        				if($('.user_text').val().length != 0){
+        					$('.user_text').css("box-shadow","inset 0px 0px 1px 1.1px #1C3F77");
+        					$('.user_text').css("border","1px solid #1C3F77");
+        					$('.feedback_content_element_add_text', $('.user_text').parent()).css("color", "#1C3F77");
+        				}
+					});
+        		});
         	$(document).mouseup(function (e){ // событие клика по веб-документу
 		    var div = $(".user_data"); // тут указываем ID элемента
 		    if (!div.is(e.target) // если клик был не по нашему блоку
