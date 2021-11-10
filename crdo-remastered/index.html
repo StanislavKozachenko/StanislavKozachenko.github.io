@@ -145,5 +145,30 @@
 	.top_header, .top_header_logo_content {
 		height: 73px;
 	}
+	.niceMargin {
+		margin-right: -25px !important;
+	}
 </style>
+<script type="text/javascript">
+	$(document).ready(function(){
+        win = $(window),
+        windowHeight = win.height();
+    	windowWidth = win.width();
+    	$( window ).resize(function() {
+			windowHeight = win.height();
+    		windowWidth = win.width();
+    	});
+    	$(window).on("scroll", function () {
+    var scrolled = $(this).scrollTop();
+    if(windowWidth >= 2500){
+    	console.log("suka");
+    	if( scrolled <= 37 ) {    	
+       		$('.alerts_main_nav').addClass('niceMargin');
+    	}else {
+    		$('.alerts_main_nav').removeClass('niceMargin');
+    	}
+    }
+    });
+    });
+</script>
 </html>
