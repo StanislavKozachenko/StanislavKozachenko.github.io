@@ -102,7 +102,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="hr_courses hr_courses_main"></div>
+			<div class="hr_courses add_hr"></div>
 			<div class="courses_examples_block_element">
 				<div class="courses_examples_block_element_img"><img src="img/course-image-3.svg"></div>
 				<div class="courses_examples_block_element_data">
@@ -167,4 +167,21 @@
 		<footer class="footerClass"></footer>
 	</section>
 </body>
+<script type="text/javascript">
+	$(document).ready(function(){
+        win = $(window),
+        windowHeight = win.height();
+    	windowWidth = win.width();
+    	$( window ).resize(function() {
+			windowHeight = win.height();
+    		windowWidth = win.width();
+    	});
+    	if(windowWidth >= 768 && windowWidth <= 1439){
+       		$(".add_hr").addClass("hr_courses_main");
+    	}
+    	else {
+    		$(".add_hr").removeClass("hr_courses_main");
+    	}
+    });
+</script>
 </html>
