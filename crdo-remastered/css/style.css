@@ -5,6 +5,15 @@
 	        box-sizing: border-box;
 	outline: none !important;
 }
+.user_data {
+
+}
+.adapt_element {
+	display: none;
+}
+.non_adapt_element {
+	display: block;
+}
 .container {
 	max-width: calc(100vw * 0.80) !important;
 }

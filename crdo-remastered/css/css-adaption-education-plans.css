@@ -1,4 +1,4 @@
-@media (max-width: 1000px){ /*440*/
+@media (max-width: 767px){ /*440*/
 	.top_block_examples_content {
 		font-family: Montserrat;
 		font-style: normal;
@@ -8,7 +8,7 @@
 		color: #1C3F77;
 	}
 	.examples_top_block {
-		padding-top: 70px;
+		padding-top: 50px;
 	}
 	.eduacation_plans_main_block_element_name {
 		background: #1C3F77;
@@ -169,5 +169,66 @@
 	}
 	footer {
 		margin-top: 20px;
+	}
+	.foreign_students_block {
+		margin-top: 28px;
+	}
+	.education_plans_main_block {
+		margin-top: 20px;
+	}
+}
+@media(min-width: 768px) and (max-width: 1439px){
+	.eduacation_plans_main_block_element_main_content table tr td {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+		color: #25416C;
+	}
+	.top_block_examples_content  {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 30px;
+		color: #1C3F77;
+		padding-top: 15px !important;
+		padding-bottom: 15px !important;
+	}
+	.eduacation_plans_main_block_element_name {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		color: #25416C;
+	}
+	.education_plans_main_block {
+		margin-bottom: 20px;
+	}
+	.eduacation_plans_main_block_element_main_content table {
+		margin-top: 15px;
+	}
+	.foreign_students {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 22px;
+		color: #25416C;
+	}
+	footer {
+		margin-top: 20px;
+	}
+}
+@media(min-width: 1440px){
+	.foreign_students {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 24px;
+		color: #25416C;
 	}
 }

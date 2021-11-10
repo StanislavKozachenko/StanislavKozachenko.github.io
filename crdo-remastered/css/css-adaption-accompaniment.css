@@ -1,38 +1,39 @@
-@media (max-width: 1000px){ /*440*/
+@media (max-width: 767px){ /*440*/
 	@-webkit-keyframes girl_falling_adapt {
 	0% {
-		top: -100px;
+		top: -150px;
 		left: 180px;
 	}
 	50% {
-		top: 96px;
+		top: 0px;
 		left: 180px;
 	}
 	100% {
-		top: -100px;
+		top: -150px;
 		left: 180px;
 	}
 }
 	@keyframes girl_falling_adapt {
 	0% {
-		top: -100px;
+		top: -150px;
 		left: 180px;
 	}
 	50% {
-		top: 96px;
+		top: 0px;
 		left: 180px;
 	}
 	100% {
-		top: -100px;
+		top: -150px;
 		left: 180px;
 	}
 }
 	.girl_falling_img {
-		max-width: 70px;
+		z-index: 40;
+		max-width: 80px;
 	}
 	.girl_falling {
-		-webkit-animation: 8s linear infinite girl_falling_adapt;
-		        animation: 8s linear infinite girl_falling_adapt;
+		-webkit-animation: 5s linear infinite girl_falling_adapt;
+		        animation: 5s linear infinite girl_falling_adapt;
 		left: 180px;
 		top: 96px;
 	}

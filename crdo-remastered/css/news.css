@@ -34,3 +34,8 @@
 @media (min-width: 768px){
 	
 }
+@media(max-width: 1023px){
+	.news_content_blocks_element_image img {
+		max-width: none;
+	}
+}

@@ -1,4 +1,4 @@
-@media (max-width: 999px){ /*440*/
+@media (max-width: 1439px){ /*440*/
 	.examples_top_block {
 		padding-top: 70px;
 	}
@@ -100,8 +100,65 @@
 		padding: 8px 13px;
 	}
 }
-@media (min-width: 1000px) and (max-width: 1350px){
-	.courses_examples_block_element_img img {
-		max-width: 350px;
+@media(max-width: 767px){
+	.courses_examples_block {
+		margin-top: 15px;
+	}
+	.button_show_more {
+		margin-bottom: 0;
+	}
+	.hr_courses_main {
+		display: none;
+	}
+}
+@media(min-width: 1024px){
+	.examples_top_block {
+		padding-top: 85px;
+	}
+}
+@media(min-width: 768px) and (max-width: 1439px){
+	.top_block_examples_content {
+		padding-top: 15px !important;
+		padding-bottom: 15px !important;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 30px;
+		color: #1C3F77;
+	}
+	.courses_examples_block {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+	.courses_examples_block_element {
+		width: 48%;
+	}
+	.hr_courses {
+		display: none;
+	}
+	.hr_courses_main {
+		display: block;
+	}
+	.english_block {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.button_show_more {
+		margin-bottom: 0;
+	}
+}
+@media(min-width: 1440px){
+	.courses_examples_block_element_data {
+		max-width: 50%;
+		min-height: 296px;
+		height: 296px;
 	}
 }
