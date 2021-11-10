@@ -663,3 +663,19 @@
 		display: none;
 	}
 }
+@media(min-width: 2000px){
+	.container {
+		width: 80% !important;
+	}
+	.top_block_backgroundImg {
+		right: 195px !important;
+	}
+}
+@media(min-width: 2500px){
+	.container {
+		width: 60% !important;
+	}
+	.top_block_backgroundImg {
+		right: 435px !important;
+	}
+}
