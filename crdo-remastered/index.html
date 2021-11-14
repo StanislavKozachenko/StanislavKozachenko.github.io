@@ -36,7 +36,7 @@
 					</div>
 					<div class="main_page_img">
 						<img src="img/main_page_img.svg" class="top_block_image pstnMain">
-						<!-- <img src="img/cogwheel_1.svg" class="positioningMain сogwheel_1">
+					<!-- 	<img src="img/cogwheel_1.svg" class="positioningMain сogwheel_1">
 						<img src="img/cloud_main_img.svg" class="positioningMain main_cloud">
 						<img src="img/cogwheel_2.svg" class="positioningMain сogwheel_2">
 						<img src="img/cogwheel_3.svg" class="positioningMain сogwheel_3">
@@ -102,7 +102,7 @@
 					<div class="news_content_blocks">
 						<div class="news_content_blocks_element">
 							<a href="first-course-meeting.html" class="news_content_block_element_href">
-								<div class="news_content_blocks_element_image"><img src="img/first-course-meeting.svg"></div>
+								<div class="news_content_blocks_element_image"><img src="img/first-course-meeting.svg" style="border: 0 !important"></div>
 								<div class="news_content_blocks_element_text">
 									<span class="news_content_element_text_top">Встреча <br>с первокурсниками<br>2021 (видео)</span>
 									<span class="news_content_element_text_bottom news_date">19 сентября 2021</span>
@@ -119,8 +119,8 @@
 								</div>
 							</a>
 						</div>
-						<div class="hr_adapt"></div>
-						<div class="news_content_blocks_element">
+						<!-- <div class="hr_adapt"></div> -->
+						<!-- <div class="news_content_blocks_element">
 							<a href="news-example.html" class="news_content_block_element_href">
 								<div class="news_content_blocks_element_image"><img src="img/news_block_img.svg"></div>
 								<div class="news_content_blocks_element_text">
@@ -128,12 +128,15 @@
 									<span class="news_content_element_text_bottom news_date">18 сентябрь 2020</span>
 								</div>
 							</a>
-						</div>
-						<div class="hr_adapt"></div>
+						</div> -->
+						<!-- Третья новость -->
+						<!-- <div class="hr_adapt"></div> -->
+						<!-- Линия для блока новости -->
 					</div>
-					<div class="news_block_btn">
+					<!-- <div class="news_block_btn">
 					<a href="news.html"><button class="news_content_btn">Показать ещё</button></a>
-					</div>
+					</div> --> 
+					<!-- Кнопка для новостей -->
 			</div>
 		</div>
 						<div class="feedback container-fluid"></div>
@@ -147,6 +150,15 @@
 	}
 	.niceMargin {
 		margin-right: -25px !important;
+	}
+	.classAddMargin {
+		transform: translateX(28px) translateY(-7px) !important;
+	}
+	.addMarginToo {
+		margin-left: -44px !important;
+	}
+	.classAddMargin2 {
+		transform: translateX(15px) translateY(-2px) !important;
 	}
 </style>
 <script type="text/javascript">
@@ -166,6 +178,36 @@
        		$('.alerts_main_nav').addClass('niceMargin');
     	}else {
     		$('.alerts_main_nav').removeClass('niceMargin');
+    	}
+    }
+    if(windowWidth <= 767){
+    	if( scrolled <= 37 ) {    	
+       		$('.top_header_logo_content').removeClass('transfromFirst');
+    	}else {
+    		$('.top_header_logo_content').addClass('transfromFirst');
+    	}
+    } else if(windowWidth >= 1024 && windowWidth <=1439) {
+    	if( scrolled <= 37 ) { 	
+       		$('.logo_icon').addClass('classAddMargin');
+       		$('.top_block_nav_text ').addClass('classAddMargin');
+    	}else {
+    		$('.logo_icon').removeClass('classAddMargin');
+       		$('.top_block_nav_text ').removeClass('classAddMargin');
+    	}
+    } else if(windowWidth >=768 && windowWidth <=1023){
+    	if( scrolled <= 37 ) { 	
+       		$('.logo_icon').addClass('classAddMargin2');
+       		$('.top_block_nav_text ').addClass('classAddMargin2');
+    	}else {
+    		$('.logo_icon').removeClass('classAddMargin2');
+       		$('.top_block_nav_text ').removeClass('classAddMargin2');
+    	}
+    } else if(windowWidth >=1440){
+    	if( scrolled <= 37 ) { 	
+       		$('.logo_icon').removeClass('addMarginToo');
+       		}
+       		else {
+    		$('.logo_icon').addClass('addMarginToo');
     	}
     }
     });
