@@ -5,8 +5,8 @@
 	        box-sizing: border-box;
 	outline: none !important;
 }
-.user_data {
-
+a img {
+   border: none !important;
 }
 .adapt_element {
 	display: none;
@@ -1010,7 +1010,8 @@ nav {
 	display: flex;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	        /*justify-content: space-between;*/
+	         justify-content: space-around;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 }
@@ -1177,8 +1178,8 @@ footer {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 14px;
-	line-height: 17px;
+	font-size: 16px;
+    line-height: 20px;
 	color: rgba(255, 255, 255, 0.7);
 	margin-bottom: 24px;
 	text-decoration: none;
@@ -2070,3 +2071,7 @@ footer {
 	top: 300px;
 	left: 96px;
 }*/
+.block_anim img {
+	width: 39px;
+    height: 39px;
+}

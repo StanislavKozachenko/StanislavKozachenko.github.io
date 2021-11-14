@@ -8,7 +8,20 @@
 .bsuir img {
 	content: url(../img/bsuir-logo-adapt.svg);
 }
+.transfromFirst {
+	-webkit-transform: translateY(7px);
+	    -ms-transform: translateY(7px);
+	        transform: translateY(7px);
+}
 @media (max-width: 767px){
+	.footer_content_element:first-child {
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+		-ms-flex-item-align: auto;
+		    -ms-grid-row-align: auto;
+		    align-self: auto;
+	}
 	.burger_drop_menu_static {
 		-webkit-transition: .8s !important;
 		-o-transition: .8s !important;
@@ -111,15 +124,23 @@
 		margin-bottom: 20px;
 	}
 }
+@media(min-width: 1024px) and (max-width: 1439px) {
+	.add_corner_2 {
+		right: 274px;
+	}
+	.add_corner_2_2 {
+		right: 103px;
+	}
+}
 @media(min-width: 768px) and (max-width: 1023px){
 	.add_corner {
 		right: 184px;
 	}
 	.add_corner_2 {
-		right: 173px;
+		right: 174px;
 	}
 	.add_corner_2_2 {
-		right: 50px;
+		right: 50.1px;
 	}
 	.add_corner_2_1 {
 		right: 63px;
@@ -623,7 +644,7 @@
 		color: #25416C;
 	}
 	.addMargin {
-		margin-left: -44px !important;
+		margin-left: -28px !important;
 	}
 	.feedback_left_side {
 		padding-left: 4%;
@@ -683,17 +704,20 @@
 	}
 }
 @media(min-width: 1440px){
+	.logo_icon {
+		height: 50px;
+	}
 	.add_corner {
-		right: 334px;
+		right: 339px;
 	}
 	.add_corner_2 {
-		right: 323px;
+		right: 323.5px;
 	}
 	.add_corner_2_2 {
-		right: 129px;
+		right: 128px;
 	}
 	.add_corner_2_1 {
-		right: 138px;
+		right: 142px;
 	}
 	.alerts_main_nav {
 		width: 450px;
@@ -772,7 +796,7 @@
 	.logo_icon, .top_block_nav_text {
 		-webkit-transform: translateX(44px) !important;
 		    -ms-transform: translateX(44px) !important;
-		        transform: translateX(44px) !important;
+		        transform: translateX(px) !important;
 	}
 	.logo_icon {
 		content: url(../img/1440_logo_top.png);
@@ -795,8 +819,8 @@
 		width: 455px;
 	}
 	.carousel_courses_slider_element_image_block {
-		min-width: 768px;
-		max-width: 768px;
+		min-width: 668px;
+    	max-width: 668px;
 	}
 	.course_name {
 		font-family: Montserrat;
@@ -875,5 +899,10 @@
 @media(min-width: 2500px){
 	.alerts_main_nav {
 		margin-right: -35px;
+	}
+}
+@media(min-width: 1440px){
+	.add_corner_2_2 {
+		right: 129px;
 	}
 }
