@@ -9,7 +9,6 @@
         $(".top_block_nav_text").addClass("translRight");
         $('.out_span').css("background", "#fff");
         $('.alerts_main_nav').css('margin-right', '0px');
-        $('.top_header_logo_content').css('transform', 'translateY(0px)');
         $('.nav_menu_burger ').css('transform', 'translateY(0px)');
     }   
     if( scrolled <= 37 ) {
@@ -21,7 +20,6 @@
         $(".logo_icon").removeClass("addMargin");
         $(".top_block_nav_text").removeClass("translRight");
         $('.alerts_main_nav').css('margin-right', '25px');
-        $('.top_header_logo_content').css('transform', 'translateY(0px)');
         $('.nav_menu_burger ').css('transform', 'translateY(-7px)');
     }
 });
