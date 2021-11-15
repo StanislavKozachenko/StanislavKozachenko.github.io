@@ -1,3 +1,18 @@
+function preloader(){
+    $(()=> {
+        setInterval(() => {
+             let p = $('.preloader');
+            p.css('opacity', 0);
+            
+            setInterval(
+            () => p.remove(),
+            parseInt(p.css('--duration')) * 1000,
+          );
+
+        }, 500);  
+        
+    });
+}
 function removeClassNav(){
 		$('.nav_menu_link').removeClass("nav_menu_link_open");
 		$('.top_menu_drop').removeClass('top_menu_drop_active');
@@ -65,3 +80,4 @@ $(document).ready(function(){
                 scrollSlow(".wrapper");
             })
 });
+preloader();
