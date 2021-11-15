@@ -14,6 +14,160 @@
 	        transform: translateY(7px);
 }
 @media (max-width: 767px){
+	.top_header_logo_content {
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+	}
+	.cloud_main {
+	    content: url(../img/cloud_adapt-mobile.svg);
+	    z-index: -1;
+	    top: -214px;
+	    left: -281px;
+	    max-width: 275px;
+	}
+	.сogwheel_2 {
+	    max-width: 21px;
+	    top: -203px;
+	    right: 107px;
+	}
+	.сogwheel_3 {
+	    max-width: 42px;
+	    top: -179px;
+	    right: 92px;
+	}
+	.сogwheel_1 {
+	    max-width: 39px;
+	    top: -161px;
+	    right: 135px;
+	}
+	.code_logo {
+	    width: 26px;
+	    z-index: 20;
+	    max-width: 65px;
+	    top: -172.5px;
+	    left: -268.5px;
+	}
+	.line_bg {
+    	width: 101px;
+	    max-width: 242px;
+	    top: -121px;
+	    left: -189px;
+	    z-index: 20;
+	    opacity: 0;
+	}
+	.line_bg_on {
+	    opacity: 1;
+	    z-index: 19;
+	    top: -120px;
+	}
+	.man_bg_main {
+	    width: 74px;
+	    opacity: 0;
+	    max-width: 107px;
+	    top: -113px;
+	    left: -188.9px;
+	    z-index: 20;
+	}
+	.code {
+	    opacity: 0;
+	    z-index: 27;
+	    top: -228px;
+	    left: -246.5px;
+	    max-width: 118px;
+	    -webkit-animation-fill-mode: forwards;
+	            animation-fill-mode: forwards;
+	}
+	.code_1 {
+	    -webkit-animation: animationCode linear 5s infinite;
+	            animation: animationCode linear 5s infinite;
+	    -webkit-animation-delay: 0s;
+	            animation-delay: 0s;
+	    top: -116px;
+   		width: 40px;
+    	max-width: 100px;
+	}
+	.code_2 {
+	    -webkit-animation: animationCode linear 5s infinite;
+	            animation: animationCode linear 5s infinite;
+	     -webkit-animation-delay: 0.5s;
+	             animation-delay: 0.5s;
+	    top: -112px;
+    	width: 43px;
+    	max-width: 100px;
+	}
+	.code_3 {
+	    -webkit-animation: animationCode linear 5s infinite;
+	            animation: animationCode linear 5s infinite;
+	     -webkit-animation-delay: 1s;
+	             animation-delay: 1s;
+	    top: -108px;
+    	width: 17px;
+    	max-width: 100px;
+	}
+	.code_4 {
+	    -webkit-animation: animationCode linear 5s infinite;
+	            animation: animationCode linear 5s infinite;
+	     -webkit-animation-delay: 1.5s;
+	             animation-delay: 1.5s;
+	    top: -103px;
+    	width: 21px;
+    	max-width: 100px;
+	}
+	.code_5 {
+	    -webkit-animation: animationCode linear 5s infinite;
+	            animation: animationCode linear 5s infinite;
+	     -webkit-animation-delay: 2s;
+	             animation-delay: 2s;
+	    top: -98px;
+	    width: 16px;
+	    max-width: 100px;
+	}
+	.code_6 {
+	    -webkit-animation: animationCode linear 5s infinite;
+	            animation: animationCode linear 5s infinite;
+	     -webkit-animation-delay: 2.5s;
+	             animation-delay: 2.5s;
+	    top: -90px;
+   		width: 40px;
+    	max-width: 100px;
+	}
+	.code_7 {
+	    -webkit-animation: animationCode linear 5s infinite;
+	            animation: animationCode linear 5s infinite;
+	     -webkit-animation-delay: 3s;
+	             animation-delay: 3s;
+	    top: -86px;
+    	width: 40px;
+    	max-width: 100px;
+	}
+	.code_8 {
+	    -webkit-animation: animationCode linear 5s infinite;
+	            animation: animationCode linear 5s infinite;
+	     -webkit-animation-delay: 3.5s;
+	             animation-delay: 3.5s;
+	    top: -83px;
+    	width: 40px;
+   		max-width: 100px;
+	}
+	.code_9 {
+	    -webkit-animation: animationCode linear 5s infinite;
+	            animation: animationCode linear 5s infinite;
+	     -webkit-animation-delay: 4s;
+	             animation-delay: 4s;
+	    top: -79px;
+    	width: 19px;
+    	max-width: 100px;
+	}
+	.code_10 {
+	    -webkit-animation: animationCode linear 5s infinite;
+	            animation: animationCode linear 5s infinite;
+	     -webkit-animation-delay: 4.5s;
+	             animation-delay: 4.5s;
+	     top: -74px;
+    	width: 15px;
+    	max-width: 100px;
+	}
 	.footer_content_element:first-child {
 		-webkit-box-pack: start;
 		    -ms-flex-pack: start;
@@ -49,7 +203,7 @@
 		content: url(../img/first_pade_adapt_bg.svg);
 	}
 	.top_block_backgroundImg {
-		margin-top: 70px;
+		margin-top: 80px;
 	}
 	.adapt_block_img_right {
 		right: 11px;
@@ -126,13 +280,153 @@
 }
 @media(min-width: 1024px) and (max-width: 1439px) {
 	.add_corner_2 {
-		right: 274px;
+		right: 273px;
 	}
 	.add_corner_2_2 {
-		right: 103px;
+		right: 102.5px;
 	}
 }
 @media(min-width: 768px) and (max-width: 1023px){
+	.cloud_main {
+	    z-index: -1;
+	    top: -36px;
+	    left: 18px;
+	    width: 432px;
+	}
+	.сogwheel_2 {
+	    max-width: 29px;
+	    top: -16px;
+	    right: 180px;
+	}
+	.сogwheel_3 {
+	    max-width: 75px;
+	    top: 21px;
+	    right: 157px;
+	}
+	.сogwheel_1 {
+	    max-width: 60px;
+	    top: 59px;
+	    right: 234px;
+	}
+	.code_logo {
+	    width: 43px;
+	    z-index: 20;
+	    max-width: 65px;
+	    top: 37px;
+	    left: 17px;
+	}
+	.line_bg {
+	    width: 156px;
+	    max-width: 242px;
+	    top: 124px;
+	    left: 150px;
+	    z-index: 20;
+	    opacity: 0;
+	}
+	.line_bg_on {
+	    opacity: 1;
+	    z-index: 19;
+	    top: 126px;
+	}
+	.man_bg_main {
+	    width: 123px;
+	    opacity: 0;
+	    max-width: 150px;
+	    top: 136px;
+	    left: 149.9px;
+	    z-index: 20;
+	}
+	.code {
+	    opacity: 0;
+	    z-index: 27;
+	    top: -228px;
+	    left: 53.5px;
+	    max-width: 118px;
+	    -webkit-animation-fill-mode: forwards;
+	            animation-fill-mode: forwards;
+	}
+	.code_1 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 0s;
+	            animation-delay: 0s;
+	    top: 129px;
+	    width: 73px;
+	}
+	.code_2 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 1s;
+	            animation-delay: 1s;
+	    top: 135px;
+	    width: 74px;
+	}
+	.code_3 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 2s;
+	            animation-delay: 2s;
+	    top: 141px;
+	    width: 39px;
+	}
+	.code_4 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	     -webkit-animation-delay: 3s;
+	             animation-delay: 3s;
+	    top: 147px;
+    	width: 55px;
+	}
+	.code_5 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 4s;
+	            animation-delay: 4s;
+	    top: 152px;
+	    width: 22px;
+	    max-width: 100px;
+	}
+	.code_6 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 5s;
+	            animation-delay: 5s;
+	    top: 164px;
+	    width: 59px;
+	}
+	.code_7 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 6s;
+	            animation-delay: 6s;
+	    top: 169px;
+	    width: 78px;
+	}
+	.code_8 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 7s;
+	            animation-delay: 7s;
+	    top: 175px;
+	    width: 43px;
+	    max-width: 100px;
+	}
+	.code_9 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 8s;
+	            animation-delay: 8s;
+	    top: 182px;
+	    width: 22px;
+	}
+	.code_10 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 9s;
+	            animation-delay: 9s;
+	    top: 189px;
+	    width: 15px;
+	}
 	.add_corner {
 		right: 184px;
 	}
@@ -152,9 +446,11 @@
 		display: block;
 	}
 	.top_block_image {
-		content: url(../img/top_block_image.png);
+		content: url(../img/bg_first_page_restyle.svg);
 		height: auto;
-		max-width: 435px;
+		max-width: 465px;
+		width: 465px;
+		top: 50px;
 	}
 	.top_block_backgroundImg {
 		content: url(../img/768-bg-img-first.svg);
@@ -286,7 +582,7 @@
 		margin-right: 20px;
 	}
 	.middle_block {
-		padding-top: 210px !important;
+		padding-top: 250px !important;
 	}
 	.middle_block_content_main_block_element {
 		width: 300px;
@@ -522,10 +818,11 @@
 		width: 660px !important;
 	}
 	.top_block_image {
-		content: url(../img/top_block_image.png);
+		content: url(../img/bg_first_page_restyle.svg);
 		height: auto;
 		max-width: 605px;
-		top: 10px;
+		width: 605px;
+		top: 80px;
 	}
 	.top_block_backgroundImg {
 		content: url(../img/768-bg-img-first.svg);
@@ -679,11 +976,11 @@
 		line-height: 17px;
 		color: #FFFFFF;
 	}
-		.middle_block  {
-		margin-top: -60px;
+	.middle_block {
+	    margin-top: 40px;
 	}
 }
-@media(min-width: 1280px) and (max-width: 1439px){
+@media(min-width: 1280px) and (max-width: 1440px){
 	.container {
 		padding: 0 10px !important;
 		max-width: 80vw !important;
@@ -699,9 +996,6 @@
 		    -ms-flex-pack: center;
 		        justify-content: center;
 	}
-	.top_block_backgroundImg {
-		right: 129px;
-	}
 }
 @media(min-width: 1440px){
 	.logo_icon {
@@ -711,7 +1005,7 @@
 		right: 339px;
 	}
 	.add_corner_2 {
-		right: 323.5px;
+		right: 322.5px;
 	}
 	.add_corner_2_2 {
 		right: 128px;
@@ -744,14 +1038,15 @@
 		width: 660px !important;
 	}
 	.top_block_image {
-		content: url(../img/top_block_image.png);
-		height: auto;
-		max-width: 705px;
-		top: -10px;
+		content: url(../img/bg_first_page_restyle.svg);
+	    height: auto;
+	    width: 705px;
+	    max-width: 705px;
+	    top: 80px;
 	}
 	.top_block_backgroundImg {
 		content: url(../img/768-bg-img-first.svg);
-		right: 65px;
+		right: -0px !important;
 		width: 750px !important;
 	}
 	.top_block_content_main {
@@ -903,6 +1198,185 @@
 }
 @media(min-width: 1440px){
 	.add_corner_2_2 {
-		right: 129px;
+		right: 127.5px;
+	}
+}
+@media(min-width: 1440px){
+	.top_block_backgroundImg {
+		content: url(../img/768-bg-img-first.svg);
+   		right: -00px !important;
+   		width: 750px !important;
+	}
+}
+@media(min-width: 1600px){
+	.container {
+		padding: 0 10px !important;
+		max-width: 1440px !important;
+	}
+	.top_block_backgroundImg {
+		content: url(../img/768-bg-img-first.svg);
+   		right: -15px !important;
+   		width: 750px !important;
+	}
+}
+@media(min-width: 1900px){
+	.top_block_backgroundImg {
+		content: url(../img/768-bg-img-first.svg);
+   		right: -45px !important;
+   		width: 750px !important;
+	}
+}
+@media(min-width: 2500px){
+	.top_block_backgroundImg {
+		content: url(../img/768-bg-img-first.svg);
+   		right: -60px !important;
+   		width: 750px !important;
+	}
+}
+@media(min-width: 1400px){
+	.bg_main_feedback {
+		min-width: 500px;
+	}
+}
+@media(min-width: 1024px) and (max-width: 1439px){
+.cloud_main {
+	    z-index: -1;
+	    top: -14px;
+	    left: 12px;
+	    width: 564px;
+	}
+	.сogwheel_2 {
+	    max-width: 35px;
+	    top: 5px;
+	    right: 241px;
+	}
+	.сogwheel_3 {
+	    max-width: 90px;
+	    top: 70px;
+	    right: 209px;
+	}
+	.сogwheel_1 {
+	    max-width: 85px;
+	    top: 126px;
+	    right: 303px;
+	}
+	.code_logo {
+	    width: 56px;
+	    z-index: 20;
+	    max-width: 75px;
+	    top: 93px;
+	    left: 22px;
+	}
+	.line_bg {
+	    width: 204px;
+	    max-width: 242px;
+	    top: 205px;
+	    left: 195px;
+	    z-index: 20;
+	    opacity: 0;
+	}
+	.line_bg_on {
+	    opacity: 1;
+	    z-index: 19;
+	    top: 207px;
+	}
+	.man_bg_main {
+	    width: 159px;
+	    opacity: 0;
+	    max-width: 186px;
+	    top: 221px;
+	    left: 194.9px;
+	    z-index: 20;
+	}
+	.code {
+	    opacity: 0;
+	    z-index: 27;
+	    top: -228px;
+	    left: 70.5px;
+	    max-width: 118px;
+	    -webkit-animation-fill-mode: forwards;
+	            animation-fill-mode: forwards;
+	}
+	.code_1 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 0s;
+	            animation-delay: 0s;
+	    top: 214px;
+	    width: 94px;
+	}
+	.code_2 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 1s;
+	            animation-delay: 1s;
+	    top: 221px;
+	    width: 110px;
+	}
+	.code_3 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 2s;
+	            animation-delay: 2s;
+	    top: 229px;
+	    width: 61px;
+	}
+	.code_4 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 3s;
+	            animation-delay: 3s;
+	    top: 237px;
+	    width: 87px;
+	}
+	.code_5 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 4s;
+	            animation-delay: 4s;
+	    top: 244px;
+	    width: 34px;
+	    max-width: 100px;
+	}
+	.code_6 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 5s;
+	            animation-delay: 5s;
+	    top: 262px;
+	    width: 97px;
+	}
+	.code_7 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 6s;
+	            animation-delay: 6s;
+	    top: 270px;
+	    width: 109px;
+	}
+	.code_8 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 7s;
+	            animation-delay: 7s;
+	    top: 278px;
+	    width: 59px;
+	    max-width: 100px;
+	}
+	.code_9 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 8s;
+	            animation-delay: 8s;
+	    top: 286px;
+	    width: 33px;
+	}
+	.code_10 {
+	    -webkit-animation: animationCode linear 10s infinite;
+	            animation: animationCode linear 10s infinite;
+	    -webkit-animation-delay: 9s;
+	            animation-delay: 9s;
+	    top: 296px;
+	    width: 22px;
 	}
 }

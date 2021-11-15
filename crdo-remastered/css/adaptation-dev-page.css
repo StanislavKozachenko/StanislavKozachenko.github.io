@@ -352,6 +352,9 @@
 	}
 }
 @media(min-width: 768px) and (max-width: 1023px){
+		.top_block_image {
+		top: 0px !important;
+	}
 	.dev_img_anim_element-1 {
 		top: 3px;
    		left: 3px;
@@ -445,6 +448,9 @@
 	}
 }
 @media(min-width: 1023px) and (max-width: 1439px){
+		.top_block_image {
+		top: 0px !important;
+	}
 	.dev_img_anim_element-3 {
 		top: 80px;
     	left: 222px;
@@ -491,6 +497,9 @@
 	}
 }
 @media(min-width: 1440px){
+		.top_block_image {
+		top: 20px !important;
+	}
 	.dev_img_anim_element-5 {
 		top: 164px;
     	left: 317px;

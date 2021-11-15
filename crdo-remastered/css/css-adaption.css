@@ -41,10 +41,11 @@
 		display: none;
 	}
 	.top_block_backgroundImg {
-		content: url(../img/bg-main-adapt.svg);
+		content: url(../img/bg_first_page_restyle.svg);
 		z-index: 2;
 		margin-top: 50px;
 		margin-right: 10px;
+		max-width: 280px;
 	}
 	.top_block_nav_logo_bg, .top_block_nav_text {
 		display: none;
