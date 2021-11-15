@@ -21,26 +21,42 @@
 	<title>ЦРДО</title>
 </head>
 <body>
+	<div class="loader">
+			<div class="preloader" id="preloaderID">
+	<!--CSS Spinner-->
+	<div class="spinner-wrapper">
+	 <div class="spinner">
+	  <div class="sk-folding-cube">
+	   <div class="sk-cube1 sk-cube"></div>
+	   <div class="sk-cube2 sk-cube"></div>
+	   <div class="sk-cube4 sk-cube"></div>
+	   <div class="sk-cube3 sk-cube"></div>
+	  </div>
+	 </div>
+	</div>
+	</div>
+	</div>
 	<div class="anchor"><img src="img/arrow-up.png"></div>
 	<section class="wrapper">
 		<img src="img/bg-adapt-right.svg" class="adapt_block_img adapt_block_img_right">
 		<img src="img/adaptation-style-top-bg.svg" class="adapt_block_img adapt_block_img_left">
-		<img src="img/top_block_bgimage.svg" class="top_block_backgroundImg">
+		
 		<header class="container-fluid top_header"></header>
 		<div class="top_block container-fluid">
 			<div class="top_block_content container container-lg container-xl container-xxl">
+				<img src="img/top_block_bgimage.svg" class="top_block_backgroundImg">
 				<div class="top_block_content_main">
 					<div class="top_block_content_text">
 						<p class="top_block_content_text_1">ЦЕНТР РАЗВИТИЯ ДИСТАНЦИОННОГО ОБРАЗОВАНИЯ</p>
 						<p class="top_block_content_text_2">Наша миссия – сделать процесс<br>обучения эффективнее, быстрее,<br>удобнее через использование<br>возможностей онлайн-технологий.</p>
 					</div>
 					<div class="main_page_img">
-						<img src="img/main_page_img.svg" class="top_block_image pstnMain">
-					<!-- 	<img src="img/cogwheel_1.svg" class="positioningMain сogwheel_1">
-						<img src="img/cloud_main_img.svg" class="positioningMain main_cloud">
+						<img src="img/bg_first_page_restyle.svg" class="top_block_image pstnMain">
+						<img src="img/cloud_main_img.svg" class="cloud_main positioningMain">
+						<img src="img/cogwheel_1.svg" class="positioningMain сogwheel_1">
 						<img src="img/cogwheel_2.svg" class="positioningMain сogwheel_2">
 						<img src="img/cogwheel_3.svg" class="positioningMain сogwheel_3">
-						<img src="img/code_icon.svg" class="positioningMain сodeIcon">
+						<img src="img/code_icon.svg" class="positioningMain сodeIcon" style="display: none;">
 						<img src="img/code_logo_icon_1.svg" class="positioningMain code_logo code_logo_1">
 						<img src="img/code_logo_icon_2.svg" class="positioningMain code_logo code_logo_2">
 						<img src="img/line_bg_1.svg" class="positioningMain line_bg_1 line_bg">
@@ -52,7 +68,17 @@
 						<img src="img/man_bg_main_2.svg" class="positioningMain man_bg_main man_bg_main_2">
 						<img src="img/man_bg_main_3.svg" class="positioningMain man_bg_main man_bg_main_3">
 						<div class="positioningMain div_main_img div_main_img_1"></div>
-						<div class="positioningMain div_main_img div_main_img_2"></div> -->
+						<div class="positioningMain div_main_img div_main_img_2"></div>
+						<img src="img/code-1.svg" class="positioningMain code code_1">
+						<img src="img/code-2.svg" class="positioningMain code code_2">
+						<img src="img/code-3.svg" class="positioningMain code code_3">
+						<img src="img/code-4.svg" class="positioningMain code code_4">
+						<img src="img/code-5.svg" class="positioningMain code code_5">
+						<img src="img/code-6.svg" class="positioningMain code code_6">
+						<img src="img/code-7.svg" class="positioningMain code code_7">
+						<img src="img/code-8.svg" class="positioningMain code code_8">
+						<img src="img/code-9.svg" class="positioningMain code code_9">
+						<img src="img/code-10.svg" class="positioningMain code code_10">
 					</div>
 				</div>
 			</div>
@@ -119,8 +145,8 @@
 								</div>
 							</a>
 						</div>
-						<!-- <div class="hr_adapt"></div> -->
-						<!-- <div class="news_content_blocks_element">
+						<div class="hr_adapt"></div>
+						<div class="news_content_blocks_element">
 							<a href="news-example.html" class="news_content_block_element_href">
 								<div class="news_content_blocks_element_image"><img src="img/news_block_img.svg"></div>
 								<div class="news_content_blocks_element_text">
@@ -128,7 +154,7 @@
 									<span class="news_content_element_text_bottom news_date">18 сентябрь 2020</span>
 								</div>
 							</a>
-						</div> -->
+						</div>
 						<!-- Третья новость -->
 						<!-- <div class="hr_adapt"></div> -->
 						<!-- Линия для блока новости -->
@@ -183,7 +209,9 @@
     if(windowWidth <= 767){
     	if( scrolled <= 37 ) {    	
        		$('.top_header_logo_content').removeClass('transfromFirst');
+       		$(".one_header").text("ЦЕНТР РАЗВИТИЯ ДИСТАНЦИОННОГО ОБРАЗОВАНИЯ");
     	}else {
+    		$(".one_header").text("ЦРДО");
     		$('.top_header_logo_content').addClass('transfromFirst');
     	}
     } else if(windowWidth >= 1024 && windowWidth <=1439) {
