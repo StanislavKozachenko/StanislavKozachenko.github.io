@@ -830,7 +830,7 @@
 		width: 650px;
 	}
 	.top_block_nav_logo_bg {
-		top: -8px;
+		top: -19px;
 	}
 	.top_header, .top_header_logo_content {
 		height: 69px !important;
@@ -1264,7 +1264,7 @@
 	    width: 56px;
 	    z-index: 20;
 	    max-width: 75px;
-	    top: 93px;
+	    top: 93.5px;
 	    left: 22px;
 	}
 	.line_bg {
