@@ -333,6 +333,7 @@
 	}
 	.top_block_image {
 		max-width: 800px;
+		width: 750px;
 	}
 	.first_block_dev_content_top {
 		font-family: Montserrat;
