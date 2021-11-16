@@ -1322,8 +1322,8 @@ footer {
 	    -ms-transform: translateY(-299px);
 	        transform: translateY(-299px);
 	z-index: 2;
-	top: 32px;
-	right: 283px;
+	top: 40px;
+	right: 288px;
 	position: absolute;
 	height: 20px;
 	width: 20px;
@@ -1339,7 +1339,7 @@ footer {
 }
 .add_corner_2 {
 	opacity: 1;
-	top: 20px;
+	top: 25px;
 	right: 274px;
 	height: 25px;
 	width: 25px;
