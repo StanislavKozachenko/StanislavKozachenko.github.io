@@ -207,10 +207,12 @@
     	}
     }
     if(windowWidth <= 767){
-    	if( scrolled <= 37 ) {    	
+    	if( scrolled <= 37 ) {
+    	$('.alerts_main_nav').css('margin-right', '-25px');    	
        		$('.top_header_logo_content').removeClass('transfromFirst');
        		$(".one_header").text("ЦЕНТР РАЗВИТИЯ ДИСТАНЦИОННОГО ОБРАЗОВАНИЯ");
     	}else {
+    		 $('.alerts_main_nav').css('margin-right', '0px');
     		$(".one_header").text("ЦРДО");
     		$('.top_header_logo_content').addClass('transfromFirst');
     	}
