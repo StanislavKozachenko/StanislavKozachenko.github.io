@@ -368,8 +368,7 @@ nav {
 	transition: .4s;
 }
 .top_menu_drop {
-	padding: 14px 0;
-	padding-top: 7px;
+	padding: 7px 0;
 }
 .top_menu_drop li {
 	-webkit-transition: .2s;
@@ -423,7 +422,10 @@ nav {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	background-color: #fff;
-	height: 56px;
+	height: 40px;
+	margin-bottom: -25px;
+	padding-bottom: 50px;
+    padding-top: 25px;
     z-index: 5;
 }
 .menu_functions_active {
@@ -1322,8 +1324,8 @@ footer {
 	    -ms-transform: translateY(-299px);
 	        transform: translateY(-299px);
 	z-index: 2;
-	top: 40px;
-	right: 288px;
+	top: 32px;
+	right: 283px;
 	position: absolute;
 	height: 20px;
 	width: 20px;
@@ -1339,7 +1341,7 @@ footer {
 }
 .add_corner_2 {
 	opacity: 1;
-	top: 25px;
+	top: 20px;
 	right: 274px;
 	height: 25px;
 	width: 25px;
@@ -1358,8 +1360,8 @@ footer {
 	right: 114px;
 }
 .add_corner_2_2 {
-	top: 37px;
-	right: 113px;
+	top: 20px;
+	right: 104px;
 }
 .menu_functions {
 	position: static;
