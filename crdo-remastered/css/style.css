@@ -1420,7 +1420,7 @@ footer {
 .code_logo {
     z-index: 20;
     max-width: 65px;
-    top: 111px;
+    top: 112.5px;
     left: 26px;
 }
 .line_bg {
@@ -2006,34 +2006,34 @@ footer {
 .man_bg_main_1 {
 	-webkit-animation-delay: .5s;
 	        animation-delay: .5s;
-	-webkit-animation: 25s linear infinite fade-out_two;
-	        animation: 25s linear infinite fade-out_two;
+	-webkit-animation: 12s linear infinite fade-out_two;
+	        animation: 12s linear infinite fade-out_two;
 }
 .man_bg_main_2 {
-	-webkit-animation: 25s linear infinite fade-out_one;
-	        animation: 25s linear infinite fade-out_one;
+	-webkit-animation: 12s linear infinite fade-out_one;
+	        animation: 12s linear infinite fade-out_one;
 }
 .man_bg_main_3 {
-	-webkit-animation: 25s linear infinite fade-out_three;
-	        animation: 25s linear infinite fade-out_three;
+	-webkit-animation: 12s linear infinite fade-out_three;
+	        animation: 12s linear infinite fade-out_three;
 }
 .line_bg_1 {
 	-webkit-animation-delay: .5s;
 	        animation-delay: .5s;
-	-webkit-animation: 25s linear infinite fade-out_one_add;
-	        animation: 25s linear infinite fade-out_one_add;
+	-webkit-animation: 12s linear infinite fade-out_one_add;
+	        animation: 12s linear infinite fade-out_one_add;
 }
 .line_bg_2 {
-	-webkit-animation: 25s linear infinite fade-out_two;
-	        animation: 25s linear infinite fade-out_two;	
+	-webkit-animation: 12s linear infinite fade-out_two;
+	        animation: 12s linear infinite fade-out_two;	
 }
 .line_bg_3 {
-	-webkit-animation: 25s linear infinite fade-out_two_add;
-	        animation: 25s linear infinite fade-out_two_add;		
+	-webkit-animation: 12s linear infinite fade-out_two_add;
+	        animation: 12s linear infinite fade-out_two_add;		
 }
 .line_bg_4 {
-	-webkit-animation: 25s linear infinite fade-out_three;
-	        animation: 25s linear infinite fade-out_three;
+	-webkit-animation: 12s linear infinite fade-out_three;
+	        animation: 12s linear infinite fade-out_three;
 }
 @-webkit-keyframes code_logo_one {
 	0% {
@@ -2129,13 +2129,13 @@ footer {
 }
 .code_logo_1 {
 	opacity: 0;
-	-webkit-animation: 15s linear infinite code_logo_two;
-	        animation: 15s linear infinite code_logo_two;
+	-webkit-animation: 7s linear infinite code_logo_two;
+	        animation: 7s linear infinite code_logo_two;
 }
 .code_logo_2 {
 	opacity: 0;
-	-webkit-animation: 15s linear infinite code_logo_one;
-	        animation: 15s linear infinite code_logo_one;
+	-webkit-animation: 7s linear infinite code_logo_one;
+	        animation: 7s linear infinite code_logo_one;
 }
 /*.div_main_img {
 	z-index: 20;
