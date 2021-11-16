@@ -1261,11 +1261,12 @@
 	    right: 303px;
 	}
 	.code_logo {
-	    width: 56px;
+	    width: 57px;
 	    z-index: 20;
 	    max-width: 75px;
 	    top: 93.5px;
-	    left: 22px;
+	    left: 21px;
+	    max-height: 40px;
 	}
 	.line_bg {
 	    width: 204px;
