@@ -1380,3 +1380,8 @@
 	    width: 22px;
 	}
 }
+@media(min-width: 1400px){
+	.middle_block_2_content_main_block_element  {
+		width: 395px;
+	}
+}
