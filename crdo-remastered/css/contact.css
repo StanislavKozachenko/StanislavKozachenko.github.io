@@ -34,8 +34,6 @@
 .persons_block {
 	width: 48%;
 	margin-top: 20px;
-	margin-right: 12px;
-	margin-left: 12px;
 }
 .persons_top {
 	font-family: Montserrat;
@@ -123,7 +121,7 @@
 @media(min-width: 1024px) and (max-width: 1439px){
 	.persons {
 		-ms-flex-pack: distribute;
-		    justify-content: space-around;
+		    justify-content: space-between;
 		margin-top: 20px;
 	}
 	.persons_block_element {
