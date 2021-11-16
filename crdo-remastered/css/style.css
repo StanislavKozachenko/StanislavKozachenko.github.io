@@ -558,12 +558,12 @@ nav {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 16px;
+	line-height: 20px;
 	color: #1C3F77;
 	margin-top: 25px;
 	margin-right: 13px;
-	height: 265px;
+	height: 240px;
 }
 .middle_block_2_button {
 	font-family: Montserrat;
@@ -2006,34 +2006,34 @@ footer {
 .man_bg_main_1 {
 	-webkit-animation-delay: .5s;
 	        animation-delay: .5s;
-	-webkit-animation: 12s linear infinite fade-out_two;
-	        animation: 12s linear infinite fade-out_two;
+	-webkit-animation: 15s linear infinite fade-out_two;
+	        animation: 15s linear infinite fade-out_two;
 }
 .man_bg_main_2 {
-	-webkit-animation: 12s linear infinite fade-out_one;
-	        animation: 12s linear infinite fade-out_one;
+	-webkit-animation: 15s linear infinite fade-out_one;
+	        animation: 15s linear infinite fade-out_one;
 }
 .man_bg_main_3 {
-	-webkit-animation: 12s linear infinite fade-out_three;
-	        animation: 12s linear infinite fade-out_three;
+	-webkit-animation: 15s linear infinite fade-out_three;
+	        animation: 15s linear infinite fade-out_three;
 }
 .line_bg_1 {
 	-webkit-animation-delay: .5s;
 	        animation-delay: .5s;
-	-webkit-animation: 12s linear infinite fade-out_one_add;
-	        animation: 12s linear infinite fade-out_one_add;
+	-webkit-animation: 15s linear infinite fade-out_one_add;
+	        animation: 15s linear infinite fade-out_one_add;
 }
 .line_bg_2 {
-	-webkit-animation: 12s linear infinite fade-out_two;
-	        animation: 12s linear infinite fade-out_two;	
+	-webkit-animation: 15s linear infinite fade-out_two;
+	        animation: 15s linear infinite fade-out_two;	
 }
 .line_bg_3 {
-	-webkit-animation: 12s linear infinite fade-out_two_add;
-	        animation: 12s linear infinite fade-out_two_add;		
+	-webkit-animation: 15s linear infinite fade-out_two_add;
+	        animation: 15s linear infinite fade-out_two_add;		
 }
 .line_bg_4 {
-	-webkit-animation: 12s linear infinite fade-out_three;
-	        animation: 12s linear infinite fade-out_three;
+	-webkit-animation: 15s linear infinite fade-out_three;
+	        animation: 15s linear infinite fade-out_three;
 }
 @-webkit-keyframes code_logo_one {
 	0% {
