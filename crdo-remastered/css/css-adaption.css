@@ -1,3 +1,6 @@
+.adapt_block_img_left {
+	display: none !important;
+}
 @media (max-width: 767px){ /*440*/
 	.main_cloud {
 		display: none;
@@ -241,7 +244,7 @@
 	.feedback_right_bottom_text {
 		font-family: Montserrat;
 		font-style: normal;
-		font-weight: 600;
+		font-weight: 500;
 		font-size: 13px;
 		line-height: 15px;
 		color: #25416C;
@@ -267,8 +270,8 @@
 		padding-right: 16px;
 	}
 	.feedback_right_bottom_button {
-		max-width: 144px;
-		padding: 8px 26px;
+		max-width: 160px;
+		padding: 10px 26px;
 		margin: 15px 0;
 		-ms-flex-item-align: center;
 		    -ms-grid-row-align: center;
@@ -457,14 +460,14 @@
 		transition: .2s;
 	}
 	.nav_menu_burger_active span:first-child {
-		-webkit-transform: translateY(6px) rotate(45deg);
-		    -ms-transform: translateY(6px) rotate(45deg);
-		        transform: translateY(6px) rotate(45deg);
+		-webkit-transform: translateY(7px) rotate(45deg);
+		    -ms-transform: translateY(7px) rotate(45deg);
+		        transform: translateY(7px) rotate(45deg);
 	}
 	.nav_menu_burger_active span:last-child {
-		-webkit-transform: translateY(-6px) rotate(135deg);
-		    -ms-transform: translateY(-6px) rotate(135deg);
-		        transform: translateY(-6px) rotate(135deg);
+		-webkit-transform: translateY(-7px) rotate(135deg);
+		    -ms-transform: translateY(-7px) rotate(135deg);
+		        transform: translateY(-7px) rotate(135deg);
 	}
 	.nav_menu_burger_active span:nth-child(2) {
 		opacity: 0;

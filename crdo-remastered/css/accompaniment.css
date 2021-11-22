@@ -167,7 +167,7 @@
 /*Animation*/
 @-webkit-keyframes girl_falling {
 	0% {
-		top: -300px;
+		top: -500px;
 		left: 357px;
 	}
 	50% {
@@ -175,13 +175,13 @@
 		left: 357px;
 	}
 	100% {
-		top: -300px;
+		top: -500px;
 		left: 357px;
 	}
 }
 @keyframes girl_falling {
 	0% {
-		top: -300px;
+		top: -500px;
 		left: 357px;
 	}
 	50% {
@@ -189,13 +189,13 @@
 		left: 357px;
 	}
 	100% {
-		top: -300px;
+		top: -500px;
 		left: 357px;
 	}
 }
 .girl_falling {
-	-webkit-animation: 6s infinite linear girl_falling;
-	        animation: 6s infinite linear girl_falling;
+	-webkit-animation: 6s infinite ease-in-out girl_falling;
+	        animation: 6s infinite ease-in-out girl_falling;
 	-webkit-animation-delay: .5s;
 	        animation-delay: .5s;
 	-webkit-animation-fill-mode: forwards;

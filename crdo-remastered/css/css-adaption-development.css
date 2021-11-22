@@ -442,8 +442,8 @@
 		        animation: anima 15s linear;
 		-webkit-animation-fill-mode: forwards;
 		        animation-fill-mode: forwards;
-		-webkit-animation-delay: 7.6s;
-		        animation-delay: 7.6s;
+		-webkit-animation-delay: 5.6s;
+		        animation-delay: 5.6s;
 		        -webkit-animation-play-state: running;
 		                animation-play-state: running;
 	}
@@ -459,7 +459,7 @@
 	}
 		.fadeEffect {
 		width: 120%;
-		height: 238px;
+		height: 239px;
 		background-color: #fff;
 		opacity: 1;
 		z-index: 2;

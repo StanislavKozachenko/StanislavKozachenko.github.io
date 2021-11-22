@@ -1,6 +1,6 @@
 @media (max-width: 1439px){ /*440*/
 	.examples_top_block {
-		padding-top: 70px;
+		padding-top: 50px;
 	}
 	.top_block_examples_content {
 		font-family: Montserrat;
@@ -34,8 +34,8 @@
 		font-family: Montserrat;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 13px;
-		line-height: 16px;
+		font-size: 14px;
+		line-height: 17px;
 		color: #25416C;
 	}
 	.courses_examples_block_element_data_info {
@@ -76,7 +76,7 @@
 	.info_block_element_tag {
 		font-family: Montserrat;
 		font-style: normal;
-		font-weight: 500;
+		font-weight: bold;
 		font-size: 13px;
 		line-height: 16px;
 		color: #25416C;

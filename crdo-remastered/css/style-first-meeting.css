@@ -17,7 +17,19 @@
 .download_presentation:hover {
 	color: #000000;
 }
+.feedback_left_side_text_main, .feedback_text_bottom {
+	display: block;
+}
 @media(max-width: 767px){
+	.news_example_main_content {
+		margin-bottom: 20px;
+	}
+	.news_example_main_text_top {
+		margin-bottom: 20px;
+	}
+	.news_date {
+		margin-top: 15px;
+	}
 	.video_download {
 		margin-top: 10px;
 	}

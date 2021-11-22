@@ -213,6 +213,9 @@
 		top: 77px;
 	}
 	.nav_menu_burger span {
+		border-radius: 5px;
+	    height: 4px;
+	    width: 20px;
 		background-color: #1C3F77;
 	}
 	.nav_menu_burger {
@@ -245,9 +248,9 @@
 		height: 150px;
 	}
 	#course_english_name {
-		-webkit-transform: translateY(-25px);
-		    -ms-transform: translateY(-25px);
-		        transform: translateY(-25px);
+		-webkit-transform: translateY(-15px);
+		    -ms-transform: translateY(-15px);
+		        transform: translateY(-15px);
 	}
 	.news_top_text {
 		padding: 7px 0;
@@ -272,21 +275,30 @@
 		top: -7px;
 	}
 	.feedback_right_bottom_button {
-		margin: 10px 0;
+		margin: 15px 0;
 	}
 	.footer_content {
-		padding-top: 10px !important;
+		padding-top: 20px !important;
 	}
 	#second_margin_footer {
 		margin-bottom: 20px;
 	}
 }
-@media(min-width: 1024px) and (max-width: 1439px) {
+@media(min-width: 1024px) and (max-width: 1279px) {
 	.add_corner_2 {
-		right: 272px;
+		right: 278.5px;
 	}
 	.add_corner_2_2 {
-		right: 102.5px;
+		right: 107.7px;
+	}
+}
+@media(min-width: 1280px) and (max-width: 1439px) {
+	.add_corner_2 {
+	    top: 20px;
+	    right: 279px;
+	}
+	.add_corner_2_2 {
+		right: 107.7px;
 	}
 }
 @media(min-width: 768px) and (max-width: 1023px){
@@ -434,7 +446,7 @@
 		right: 184px;
 	}
 	.add_corner_2 {
-		right: 174px;
+		right: 170px;
 	}
 	.add_corner_2_2 {
 		right: 50.1px;
@@ -472,11 +484,14 @@
 	.top_header, .top_header_logo_content {
 		height: 52px !important;
 	}
+	.top_block_nav_logo_bg {
+		width: 135px;
+	}
 	.top_block_nav_text, .top_block_nav_text_main {
 		font-family: Montserrat;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 16px;
+		font-size: 19px;
 		line-height: 20px;
 		color: #FFFFFF;
 		-webkit-transform: rotate(0.29deg);
@@ -812,23 +827,43 @@
 		line-height: 17px;
 		color: #FFFFFF;
 	}
+	.logo_footer {
+		max-height: 65px;
+		max-width: 65px;
+	}
 }
 @media(min-width: 1024px){
+	.block_anim img {
+		width: 32px;
+    	height: 32px;
+	}
+	.block_anim_1 {
+		top: 90px;
+   		left: -191px;
+	}
+	.block_anim_2 {
+		top: 59px;
+		left: -147px;
+	}
+	.block_anim_3 {
+		top: 46px;
+    	left: -100px;
+	}
 	.top_block_nav_logo_bg {
-		content: url(../img/bg_top_icon_1024.svg);
+		content: url(../img/bg_top_icon_1024.svg) !important;
 	}
 	.top_block_backgroundImg {
 		width: 660px !important;
 	}
 	.top_block_image {
-		content: url(../img/bg_first_page_restyle.svg);
+		content: url(../img/bg_first_page_restyle.svg) !important;
 		height: auto;
 		max-width: 605px;
 		width: 605px;
 		top: 80px;
 	}
 	.top_block_backgroundImg {
-		content: url(../img/768-bg-img-first.svg);
+		content: url(../img/768-bg-img-first.svg) !important;
 		right: 8px;
 		width: 650px;
 	}
@@ -975,9 +1010,12 @@
 		font-family: Montserrat;
 		font-style: normal;
 		font-weight: 500;
-		font-size: 14px;
-		line-height: 17px;
+		font-size: 16px;
+    	line-height: 22px;
 		color: #FFFFFF;
+	}
+	.logo_footer {
+		max-height: 80px;
 	}
 	.middle_block {
 	    margin-top: 40px;
@@ -1001,6 +1039,22 @@
 	}
 }
 @media(min-width: 1440px){
+	.block_anim img {
+		width: 42px;
+    	height: 42px;
+	}
+	.block_anim_1 {
+		top: 115px;
+    	left: -246px;
+	}
+	.block_anim_2 {
+		top: 78px;
+    	left: -189px;
+	}
+	.block_anim_3 {
+		top: 58px;
+    	left: -126px;
+	}
 	.logo_icon {
 		height: 50px;
 	}
@@ -1008,7 +1062,7 @@
 		right: 339px;
 	}
 	.add_corner_2 {
-		right: 322.5px;
+		right: 328.5px;
 	}
 	.add_corner_2_2 {
 		right: 128px;
@@ -1035,20 +1089,20 @@
 		right: 129px;
 	}
 	.top_block_nav_logo_bg {
-		content: url(../img/top_logo_block_1440.svg);
+		content: url(../img/top_logo_block_1440.svg) !important;
 	}
 	.top_block_backgroundImg {
 		width: 660px !important;
 	}
 	.top_block_image {
-		content: url(../img/bg_first_page_restyle.svg);
+		content: url(../img/bg_first_page_restyle.svg) !important;
 	    height: auto;
 	    width: 705px;
 	    max-width: 705px;
 	    top: 80px;
 	}
 	.top_block_backgroundImg {
-		content: url(../img/768-bg-img-first.svg);
+		content: url(../img/768-bg-img-first.svg) !important;
 		right: -0px !important;
 		width: 750px !important;
 	}
@@ -1201,7 +1255,7 @@
 }
 @media(min-width: 1440px){
 	.add_corner_2_2 {
-		right: 127.5px;
+		right: 132.5px;
 	}
 }
 @media(min-width: 1440px){
@@ -1301,84 +1355,84 @@
 	            animation-fill-mode: forwards;
 	}
 	.code_1 {
-	    -webkit-animation: animationCode linear 5s infinite;
-	            animation: animationCode linear 5s infinite;
+	    -webkit-animation: animationCode linear 3s infinite;
+	            animation: animationCode linear 3s infinite;
 	    -webkit-animation-delay: 0s;
 	            animation-delay: 0s;
 	    top: 214px;
 	    width: 94px;
 	}
 	.code_2 {
-	    -webkit-animation: animationCode linear 5s infinite;
-	            animation: animationCode linear 5s infinite;
-	    -webkit-animation-delay: 0.5s;
-	            animation-delay: 0.5s;
+	    -webkit-animation: animationCode linear 3s infinite;
+	            animation: animationCode linear 3s infinite;
+	    -webkit-animation-delay: 0.25s;
+	            animation-delay: 0.25s;
 	    top: 221px;
 	    width: 110px;
 	}
 	.code_3 {
-	    -webkit-animation: animationCode linear 5s infinite;
-	            animation: animationCode linear 5s infinite;
-	    -webkit-animation-delay: 1s;
-	            animation-delay: 1s;
+	    -webkit-animation: animationCode linear 3s infinite;
+	            animation: animationCode linear 3s infinite;
+	    -webkit-animation-delay: 0.5s;
+	            animation-delay: 0.5s;
 	    top: 229px;
 	    width: 61px;
 	}
 	.code_4 {
-	    -webkit-animation: animationCode linear 5s infinite;
-	            animation: animationCode linear 5s infinite;
-	    -webkit-animation-delay: 1.5s;
-	            animation-delay: 1.5s;
+	    -webkit-animation: animationCode linear 3s infinite;
+	            animation: animationCode linear 3s infinite;
+	    -webkit-animation-delay: 0.75s;
+	            animation-delay: 0.75s;
 	    top: 237px;
 	    width: 87px;
 	}
 	.code_5 {
-	    -webkit-animation: animationCode linear 5s infinite;
-	            animation: animationCode linear 5s infinite;
-	    -webkit-animation-delay: 2s;
-	            animation-delay: 2s;
+	    -webkit-animation: animationCode linear 3s infinite;
+	            animation: animationCode linear 3s infinite;
+	    -webkit-animation-delay: 1s;
+	            animation-delay: 1s;
 	    top: 244px;
 	    width: 34px;
 	    max-width: 100px;
 	}
 	.code_6 {
-	    -webkit-animation: animationCode linear 5s infinite;
-	            animation: animationCode linear 5s infinite;
-	    -webkit-animation-delay: 2.5s;
-	            animation-delay: 2.5s;
+	    -webkit-animation: animationCode linear 3s infinite;
+	            animation: animationCode linear 3s infinite;
+	    -webkit-animation-delay: 1.25s;
+	            animation-delay: 1.25s;
 	    top: 262px;
 	    width: 97px;
 	}
 	.code_7 {
-	    -webkit-animation: animationCode linear 5s infinite;
-	            animation: animationCode linear 5s infinite;
-	    -webkit-animation-delay: 3s;
-	            animation-delay: 3s;
+	    -webkit-animation: animationCode linear 3s infinite;
+	            animation: animationCode linear 3s infinite;
+	    -webkit-animation-delay: 1.5s;
+	            animation-delay: 1.5s;
 	    top: 270px;
 	    width: 109px;
 	}
 	.code_8 {
-	    -webkit-animation: animationCode linear 5s infinite;
-	            animation: animationCode linear 5s infinite;
-	    -webkit-animation-delay: 3.5s;
-	            animation-delay: 3.5s;
+	    -webkit-animation: animationCode linear 3s infinite;
+	            animation: animationCode linear 3s infinite;
+	    -webkit-animation-delay: 1.75s;
+	            animation-delay: 1.75s;
 	    top: 278px;
 	    width: 59px;
 	    max-width: 100px;
 	}
 	.code_9 {
-	    -webkit-animation: animationCode linear 5s infinite;
-	            animation: animationCode linear 5s infinite;
-	    -webkit-animation-delay: 4s;
-	            animation-delay: 4s;
+	    -webkit-animation: animationCode linear 3s infinite;
+	            animation: animationCode linear 3s infinite;
+	    -webkit-animation-delay: 2s;
+	            animation-delay: 2s;
 	    top: 286px;
 	    width: 33px;
 	}
 	.code_10 {
-	    -webkit-animation: animationCode linear 5s infinite;
-	            animation: animationCode linear 5s infinite;
-	    -webkit-animation-delay: 4.5s;
-	            animation-delay: 4.5s;
+	    -webkit-animation: animationCode linear 3s infinite;
+	            animation: animationCode linear 3s infinite;
+	    -webkit-animation-delay: 2.25s;
+	            animation-delay: 2.25s;
 	    top: 296px;
 	    width: 22px;
 	}
@@ -1386,5 +1440,10 @@
 @media(min-width: 1400px){
 	.middle_block_2_content_main_block_element  {
 		width: 395px;
+	}
+}
+@media(min-width: 360px) and (max-width: 767px){
+	.container  {
+		max-width: 360px !important;
 	}
 }

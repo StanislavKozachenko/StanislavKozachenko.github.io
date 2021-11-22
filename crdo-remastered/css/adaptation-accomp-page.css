@@ -61,13 +61,13 @@
 	}
 	.top_block_text_up {
 		z-index: -1;
-		-webkit-transform: translateY(-245px);
-		    -ms-transform: translateY(-245px);
-		        transform: translateY(-245px);
+		-webkit-transform: translateY(-295px);
+		    -ms-transform: translateY(-295px);
+		        transform: translateY(-295px);
 	}
 	.girl_falling_img {
 		content: normal;
-		max-width: 80px;
+		max-width: 100px;
 	}
 	.accomp_third_block_content_element {
 		margin-bottom: 10px;
@@ -85,9 +85,9 @@
 		font-size: 25px;
 		line-height: 30px;
 		color: #25416C;
-		-webkit-transform: translate(25px, 60px);
-		    -ms-transform: translate(25px, 60px);
-		        transform: translate(25px, 60px);
+		-webkit-transform: translate(-25px, 60px);
+		    -ms-transform: translate(-25px, 60px);
+		        transform: translate(-25px, 60px);
 	}
 	.top_block_text_bottom {
 		font-family: Montserrat;
@@ -96,16 +96,16 @@
 		font-size: 15px;
 		line-height: 18px;
 		color: #1C3F77;
-		-webkit-transform: translate(60px, 70px);
-		    -ms-transform: translate(60px, 70px);
-		        transform: translate(60px, 70px);
+		-webkit-transform: translate(13px, 70px);
+		    -ms-transform: translate(13px, 70px);
+		        transform: translate(13px, 70px);
 	}
 	.girl_falling_img {
 		max-width: 130px;
 	}
 	@-webkit-keyframes girl_falling_adapt {
 	0% {
-		top: -100px;
+		top: -200px;
 		left: 180px;
 	}
 	50% {
@@ -113,13 +113,13 @@
 		left: 180px;
 	}
 	100% {
-		top: -100px;
+		top: -200px;
 		left: 180px;
 	}
 }
 	@keyframes girl_falling_adapt {
 	0% {
-		top: -100px;
+		top: -200px;
 		left: 180px;
 	}
 	50% {
@@ -127,7 +127,7 @@
 		left: 180px;
 	}
 	100% {
-		top: -100px;
+		top: -200px;
 		left: 180px;
 	}
 }
@@ -135,10 +135,9 @@
 		z-index: 40;
 	}
 	.girl_falling {
-		-webkit-animation: 4s linear infinite girl_falling_adapt;
-		        animation: 4s linear infinite girl_falling_adapt;
+		-webkit-animation: 6s ease-in-out infinite girl_falling_adapt;
+		        animation: 6s ease-in-out infinite girl_falling_adapt;
 		left: 180px;
-		top: 96px;
 	}
 	.accomp_second_block_content_text_top {
 		font-family: Montserrat;
@@ -232,7 +231,7 @@
 	}
 	@-webkit-keyframes girl_falling_adapt {
 	0% {
-		top: -100px;
+		top: -200px;
 		left: 270px;
 	}
 	50% {
@@ -240,13 +239,13 @@
 		left: 270px;
 	}
 	100% {
-		top: -100px;
+		top: -200px;
 		left: 270px;
 	}
 }
 	@keyframes girl_falling_adapt {
 	0% {
-		top: -100px;
+		top: -200px;
 		left: 270px;
 	}
 	50% {
@@ -254,7 +253,7 @@
 		left: 270px;
 	}
 	100% {
-		top: -100px;
+		top: -200px;
 		left: 270px;
 	}
 	}

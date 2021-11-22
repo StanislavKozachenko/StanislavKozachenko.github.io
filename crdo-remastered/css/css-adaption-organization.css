@@ -10,6 +10,9 @@
 		        transform: translateX(-7px) translateY(-50px);
 	}
 @media (max-width: 1023px){ /*440*/
+	.features_block  {
+		margin-bottom: 20px;
+	}
 	.telephone_icon, .icon_rel {
 		max-width: 68px;
 		border-radius: 50%;
@@ -238,8 +241,108 @@
 	}
 }
 @media(min-width: 1024px) {
+	@-webkit-keyframes anim_fadeOne {
+		0% {
+			top: 10px;
+    		left: -76px;
+		}
+		100% {
+			top: 10px;
+   			left: -301px;
+		}
+	}
+	@keyframes anim_fadeOne {
+		0% {
+			top: 10px;
+    		left: -76px;
+		}
+		100% {
+			top: 10px;
+   			left: -301px;
+		}
+	}
+	@-webkit-keyframes anim_fadeTwo {
+		0% {
+			top: 250px;
+		}
+		100% {
+			top: 50px;
+		}
+	}
+	@keyframes anim_fadeTwo {
+		0% {
+			top: 250px;
+		}
+		100% {
+			top: 50px;
+		}
+	}
+	@-webkit-keyframes anim_fadeThree {
+		0% {
+			top: 300px;
+		}
+		100% {
+			top: 100px;
+		}
+	}
+	@keyframes anim_fadeThree {
+		0% {
+			top: 300px;
+		}
+		100% {
+			top: 100px;
+		}
+	}
+	.top_block_org_img {
+		position: relative;
+	}
+	.fade_in_organization {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		height: 200px;
+		width: 200px;
+		background-color: #fff;
+
+	}
+	.top_block_org_content {
+		z-index: 30;
+	}
+	.top_block_org_img {
+		z-index: 24;
+	}
+	.plane_icon {
+		z-index: -2;
+	}
 	.plane_icon {
 		width: auto !important;
+	}
+	.plane_icon_2 {
+		z-index: -4;
+	}
+	.fade_in_organization_1 {
+		-webkit-animation: anim_fadeOne 5s linear infinite;
+		        animation: anim_fadeOne 5s linear infinite;
+		top: 10px;
+    	left: -76px;
+	}
+	.fade_in_organization_2 {
+		z-index: -3;
+		-webkit-animation: anim_fadeTwo 5s linear infinite;
+		        animation: anim_fadeTwo 5s linear infinite;
+		-webkit-animation-delay: 2.5s;
+		        animation-delay: 2.5s;
+		top: 250px;
+    	left: -212px;
+	}
+	.fade_in_organization_3 {
+		-webkit-animation: anim_fadeThree 5s linear infinite;
+		        animation: anim_fadeThree 5s linear infinite;
+		-webkit-animation-delay: 1.5s;
+		        animation-delay: 1.5s;
+		top: 300px;
+    	left: -416px;
 	}
 	.top_block_org_content {
 		padding-top: 125px;
@@ -314,7 +417,7 @@
 		-webkit-transform: rotateY(180deg);
 		        transform: rotateY(180deg);
 		top: 370px;
-		left: -321px;
+		left: -345px;
 	}
 	.second_block_org_content_element {
 		font-family: Montserrat;
@@ -342,6 +445,81 @@
 	}
 }
 @media(min-width: 1440px){
+	@-webkit-keyframes anim_fadeOne {
+		0% {
+			top: 10px;
+    		left: -76px;
+		}
+		100% {
+			top: 10px;
+   			left: -301px;
+		}
+	}
+	@keyframes anim_fadeOne {
+		0% {
+			top: 10px;
+    		left: -76px;
+		}
+		100% {
+			top: 10px;
+   			left: -301px;
+		}
+	}
+	@-webkit-keyframes anim_fadeTwo {
+		0% {
+			top: 350px;
+		}
+		100% {
+			top: 50px;
+		}
+	}
+	@keyframes anim_fadeTwo {
+		0% {
+			top: 350px;
+		}
+		100% {
+			top: 50px;
+		}
+	}
+	@-webkit-keyframes anim_fadeThree {
+		0% {
+			top: 400px;
+		}
+		100% {
+			top: 100px;
+		}
+	}
+	@keyframes anim_fadeThree {
+		0% {
+			top: 400px;
+		}
+		100% {
+			top: 100px;
+		}
+	}
+	.fade_in_organization_1 {
+		-webkit-animation: anim_fadeOne 5s linear infinite;
+		        animation: anim_fadeOne 5s linear infinite;
+		top: 10px;
+    	left: -76px;
+	}
+	.fade_in_organization_2 {
+		z-index: -3;
+		-webkit-animation: anim_fadeTwo 5s linear infinite;
+		        animation: anim_fadeTwo 5s linear infinite;
+		-webkit-animation-delay: 2.5s;
+		        animation-delay: 2.5s;
+		top: 350px;
+    	left: -212px;
+	}
+	.fade_in_organization_3 {
+		-webkit-animation: anim_fadeThree 5s linear infinite;
+		        animation: anim_fadeThree 5s linear infinite;
+		-webkit-animation-delay: 1.5s;
+		        animation-delay: 1.5s;
+		top: 400px;
+    	left: -416px;
+	}
 	.top_block_org_content {
 		padding-top: 155px;
 	}
@@ -440,5 +618,28 @@
 		font-size: 20px;
 		line-height: 24px;
 		color: #051369;
+	}
+}
+@media(min-width: 360px) and (max-width: 767px){
+	.top_block_org_img img {
+		width: 330px;
+	}
+	.telephone_icon {
+	    top: 67px;
+	    right: 27px;
+	}
+	.telephone_icon, .icon_rel {
+	    max-width: 90px;
+	    border-radius: 50%;
+	}
+	.beep_2 {
+	    top: 12px;
+	    right: 12px;
+	    max-width: 33px;
+	}
+	.beep_1 {
+	    top: 20px;
+	    right: 20px;
+	    max-width: 26px;
 	}
 }

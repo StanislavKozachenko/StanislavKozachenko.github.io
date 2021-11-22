@@ -1,29 +1,29 @@
 @media (max-width: 767px){ /*440*/
 	@-webkit-keyframes girl_falling_adapt {
 	0% {
-		top: -150px;
+		top: -240px;
 		left: 180px;
 	}
 	50% {
-		top: 0px;
+		top: -50px;
 		left: 180px;
 	}
 	100% {
-		top: -150px;
+		top: -240px;
 		left: 180px;
 	}
 }
 	@keyframes girl_falling_adapt {
 	0% {
-		top: -150px;
+		top: -240px;
 		left: 180px;
 	}
 	50% {
-		top: 0px;
+		top: -50px;
 		left: 180px;
 	}
 	100% {
-		top: -150px;
+		top: -240px;
 		left: 180px;
 	}
 }
@@ -32,8 +32,8 @@
 		max-width: 80px;
 	}
 	.girl_falling {
-		-webkit-animation: 5s linear infinite girl_falling_adapt;
-		        animation: 5s linear infinite girl_falling_adapt;
+		-webkit-animation: 5s ease-in-out infinite girl_falling_adapt;
+		        animation: 5s ease-in-out infinite girl_falling_adapt;
 		left: 180px;
 		top: 96px;
 	}
@@ -41,7 +41,7 @@
 		-webkit-transform: translateX(50px) translateY(-8px);
 		    -ms-transform: translateX(50px) translateY(-8px);
 		        transform: translateX(50px) translateY(-8px);
-		        max-width: 240px;
+		        max-width: 300px;
 	}
 	.top_block_text_up {
 		position: absolute;

@@ -121,7 +121,8 @@
 @media(min-width: 1024px) and (max-width: 1439px){
 	.persons {
 		-ms-flex-pack: distribute;
-		    justify-content: space-between;
+		    -webkit-box-pack: justify;
+		        justify-content: space-between;
 		margin-top: 20px;
 	}
 	.persons_block_element {
