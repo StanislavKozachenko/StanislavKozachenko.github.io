@@ -94,6 +94,7 @@ $(document).ready(function(){
 				       		paused();
 				       			if((scrollPos >= blockInfoScroll3 - windowHeight/1.5) && (scrollPos <= fadeHeight3 + fadeHeight2 + fadeHeight + 540)){
 						       		z = 1;
+						       		console.log("shit3");
 						       		running();
 						       	}
 						       	else {

@@ -20,7 +20,7 @@
         $(".logo_icon").removeClass("addMargin");
         $(".top_block_nav_text").removeClass("translRight");
         $('.alerts_main_nav').css('margin-right', '25px');
-        $('.nav_menu_burger ').css('transform', 'translateY(-7px)');
+        $('.nav_menu_burger ').css('transform', 'translateY(-17px)');
     }
 });
 		});

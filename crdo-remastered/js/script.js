@@ -9,7 +9,7 @@ function preloader(){
             parseInt(p.css('--duration')) * 1000,
           );
 
-        }, 500);  
+        }, 0);  
         
     });
 }
