@@ -38,13 +38,11 @@
 	</div>
 	<div class="anchor"><img src="img/arrow-up.png"></div>
 	<section class="wrapper">
-		<img src="img/bg-adapt-right.svg" class="adapt_block_img adapt_block_img_right">
-		<img src="img/adaptation-style-top-bg.svg" class="adapt_block_img adapt_block_img_left">
-		
 		<header class="container-fluid top_header"></header>
 		<div class="top_block container-fluid">
 			<div class="top_block_content container container-lg container-xl container-xxl">
-				<img src="img/top_block_bgimage.svg" class="top_block_backgroundImg">
+						<div src="img/bg-adapt-right.svg" class="adapt_block_img adapt_block_img_right" style="z-index: -1;"></div>
+				<div src="img/top_block_bgimage.svg" class="top_block_backgroundImg"></div>
 				<div class="top_block_content_main">
 					<div class="top_block_content_text">
 						<p class="top_block_content_text_1">ЦЕНТР РАЗВИТИЯ ДИСТАНЦИОННОГО ОБРАЗОВАНИЯ</p>
@@ -122,7 +120,7 @@
 			</div>
 		</div>
 		<div class="middle_block_slider container"></div>
-		<div class="news container">
+		<div class="news container" style="transform: translateY(-20px);">
 			<div class="middle_block_content_top_text news_top_text"><a href="news.html">Новости</a></div>
 			<div class="news_content">
 					<div class="news_content_blocks">
@@ -178,13 +176,23 @@
 		margin-right: -25px !important;
 	}
 	.classAddMargin {
-		transform: translateX(28px) translateY(-7px) !important;
+		transform: translateX(28px) !important;
 	}
 	.addMarginToo {
 		margin-left: -44px !important;
 	}
 	.classAddMargin2 {
-		transform: translateX(15px) translateY(-2px) !important;
+		transform: translateX(15px) !important;
+	}
+	@media(max-width: 767px){
+		.adapt_block_img_left {
+			display: block !important;
+		}
+		.nav_menu_burger {
+		-webkit-transform: translateY(-17px);
+		    -ms-transform: translateY(-17px);
+		        transform: translateY(-17px);
+		}
 	}
 </style>
 <script type="text/javascript">
@@ -208,16 +216,26 @@
     }
     if(windowWidth <= 767){
     	if( scrolled <= 37 ) {
+    		$('.logo_icon').css("transform", "translateY(-4px)");
+    		$('.top_block_nav_adapt').css('font-size', "14px");
     	$('.alerts_main_nav').css('margin-right', '-25px');    	
        		$('.top_header_logo_content').removeClass('transfromFirst');
        		$(".one_header").text("ЦЕНТР РАЗВИТИЯ ДИСТАНЦИОННОГО ОБРАЗОВАНИЯ");
+       		$('.top_header').css("height", "73px");
+       		$('.top_header_logo_content').css("height", "73px");
+       		$(".adapt_block_img_left").css("width", "260px");
     	}else {
+    		$('.logo_icon').css("transform", "translateY(0px)");
+    		$('.top_block_nav_adapt').css("font-size", "18px");
+    		$(".adapt_block_img_left").css("width", "160px");
+    		$('.top_header').css("height", "50px");
+    		$('.top_header_logo_content').css("height", "50px");
     		 $('.alerts_main_nav').css('margin-right', '0px');
     		$(".one_header").text("ЦРДО");
     		$('.top_header_logo_content').addClass('transfromFirst');
     	}
     } else if(windowWidth >= 1024 && windowWidth <=1439) {
-    	if( scrolled <= 37 ) { 	
+    	if( scrolled <= 37 ) {
        		$('.logo_icon').addClass('classAddMargin');
        		$('.top_block_nav_text ').addClass('classAddMargin');
     	}else {
