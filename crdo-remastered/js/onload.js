@@ -16,6 +16,13 @@ $(document).ready(function(){
 		        $('.burger_drop_menu', $(this).parent()).toggleClass("burger_drop_menu_static");
 		        $('.alert_arrow', $(this).parent()).toggleClass("alert_arrow_active");
 		    });
+            let k = 0;
+            $(document.body).on('touchmove', onScroll); // for mobile
+            $(window).on('scroll', onScroll); 
+
+            function onScroll(){
+                // Событие пролистывания на телефоне.
+            }
 		    $('.nav_menu_burger').click(function(){
 		        $('.alerts_burger').toggleClass("dsplayNn");
 		        $('.nav_burger_menu_main').toggleClass("nav_burger_menu_main_active");

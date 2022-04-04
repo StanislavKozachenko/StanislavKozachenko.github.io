@@ -52,6 +52,12 @@ $(document).ready(function(){
 			windowHeight = win.height();
     		windowWidth = win.width();
     	});
+    	if(windowHeight >= container.offset().top && windowHeight <= container.offset().bottom) {
+    		running();
+    	}
+    	else {
+    		paused();
+    	}
     	if(windowWidth <= 1023){
 	    	win.scroll(function () {
 		        var scrollPos = $(this).scrollTop(),
@@ -94,7 +100,6 @@ $(document).ready(function(){
 				       		paused();
 				       			if((scrollPos >= blockInfoScroll3 - windowHeight/1.5) && (scrollPos <= fadeHeight3 + fadeHeight2 + fadeHeight + 540)){
 						       		z = 1;
-						       		console.log("shit3");
 						       		running();
 						       	}
 						       	else {
@@ -132,8 +137,7 @@ $(document).ready(function(){
 						       		paused();
 						       	}
 						 }
-			       	
-			       	console.log(k,f,z);    	
+			       		
 		       }
 		        else
 		        {
