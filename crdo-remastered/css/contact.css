@@ -148,8 +148,3 @@
 		width: 95% !important;
 	}
 }
-@media(max-width: 1439px){
-	.br_adaptation {
-		display: block;
-	}
-}
