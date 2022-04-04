@@ -1491,78 +1491,78 @@ footer {
 	        animation-fill-mode: forwards;
 }
 .code_1 {
-	-webkit-animation: animationCode linear 10s infinite;
-	        animation: animationCode linear 10s infinite;
-	top: 253px;
+	-webkit-animation: animationCode linear 5s infinite;
+	        animation: animationCode linear 5s infinite;
+	top: 263px;
 	max-width: 100px;
 }
 .code_2 {
-	-webkit-animation: animationCode linear 10s infinite;
-	        animation: animationCode linear 10s infinite;
-	-webkit-animation-delay: 1s;
-	        animation-delay: 1s;
+	-webkit-animation: animationCode linear 5s infinite;
+	        animation: animationCode linear 5s infinite;
+	-webkit-animation-delay: 0.5s;
+	        animation-delay: 0.5s;
 	top: 263px;
 	max-width: 13px;
 }
 .code_3 {
-	-webkit-animation: animationCode linear 10s infinite;
-	        animation: animationCode linear 10s infinite;
-	-webkit-animation-delay: 2s;
-	        animation-delay: 2s;
+	-webkit-animation: animationCode linear 5s infinite;
+	        animation: animationCode linear 5s infinite;
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
 	top: 273px;
 	max-width: 66px;
 }
 .code_4 {
-	-webkit-animation: animationCode linear 10s infinite;
-	        animation: animationCode linear 10s infinite;
-	-webkit-animation-delay: 3s;
-	        animation-delay: 3s;
+	-webkit-animation: animationCode linear 5s infinite;
+	        animation: animationCode linear 5s infinite;
+	-webkit-animation-delay: 1.5s;
+	        animation-delay: 1.5s;
 	top:  283px;
 	max-width: 105px;
 }
 .code_5 {
-	-webkit-animation: animationCode linear 10s infinite;
-	        animation: animationCode linear 10s infinite;
-	-webkit-animation-delay: 4s;
-	        animation-delay: 4s;
+	-webkit-animation: animationCode linear 5s infinite;
+	        animation: animationCode linear 5s infinite;
+	-webkit-animation-delay: 2s;
+	        animation-delay: 2s;
 	top: 293px;
 	max-width: 40px;
 }
 .code_6 {
-	-webkit-animation: animationCode linear 10s infinite;
-	        animation: animationCode linear 10s infinite;
-	-webkit-animation-delay: 5s;
-	        animation-delay: 5s;
+	-webkit-animation: animationCode linear 5s infinite;
+	        animation: animationCode linear 5s infinite;
+	-webkit-animation-delay: 2.5s;
+	        animation-delay: 2.5s;
 	top:  313px;
 }
 .code_7 {
-	-webkit-animation: animationCode linear 10s infinite;
-	        animation: animationCode linear 10s infinite;
-	-webkit-animation-delay: 6s;
-	        animation-delay: 6s;
+	-webkit-animation: animationCode linear 5s infinite;
+	        animation: animationCode linear 5s infinite;
+	-webkit-animation-delay: 3s;
+	        animation-delay: 3s;
 	top:  323px;
 }
 .code_8 {
-	-webkit-animation: animationCode linear 10s infinite;
-	        animation: animationCode linear 10s infinite;
-	-webkit-animation-delay: 7s;
-	        animation-delay: 7s;
+	-webkit-animation: animationCode linear 5s infinite;
+	        animation: animationCode linear 5s infinite;
+	-webkit-animation-delay: 3.5s;
+	        animation-delay: 3.5s;
 	top:  333px;
 	max-width: 65px;
 }
 .code_9 {
-	-webkit-animation: animationCode linear 10s infinite;
-	        animation: animationCode linear 10s infinite;
-	-webkit-animation-delay: 8s;
-	        animation-delay: 8s;
+	-webkit-animation: animationCode linear 5s infinite;
+	        animation: animationCode linear 5s infinite;
+	-webkit-animation-delay: 4s;
+	        animation-delay: 4s;
 	top:  343px;
 	max-width: 50px;
 }
 .code_10 {
-	-webkit-animation: animationCode linear 10s infinite;
-	        animation: animationCode linear 10s infinite;
-	-webkit-animation-delay: 9s;
-	        animation-delay: 9s;
+	-webkit-animation: animationCode linear 5s infinite;
+	        animation: animationCode linear 5s infinite;
+	-webkit-animation-delay: 4.5s;
+	        animation-delay: 4.5s;
 	top:  353px;
 	max-width: 34px;
 }
