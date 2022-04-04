@@ -103,17 +103,17 @@
 				<div class="middle_block_2_content_main_block">
 					<div class="middle_block_2_content_main_block_element middle_block_element__1">
 						<div class="middle_block_2_top_side">Разработка<br>электронных курсов<div class="middle_block_2_hr"></div></div>
-						<div class="middle_block_2_middle_side">С использованием Ваших<br>отраслевых компетенций поможем<br>разработать структуру курса,<br>проконсультируем по созданию<br>его элементов, при необходимости<br>создадим текстовые материалы,<br>видеоконтент, модули контроля<br>знаний и другое, разместим курс<br>на электронной платформе,<br>обеспечим инструментами<br>для анализа хода и результатов<br>обучения.</div>
+						<div class="middle_block_2_middle_side">С использованием Ваших<br> отраслевых компетенций поможем<br> разработать структуру курса, <br>проконсультируем по созданию<br> его элементов, при необходимости<br> создадим текстовые материалы, <br>видеоконтент, модули контроля <br>знаний и другое, разместим курс <br>на электронной платформе, <br>обеспечим инструментами <br>для анализа хода и результатов <br>обучения.</div>
 						<div class="middle_block_2_bottom_side"><a href="develop-courses.html"><button class="middle_block_2_button">Подробнее</button></a></div>
 					</div>
 					<div class="middle_block_2_content_main_block_element middle_block_element__2">
 						<div class="middle_block_2_top_side">Сопровождение системы<br>электронного обучения<div class="middle_block_2_hr hr_2"></div></div>
-						<div class="middle_block_2_middle_side">Если Вы отвечаете за организацию<br>учебного процесса в учреждении<br>образования или назначены<br>ответственным за повышение<br>квалификации сотрудников<br>вашей компании, то мы готовы<br>выполнить комплекс работ<br>по организации дистанционного<br>онлайн-обучения.</div>
+						<div class="middle_block_2_middle_side">Если Вы отвечаете за организацию <br>учебного процесса в учреждении <br>образования или назначены <br>ответственным за повышение <br>квалификации сотрудников <br>вашей компании, то мы готовы <br>выполнить комплекс работ <br>по организации дистанционного <br>онлайн-обучения.</div>
 						<div class="middle_block_2_bottom_side"><a href="accompaniment.html"><button class="middle_block_2_button middle_block_2_button_2">Подробнее</button></a></div>
 					</div>
 					<div class="middle_block_2_content_main_block_element middle_block_element__3">
 						<div class="middle_block_2_top_side">Организация<br>онлайн мероприятий<div class="middle_block_2_hr hr_3"></div></div>
-						<div class="middle_block_2_middle_side">Выполняем комплекс технических<br>работ по организации<br>и проведению конференций,<br>вебинаров, мастер-классов<br>на основе услуги<br>видеоконференцсвязи<br>с возможностью использования<br>видеостудии и профессионального<br>оборудования.</div>
+						<div class="middle_block_2_middle_side">Выполняем комплекс технических <br>работ по организации <br>и проведению конференций, <br>вебинаров, мастер-классов <br>на основе услуги <br>видеоконференцсвязи <br>с возможностью использования <br>видеостудии и профессионального <br>оборудования.</div>
 						<div class="middle_block_2_bottom_side"><a href="organization.html"><button class="middle_block_2_button middle_block_2_button_3">Подробнее</button></a></div>
 					</div>
 				</div>
@@ -207,7 +207,6 @@
     	$(window).on("scroll", function () {
     var scrolled = $(this).scrollTop();
     if(windowWidth >= 2500){
-    	console.log("suka");
     	if( scrolled <= 37 ) {    	
        		$('.alerts_main_nav').addClass('niceMargin');
     	}else {
@@ -218,7 +217,7 @@
     	if( scrolled <= 37 ) {
     		$('.logo_icon').css("transform", "translateY(-4px)");
     		$('.top_block_nav_adapt').css('font-size', "14px");
-    	$('.alerts_main_nav').css('margin-right', '-25px');    	
+    		$('.alerts_main_nav').css('margin-right', '-25px');    	
        		$('.top_header_logo_content').removeClass('transfromFirst');
        		$(".one_header").text("ЦЕНТР РАЗВИТИЯ ДИСТАНЦИОННОГО ОБРАЗОВАНИЯ");
        		$('.top_header').css("height", "73px");
@@ -251,13 +250,25 @@
        		$('.top_block_nav_text ').removeClass('classAddMargin2');
     	}
     } else if(windowWidth >=1440){
-    	if( scrolled <= 37 ) { 	
+    	if( scrolled <= 37 ) { 
        		$('.logo_icon').removeClass('addMarginToo');
        		}
        		else {
+
     		$('.logo_icon').addClass('addMarginToo');
     	}
+    	
     }
+    if(windowWidth >= 1600){
+    		if(scrolled <= 37) {
+    			$('.alerts_main_nav').css('margin-right', '5px');
+    		}
+    	}
+    if(windowWidth >= 1900){
+    		if(scrolled <= 37) {
+    			$('.alerts_main_nav').css('margin-right', '-15px');
+    		}
+    	}
     });
     });
 </script>
