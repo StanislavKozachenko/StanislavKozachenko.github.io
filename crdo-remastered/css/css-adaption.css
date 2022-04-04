@@ -2,6 +2,9 @@
 	display: none !important;
 }
 @media (max-width: 767px){ /*440*/
+	.middle_block_2_middle_side br {
+		display: none;
+	}
 	.main_cloud {
 		display: none;
 	}
@@ -665,6 +668,9 @@
 	}
 	.alerts_main_nav {
 		display: none;
+	}
+	.middle_block_slider {
+		margin-bottom: 20px;
 	}
 }
 @media(min-width: 2000px){

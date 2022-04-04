@@ -428,8 +428,8 @@
 	    }
 	}
 	.fadeEffectOne{
-		-webkit-animation: anim 15s linear;
-		        animation: anim 15s linear;
+		-webkit-animation: anim 7.5s linear;
+		        animation: anim 7.5s linear;
 		-webkit-animation-fill-mode: forwards;
 		        animation-fill-mode: forwards;
 		-webkit-animation-delay: 0.2s;
@@ -438,22 +438,22 @@
 		                animation-play-state: running;
 	}
 	.fadeEffectTwo{
-		-webkit-animation: anima 15s linear;
-		        animation: anima 15s linear;
+		-webkit-animation: anima 7.5s linear;
+		        animation: anima 7.5s linear;
 		-webkit-animation-fill-mode: forwards;
 		        animation-fill-mode: forwards;
-		-webkit-animation-delay: 5.6s;
-		        animation-delay: 5.6s;
+		-webkit-animation-delay: 3.9s;
+		        animation-delay: 3.9s;
 		        -webkit-animation-play-state: running;
 		                animation-play-state: running;
 	}
 	.fadeEffectThree {
-		-webkit-animation: anim 15s linear;
-		        animation: anim 15s linear;
+		-webkit-animation: anim 7.5s linear;
+		        animation: anim 7.5s linear;
 		-webkit-animation-fill-mode: forwards;
 		        animation-fill-mode: forwards;
-		-webkit-animation-delay: 10.2s;
-		        animation-delay: 10.2s;
+		-webkit-animation-delay: 5.2s;
+		        animation-delay: 5.2s;
 		        -webkit-animation-play-state: running;
 		                animation-play-state: running;
 	}
@@ -465,47 +465,47 @@
 		z-index: 2;
 	}
 	.one_fade  {
-			-webkit-animation-delay: 2s;
-	        animation-delay: 2s;
+			-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
 	}
 	.two_fade  {
-			-webkit-animation-delay: 5s;
-	        animation-delay: 5s;
+			-webkit-animation-delay: 2.4s;
+	        animation-delay: 2.4s;
 	}
 	.one_fade_img {
-			-webkit-animation-delay: 3.5s;
-	        animation-delay: 3.5s
+			-webkit-animation-delay: 1.7s;
+	        animation-delay: 1.7s
 	}
 	.five_fade_img {
-		-webkit-animation-delay: 15.4s;
-		        animation-delay: 15.4s;
+		-webkit-animation-delay: 7.6s;
+		        animation-delay: 7.6s;
 	}
 	.six_fade {
-		-webkit-animation-delay: 17.5s;
-		        animation-delay: 17.5s;
+		-webkit-animation-delay: 8.7s;
+		        animation-delay: 8.7s;
 	}
 	.four_fade  {
-				-webkit-animation-delay: 10s;
-		        animation-delay: 10s;
+				-webkit-animation-delay: 5s;
+		        animation-delay: 5s;
 	}
 	.three_fade_img {
-		-webkit-animation-delay: 9s;
-		        animation-delay: 9s;
+		-webkit-animation-delay: 4.6s;
+		        animation-delay: 4.6s;
 	}
 	.four_fade_img {
-		-webkit-animation-delay: 11.3s;
-		        animation-delay: 11.3s;
+		-webkit-animation-delay: 5.7s;
+		        animation-delay: 5.7s;
 	}
 	.two_fade_img  {
-			-webkit-animation-delay: 6.5s;
-	        animation-delay: 6.5s;
+			-webkit-animation-delay: 3.4s;
+	        animation-delay: 3.4s;
 	}
 	.three_fade  {
-			-webkit-animation-delay: 8s;
-	        animation-delay: 8s;
+			-webkit-animation-delay: 4s;
+	        animation-delay: 4s;
 	}
 	.five_fade {
-		-webkit-animation-delay: 13s;
-		        animation-delay: 13s;
+		-webkit-animation-delay: 6.5s;
+		        animation-delay: 6.5s;
 	}
 }

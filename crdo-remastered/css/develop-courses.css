@@ -207,8 +207,8 @@
     }
 }
 .fadeEffectOne{
-	-webkit-animation: anim 15s linear;
-	        animation: anim 15s linear;
+	-webkit-animation: anim 7s linear;
+	        animation: anim 7s linear;
 	-webkit-animation-fill-mode: forwards;
 	        animation-fill-mode: forwards;
 	-webkit-animation-delay: 0.2s;
@@ -216,25 +216,36 @@
 	        -webkit-animation-play-state: paused;
 	                animation-play-state: paused;
 }
+
 .fadeEffectTwo{
-	-webkit-animation: anima 15s linear;
-	        animation: anima 15s linear;
+	-webkit-animation: anima 7s linear;
+	        animation: anima 7s linear;
 	-webkit-animation-fill-mode: forwards;
 	        animation-fill-mode: forwards;
-	-webkit-animation-delay: 4.6s;
-	        animation-delay: 4.6s;
+	-webkit-animation-delay: 2.3s;
+	        animation-delay: 2.3s;
 	        -webkit-animation-play-state: paused;
 	                animation-play-state: paused;
 }
 .fadeEffectThree {
-	-webkit-animation: anim 15s linear;
-	        animation: anim 15s linear;
+	-webkit-animation: anim 7s linear;
+	        animation: anim 7s linear;
 	-webkit-animation-fill-mode: forwards;
 	        animation-fill-mode: forwards;
-	-webkit-animation-delay: 8.2s;
-	        animation-delay: 8.2s;
+	-webkit-animation-delay: 4s;
+	        animation-delay: 4s;
 	        -webkit-animation-play-state: paused;
 	                animation-play-state: paused;
+}
+@media (min-width: 1900px){
+	.fadeEffectTwo{
+		-webkit-animation-delay: 1.8s;
+	        animation-delay: 1.8s;
+	}
+	.fadeEffectThree{
+		-webkit-animation-delay: 3.6s;
+	        animation-delay: 3.6s;
+	}
 }
 .line_image {
 	z-index: 1;
@@ -424,48 +435,48 @@
 	                animation-play-state: paused;
 }
 .one_fade {
-	-webkit-animation-delay: 1.9s;
-	        animation-delay: 1.9s;
+	-webkit-animation-delay: 0.7s;
+	        animation-delay: 0.7s;
 }
 .one_fade_img {
-	-webkit-animation-delay: 3.3s;
-	        animation-delay: 3.3s
+	-webkit-animation-delay: 1.5s;
+	        animation-delay: 1.5s;
 }
 .two_fade {
-	-webkit-animation-delay: 4s;
-	        animation-delay: 4s;
+	-webkit-animation-delay: 2s;
+	        animation-delay: 2s;
 }
 .two_fade_img{
-	-webkit-animation-delay: 5.5s;
-	        animation-delay: 5.5s
+	-webkit-animation-delay: 2.6s;
+	        animation-delay: 2.6s
 }
 .three_fade{
-	-webkit-animation-delay: 6.5s;
-	        animation-delay: 6.5s;
+	-webkit-animation-delay: 3s;
+	        animation-delay: 3s;
 }
 .three_fade_img{
-	-webkit-animation-delay: 7.7s;
-	        animation-delay: 7.7s;
+	-webkit-animation-delay: 3.4s;
+	        animation-delay: 3.4s;
 }
 .four_fade{
-	-webkit-animation-delay: 8.3s;
-	        animation-delay: 8.3s;
+	-webkit-animation-delay: 3.9s;
+	        animation-delay: 3.9s;
 }
 .four_fade_img{
-	-webkit-animation-delay: 9.5s;
-	        animation-delay: 9.5s;
+	-webkit-animation-delay: 4.4s;
+	        animation-delay: 4.4s;
 }
 .five_fade{
-	-webkit-animation-delay: 10.3s;
-	        animation-delay: 10.3s;
+	-webkit-animation-delay: 4.8s;
+	        animation-delay: 4.8s;
 }
 .five_fade_img{
-	-webkit-animation-delay: 12.3s;
-	        animation-delay: 12.3s;
+	-webkit-animation-delay: 5.6s;
+	        animation-delay: 5.6s;
 }
 .six_fade{
-	-webkit-animation-delay: 14.3s;
-	        animation-delay: 14.3s;
+	-webkit-animation-delay: 6.5s;
+	        animation-delay: 6.5s;
 }
 /*Anim*/
 @-webkit-keyframes anim_dev_one {

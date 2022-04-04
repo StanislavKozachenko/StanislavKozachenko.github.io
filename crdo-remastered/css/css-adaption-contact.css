@@ -1,4 +1,11 @@
-
+.br_persons_desktop {
+	display: block;
+}
+@media(max-width: 1023px){
+	.br_persons_desktop {
+		display: none;
+	}
+}
 @media (max-width: 767px){
 	.logo_icon {
 		content: url(../img/320_top_block.png) !important;

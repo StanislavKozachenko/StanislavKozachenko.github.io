@@ -135,8 +135,8 @@
 		z-index: 40;
 	}
 	.girl_falling {
-		-webkit-animation: 6s ease-in-out infinite girl_falling_adapt;
-		        animation: 6s ease-in-out infinite girl_falling_adapt;
+		-webkit-animation: 8s ease-in-out infinite girl_falling_adapt;
+		        animation: 8s ease-in-out infinite girl_falling_adapt;
 		left: 180px;
 	}
 	.accomp_second_block_content_text_top {
