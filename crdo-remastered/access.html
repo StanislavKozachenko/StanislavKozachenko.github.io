@@ -1,0 +1,408 @@
+<html lang="ru">
+
+ <head>
+  
+    <meta charset="utf-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <link rel="shortcut icon" href="img/site_logo.png" type="image/x-icon">
+    <title>Обратная связь</title>
+	
+<script>
+var role = 1;
+var choice =0;
+var other =1;
+function getval_1(sel)
+{
+	role = sel.value;
+	
+	if (sel.value == 1)	
+		{ 
+		document.getElementById("place_user").style.display = "inline"; 
+		document.getElementById("place_eor").style.display = "none";
+		document.getElementById("Check_EOR").checked =false;
+		document.getElementById("info_eor").style.display = "none";
+		document.getElementById("selecktor").disabled = false;
+		document.getElementById("cat_select").style.display = "inline";
+
+			if (choice==1 ) 
+			{ 
+				if (other==1 ) 
+				{
+				document.getElementById("place_stud_pass").style.display = "inline"; 
+				
+				document.getElementById("password_1").disabled = true; document.getElementById("password_2").disabled = true;
+				document.getElementById("place_user_pass").style.display = "none";
+				document.getElementById("place_other_form").style.display = "none";
+				}
+				else 
+				{
+				document.getElementById("place_stud_pass").style.display = "none";  
+		        document.getElementById("password_1").disabled = true; document.getElementById("password_2").disabled = true;
+				document.getElementById("place_user_pass").style.display = "none";
+				document.getElementById("place_other_form").style.display = "inline";
+				}
+		
+			}
+		}
+	else 
+		{  
+			if (choice==1 ) 
+			{
+				if (other==1 ) 
+				 {		
+				 document.getElementById("place_user_select").style.display = "inline";
+				 
+				 document.getElementById("password_1").disabled = false; document.getElementById("password_2").disabled = false;
+				 document.getElementById("place_user_pass").style.display = "inline";
+				 document.getElementById("place_stud_pass").style.display = "none";
+				 document.getElementById("place_other_form").style.display = "none";
+				 }
+				 else {
+				document.getElementById("place_stud_pass").style.display = "none";  		 
+				document.getElementById("password_1").disabled = true; document.getElementById("password_2").disabled = true;
+				document.getElementById("place_user_pass").style.display = "none";
+				document.getElementById("place_other_form").style.display = "inline";
+				}			
+			}
+	        document.getElementById("place_user").style.display = "none"; 
+
+ if (role == 2 && choice == 0)
+		{ document.getElementById("place_eor").style.display = "inline";} else{ document.getElementById("place_eor").style.display = "none"; }
+
+			document.getElementById("group1").value = null; 
+			document.getElementById("group2").value = null; 			
+		}
+if (role == 1 && choice == 0)
+		{ 		 
+		document.getElementById("btnSent").disabled = true;
+		}
+		
+}
+
+function getval_2(sel2)
+{	
+	choice = sel2.value;
+ 
+ if (role == 2 && choice == 0)
+		{ document.getElementById("place_eor").style.display = "inline";} else{ document.getElementById("place_eor").style.display = "none";}
+	if (sel2.value == 0	)
+		{
+		
+		 document.getElementById("numRadio1").checked=true;		
+		 other =1;
+		 document.getElementById("place_user_select").style.display = "none";
+		 document.getElementById("place_user_pass").style.display = "none";
+		 document.getElementById("place_stud_pass").style.display = "none";
+		 document.getElementById("place_other_form").style.display = "none";
+		 document.getElementById("password_1").disabled = true; document.getElementById("password_2").disabled = true;
+		 document.getElementById("btnSent").disabled = true;		 
+		}
+	else if (sel2.value == 1)
+		{
+		 document.getElementById("btnSent").disabled = false;
+		 document.getElementById("numRadio1").checked=true;		
+		 other =1;
+		 
+		if (role == 2 )
+		{
+       		
+	     document.getElementById("place_user_select").style.display = "inline";
+		 document.getElementById("password_1").disabled = false; document.getElementById("password_2").disabled = false;
+	 	 document.getElementById("place_user_pass").style.display = "inline";
+		 document.getElementById("place_stud_pass").style.display = "none";
+		 document.getElementById("place_other_form").style.display = "none";
+			
+		 }	 
+		 else
+		 { 
+			document.getElementById("place_stud_pass").style.display = "inline";
+	        document.getElementById("numRadio1").checked=true;	
+			other =1;			
+	        document.getElementById("place_user_select").style.display = "inline";
+			document.getElementById("place_other_form").style.display = "none";
+			
+		 } 
+		}
+		
+	else
+		{
+		 document.getElementById("place_eor").style.display = "none";
+		 document.getElementById("place_user_select").style.display = "none";
+		 document.getElementById("place_stud_pass").style.display = "none";
+		 document.getElementById("password_1").disabled = true; document.getElementById("password_2").disabled = true;
+	 	 document.getElementById("place_user_pass").style.display = "none";
+		 document.getElementById("place_other_form").style.display = "inline";
+		 document.getElementById("btnSent").disabled = false;
+		}
+}
+
+function getval_3(sel3)
+{	
+ other =sel3.value;
+	
+	if (sel3.value == 1)
+		{
+
+		if (role == 2 )	
+			{	
+			document.getElementById("password_1").disabled = false; document.getElementById("password_2").disabled = false;
+			document.getElementById("place_user_pass").style.display = "inline";
+			document.getElementById("place_stud_pass").style.display = "none";
+			document.getElementById("place_other_form").style.display = "none";  
+			}
+		else {			
+			document.getElementById("password_1").disabled = true; document.getElementById("password_2").disabled = true;
+			document.getElementById("place_user_pass").style.display = "none";
+			document.getElementById("place_stud_pass").style.display = "inline";
+			document.getElementById("place_other_form").style.display = "none"; }		
+		} 
+	else 
+		{
+		document.getElementById("password_1").disabled = true; document.getElementById("password_2").disabled = true;
+		document.getElementById("place_user_pass").style.display = "none";  
+		document.getElementById("place_stud_pass").style.display = "none";
+		document.getElementById("place_other_form").style.display = "inline";
+		}
+}
+
+function clearInput() 
+		{
+        document.getElementById("FilePath").value = null;  	    
+		}
+		
+function clearForm() 
+		{
+		 document.getElementById("client").reset();
+		 document.getElementById("numRadio1").checked=true;
+		 other =1;
+		 role = 1;
+		 choice =0;
+		 document.getElementById("place_user").style.display = "inline";    
+		 document.getElementById("place_user_select").style.display = "none";
+		 document.getElementById("place_eor").style.display = "none";
+		 document.getElementById("info_eor").style.display = "none";
+		 document.getElementById("place_user_pass").style.display = "none";
+		 document.getElementById("place_stud_pass").style.display = "none";
+		 document.getElementById("place_other_form").style.display = "none";
+		 document.getElementById("password_1").disabled = true; document.getElementById("password_2").disabled = true;
+		 document.getElementById("btnSent").disabled = true;	
+		 document.getElementById("selecktor").disabled = false;
+		 document.getElementById("cat_select").style.display = "inline";
+		 						document.getElementById("eor_f_name").disabled = true;
+									document.getElementById("eor_s_name").disabled = true;
+												document.getElementById("eor_step").disabled = true;
+															document.getElementById("eor_kaf").disabled = true;
+																		document.getElementById("eor_author").disabled = true;
+			
+		}	
+		
+		function eor_1() 
+{
+        if (document.getElementById("Check_EOR").checked) {
+			document.getElementById("selecktor").disabled = true;
+			document.getElementById("info_eor").style.display = "inline";
+			document.getElementById("cat_select").style.display = "none";
+			document.getElementById("btnSent").disabled = false;
+						
+						document.getElementById("eor_f_name").disabled = false;
+									document.getElementById("eor_s_name").disabled = false;
+												document.getElementById("eor_step").disabled = false;
+															document.getElementById("eor_kaf").disabled = false;
+																		document.getElementById("eor_author").disabled = false;	
+
+			
+		
+        } else {
+           document.getElementById("selecktor").disabled = false;
+		   document.getElementById("cat_select").style.display = "inline";
+		   document.getElementById("info_eor").style.display = "none";
+		   document.getElementById("btnSent").disabled = true;	
+
+																		
+						document.getElementById("eor_f_name").disabled = true;
+									document.getElementById("eor_s_name").disabled = true;
+												document.getElementById("eor_step").disabled = true;
+															document.getElementById("eor_kaf").disabled = true;
+																		document.getElementById("eor_author").disabled = true;
+			
+			
+        }
+		
+		
+    }
+
+</script>
+
+</head>
+  
+  <body class="container" style="padding: 2em 0 0 0; background-repeat: no-repeat; background-position: center bottom" background="img/png-bsuir_forms.png" >
+  
+  <script>
+	        if (performance.navigation.type == 1) window.location.href = 'form1.html';
+			if (String(window.performance.getEntriesByType("navigation")[0].type) === "back_forward") window.location.reload();
+  </script>
+
+	<div class="container">
+<form id="client" action="send.php" method="post"  enctype="multipart/form-data">
+	
+	    <img src="img/site_logo_forms.png" style=" float:left; margin: 0 10px 10px 0; "><h4 style="padding: 20px 0 0 0;"><b>Обратная связь</b>. Информация о заявителе:</h4>
+		<div class="input-group mb-3">
+			<span for="name" class="input-group-text" id="name-text" style="width: 100px;">Ф. И. О.</span>
+			<input type="text" class="form-control" id="name" name="from_name" aria-describedby="name" placeholder="Иванов Иван Иванович" required>
+	    </div>
+	    <div class="input-group mb-3">
+		    <span for="email" class="input-group-text" id="email-text" style="width: 100px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-right:0.5em;" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/></svg> E-mail</span>
+		    <input type="email" name="from_email" class="form-control" placeholder="example@bsuir.by" aria-label="email" aria-describedby="email" required>
+	    </div>		
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="authRadio" id="authRadio2" value="1"  onchange="getval_1(this);" checked >
+			<label class="form-check-label" for="authRadio2" >Обучающийся</label>
+		</div>
+		<div class="form-check mb-3">
+			<input class="form-check-input" type="radio" name="authRadio" id="authRadio1" value="2"  onchange="getval_1(this); " >
+			<label class="form-check-label" for="authRadio1" >Преподаватель / Сотрудник университета</label>
+		</div>
+		
+<div  id="place_user">
+
+				<div class="mb-3" >
+			<div class="input-group">
+				<span for="grpup1" class="input-group-text" id="group1-text">Группа</span>
+				<input type="text" name="stGroup" class="form-control" id="group1" aria-describedby="group1" placeholder="000000">
+			</div>
+			<div id="grouphelp" class="form-text">Если Вы не студент БГУИР, оставьте поле пустым.</div>
+	    </div>
+		
+				<div class="mb-4">
+			<div class="input-group">
+				<span for="grpup2" class="input-group-text" id="group2-text">Номер студенческого билета</span>
+				<input type="text"  name="stBilet" class="form-control" id="group2" aria-describedby="group2" placeholder="">
+			</div>
+			<div id="grouphelp" class="form-text">Если у Вас нет студенческого билета или он Вам неизвестен, оставьте поле пустым.</div>
+	    </div>
+		</div>
+<div  id="cat_select" style="display:inline;">
+	    <h4>Категория проблемы:</h4>
+		<select name="opt_help" class="form-select mb-3" aria-label="select"  id="selecktor" onchange="getval_2(this);" required >
+			<option value="0">Выберите категорию проблемы...</option>
+			<option value="1">Проблемы с авторизацией</option>
+			<option value="2">Доступ к материалам дисциплин</option>
+			<option value="3">Ошибки в учебных материалах/тестах</option>
+			<option value="4">Взаимодействие с преподавателем</option>
+			<option value="5">Предложения по улучшению</option>
+			<option value="6">Другое</option>
+		</select>
+		</div>
+<div  id="place_user_select" style="display:none;">
+		
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="numRadio" id="numRadio1" value="1" onchange="getval_3(this);" checked>
+			<label class="form-check-label" for="numRadio1">Восстановление доступа (сброс пароля) к СЭО</label>
+		</div>
+		<div class="form-check mb-3">
+			<input class="form-check-input" type="radio" name="numRadio" id="numRadio2" value="2" onchange="getval_3(this);" >
+			<label class="form-check-label" for="numRadio2">Другое</label>
+		</div>
+		</div>
+		
+		<div  id="place_stud_pass" style="display:none;">
+
+				<div class="alert alert-info" role="alert" >
+  <b>Пароль для доступа к СЭО аналогичен паролю к <a href="https://iis.bsuir.by/" target="_blank">ИИС БГУИР</a></b>. В случае невозможности смены (восстановления) пароля  на  сайте  <b><a href="https://passwords.bsuir.by/" target="_blank">https://passwords.bsuir.by/</a></b> нажмите кнопку "Отправить сообщение" и ожидайте ответа технической поддержки.</div>
+		</div>
+		
+<div  id="place_user_pass" style="display:none;">
+
+		<div class="input-group mb-3">
+		  
+			<span class="input-group-text" >Подразделение</span>		 
+		  <input type="text" class="form-control" id = "password_1" name="pass1"  placeholder="каф. ПОИТ"   required disabled>
+		</div>
+		
+		<div class="input-group mb-3">		
+			<span class="input-group-text" >Рабочий номер телефона</span>		 
+		  <input type="text" class="form-control" id="password_2" name="pass2" placeholder="293-ХХ-ХХ"  required disabled>
+		</div>		
+
+</div>
+		
+<div  id="place_other_form" style="display:none;">
+
+		<div class="input-group mb-3">
+			<span class="input-group-text">Описание<br/>проблемы</span>
+			<textarea name="mess" class="form-control" aria-label="Описание<br/>проблемы" rows="5" placeholder="Введите текст..."></textarea>
+		</div>	
+		
+
+<div class="mb-3">
+		<label for="FilePath" class="form-label">Выберите файл</label>
+		<div class="input-group">
+		<input name = "xfile" type="file" class="form-control" id="FilePath" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+		<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" onclick="clearInput();" >Удалить</button>
+		</div></div>
+			</div>
+			
+			
+<div  id="place_eor" style="display:none;"  >
+
+<div class="alert alert-info" role="alert"  style="width: 400px;">
+    <div class="form-check form-switch" >
+  <input class="form-check-input" type="checkbox" id="Check_EOR" name="Check_EOR" value="1" onchange="eor_1(this);">
+  <label class="form-check-label" for="Check_EOR"><strong>Подать заявку на создание шаблона ЭОР</strong></label>
+  
+</div>
+</div>
+</div>
+<div  id="info_eor" style="display:none;"   >
+		 		<div class="mb-3"></div>
+		 <div class="input-group mb-3" >
+		 
+		  <span class="input-group-text" id="basic-addon1"  style="width: 300px;" >Полное название дисциплины</span>
+		  <input type="text" class="form-control" id="eor_f_name"  name="eor_f_name"  placeholder="ЭОР «Управление качеством в логистике»" aria-describedby="basic-addon1" required disabled>
+		</div>
+		<div class="input-group mb-3" >
+		  <span class="input-group-text" id="basic-addon1" style="width: 300px;">Сокращённое название дисциплины</span>
+		  <input type="text" class="form-control" id="eor_s_name"  name="eor_s_name" placeholder="ЭОР «УКвЛ»"  aria-describedby="basic-addon1" required disabled>
+		</div>
+		<div class="input-group mb-3" style="max-width: 400px;">		 
+		  <span class="input-group-text" id="basic-addon1" style="width: 160px;" >Ступень обучения</span>
+		  <input type="text" class="form-control" id="eor_step"  name="eor_step" placeholder="1 ступень" aria-describedby="basic-addon1" required disabled>
+		</div>
+		
+		<div class="input-group mb-3"  style="max-width: 400px;">
+		  <span class="input-group-text" id="basic-addon1" style="width: 160px;">Подразделение</span>
+		  <input type="text" class="form-control" id="eor_kaf"  name="eor_kaf" placeholder="кафедра Менеджмента"  aria-describedby="basic-addon1" required disabled>
+		</div>
+		<div class="input-group">
+  <span class="input-group-text" style="width: 300px;">ФИО разработчика(-ов) полностью,<br>наличие учетной записи в СЭО</span>
+  <textarea class="form-control" aria-label="With textarea"  id="eor_author"  name="eor_author" rows="3" required disabled></textarea>
+</div>
+<div id="grouphelp" class="form-text">Если у разработчиков ЭОР отсутствуют аккаунты в СЭО, технические специалисты смогут их создать.</div>
+</div>
+<br>
+						<div class="mb-3">
+ <div class="g-recaptcha" data-sitekey="6LeSkb4dAAAAAPr6LM5vJIHD6i0QBQ5bOITsZ-Al"></div><br>
+				 <div class="form-check" >
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"  name = "agreement" required>
+  <label class="form-check-label" for="flexCheckIndeterminate">Нажимая кнопку "Отправить сообщение", Вы подтверждаете свою осведомленность и согласие на обработку Ваших персональных данных для формирования ответа на Ваш запрос, в том числе на их предоставление посредством электронной почты, указанным Вами способом.
+  </label>
+</div>
+		 </div>	
+		<div class="mb-3">
+
+		 <button type="submit" class="btn btn-primary"  id="btnSent"  name = "sendMail1" disabled >Отправить сообщение</button>
+		 <button class="btn btn-outline-secondary" type="button"  onclick="clearForm();" >Очистить форму</button>		
+		 </div>
+		 
+</form><div class="mb-5"></div>
+	
+	
+	</div>
+	
+	
+  </body>
+</html>
