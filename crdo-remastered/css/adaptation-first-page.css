@@ -856,7 +856,7 @@
 		width: 660px !important;
 	}
 	.top_block_image {
-		content: url(../img/bg_first_page_restyle.svg) !important;
+		content: url(../img/mainImage.svg) !important;
 		height: auto;
 		max-width: 605px;
 		width: 605px;
@@ -1095,7 +1095,7 @@
 		width: 660px !important;
 	}
 	.top_block_image {
-		content: url(../img/bg_first_page_restyle.svg) !important;
+		content: url(../img/mainImage.svg) !important;
 	    height: auto;
 	    width: 705px;
 	    max-width: 705px;
@@ -1151,7 +1151,7 @@
 		        transform: translateX(px) !important;
 	}
 	.logo_icon {
-		content: url(../img/1440_logo_top.png);
+		content: url(../img/icon_top.svg);
 	}
 	.top_block_nav_text {
 		font-family: Montserrat;
@@ -1227,7 +1227,7 @@
 		max-width: 270px;
 	}
 	.crdo img {
-		content: url(../img/logo_1440_footer.png);
+		content: url(../img/icon_top.svg);
 	}
 	.footer_content_element_left_text {
 		font-family: Montserrat;

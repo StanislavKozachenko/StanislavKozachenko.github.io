@@ -420,11 +420,7 @@
 	.adapt_block_img_left {
 		width: 260px;
 	}
-	.top_block_nav_text_main {
-		-webkit-transition: .2s;
-		-o-transition: .2s;
-		transition: .2s;
-	}
+
 	.logo_icon {
 		-webkit-transition: .2s;
 		-o-transition: .2s;
