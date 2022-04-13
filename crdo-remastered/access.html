@@ -9,6 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src='https://www.google.com/recaptcha/api.js' async defer></script>
     <link rel="shortcut icon" href="img/site_logo.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="  crossorigin="anonymous"></script>
     <title>Обратная связь</title>
 	
 <script>
@@ -238,9 +240,7 @@ function clearForm()
 </script>
 
 </head>
-  
   <body class="container" style="padding: 2em 0 0 0; background-repeat: no-repeat; background-position: center bottom" background="img/png-bsuir_forms.png" >
-  
   <script>
 	        if (performance.navigation.type == 1) window.location.href = 'access.html';
 			if (String(window.performance.getEntriesByType("navigation")[0].type) === "back_forward") window.location.reload();
@@ -252,11 +252,11 @@ function clearForm()
 	    <img src="img/site_logo_forms.png" style=" float:left; margin: 0 10px 10px 0; "><h4 style="padding: 20px 0 0 0;"><b>Обратная связь</b>. Информация о заявителе:</h4>
 		<div class="input-group mb-3">
 			<span for="name" class="input-group-text" id="name-text" style="width: 100px; background: #E7F1FA;">Ф. И. О.</span>
-			<input type="text" class="form-control" id="name" name="from_name" aria-describedby="name" placeholder="Иванов Иван Иванович" required>
+			<input type="text" class="form-control user_data" style="background: #E7F1FA;" id="name" name="from_name" aria-describedby="name" placeholder="Иванов Иван Иванович" required>
 	    </div>
 	    <div class="input-group mb-3">
-		    <span for="email" class="input-group-text" id="email-text" style="width: 100px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-right:0.5em;" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/></svg> E-mail</span>
-		    <input type="email" name="from_email" class="form-control" placeholder="example@bsuir.by" aria-label="email" aria-describedby="email" required>
+		    <span for="email" class="input-group-text" id="email-text" style="width: 100px; background: #E7F1FA;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-right:0.5em;" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/></svg> E-mail</span>
+		    <input type="email" name="from_email" style="background: #E7F1FA;" class="form-control user_data" placeholder="example@bsuir.by" aria-label="email" aria-describedby="email" required>
 	    </div>		
 		<div class="form-check">
 			<input class="form-check-input" type="radio" name="authRadio" id="authRadio2" value="1"  onchange="getval_1(this);" checked >
@@ -271,16 +271,16 @@ function clearForm()
 
 				<div class="mb-3" >
 			<div class="input-group">
-				<span for="grpup1" class="input-group-text" id="group1-text">Группа</span>
-				<input type="text" name="stGroup" class="form-control" id="group1" aria-describedby="group1" placeholder="000000">
+				<span for="grpup1" class="input-group-text" id="group1-text" style="background: #E7F1FA;">Группа</span>
+				<input type="text" name="stGroup" style="background: #E7F1FA;" class="form-control user_data" id="group1" aria-describedby="group1" placeholder="000000">
 			</div>
 			<div id="grouphelp" class="form-text">Если Вы не студент БГУИР, оставьте поле пустым.</div>
 	    </div>
 		
 				<div class="mb-4">
 			<div class="input-group">
-				<span for="grpup2" class="input-group-text" id="group2-text">Номер студенческого билета</span>
-				<input type="text"  name="stBilet" class="form-control" id="group2" aria-describedby="group2" placeholder="">
+				<span for="grpup2" class="input-group-text" id="group2-text" style="background: #E7F1FA;">Номер студенческого билета</span>
+				<input type="text"  name="stBilet" style="background: #E7F1FA;" class="form-control user_data" id="group2" aria-describedby="group2" placeholder="">
 			</div>
 			<div id="grouphelp" class="form-text">Если у Вас нет студенческого билета или он Вам неизвестен, оставьте поле пустым.</div>
 	    </div>
@@ -333,15 +333,15 @@ function clearForm()
 <div  id="place_other_form" style="display:none;">
 
 		<div class="input-group mb-3">
-			<span class="input-group-text">Описание<br/>проблемы</span>
-			<textarea name="mess" class="form-control" aria-label="Описание<br/>проблемы" rows="5" placeholder="Введите текст..."></textarea>
+			<span class="input-group-text" style="background: #E7F1FA;">Описание<br/>проблемы</span>
+			<textarea name="mess" class="form-control user_data" style="background: #E7F1FA;" aria-label="Описание<br/>проблемы" rows="5" placeholder="Введите текст..."></textarea>
 		</div>	
 		
 
 <div class="mb-3">
-		<label for="FilePath" class="form-label">Выберите файл</label>
+		<label for="FilePath" class="form-label" >Выберите файл</label>
 		<div class="input-group">
-		<input name = "xfile" type="file" class="form-control" id="FilePath" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+		<input  name = "xfile" type="file" class="form-control" id="FilePath" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
 		<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" onclick="clearInput();" >Удалить</button>
 		</div></div>
 			</div>
@@ -349,7 +349,7 @@ function clearForm()
 			
 <div  id="place_eor" style="display:none;"  >
 
-<div class="alert alert-info" role="alert"  style="width: 400px;">
+<div class="alert alert-info" role="alert"  style="width: 400px">
     <div class="form-check form-switch" >
   <input class="form-check-input" type="checkbox" id="Check_EOR" name="Check_EOR" value="1" onchange="eor_1(this);">
   <label class="form-check-label" for="Check_EOR"><strong>Подать заявку на создание шаблона ЭОР</strong></label>
@@ -361,25 +361,25 @@ function clearForm()
 		 		<div class="mb-3"></div>
 		 <div class="input-group mb-3" >
 		 
-		  <span class="input-group-text" id="basic-addon1"  style="width: 300px;" >Полное название дисциплины</span>
-		  <input type="text" class="form-control" id="eor_f_name"  name="eor_f_name"  placeholder="ЭОР «Управление качеством в логистике»" aria-describedby="basic-addon1" required disabled>
+		  <span class="input-group-text" id="basic-addon1" style="width: 300px; background: #E7F1FA;">Полное название дисциплины</span>
+		  <input type="text" class="form-control user_data" style="background: #E7F1FA;" id="eor_f_name"  name="eor_f_name"  placeholder="ЭОР «Управление качеством в логистике»" aria-describedby="basic-addon1" required disabled>
 		</div>
 		<div class="input-group mb-3" >
-		  <span class="input-group-text" id="basic-addon1" style="width: 300px;">Сокращённое название дисциплины</span>
-		  <input type="text" class="form-control" id="eor_s_name"  name="eor_s_name" placeholder="ЭОР «УКвЛ»"  aria-describedby="basic-addon1" required disabled>
+		  <span class="input-group-text" id="basic-addon1" style="width: 300px; background: #E7F1FA;">Сокращённое название дисциплины</span>
+		  <input type="text" class="form-control user_data" style="background: #E7F1FA;" id="eor_s_name"  name="eor_s_name" placeholder="ЭОР «УКвЛ»"  aria-describedby="basic-addon1" required disabled>
 		</div>
 		<div class="input-group mb-3" style="max-width: 400px;">		 
-		  <span class="input-group-text" id="basic-addon1" style="width: 160px;" >Ступень обучения</span>
-		  <input type="text" class="form-control" id="eor_step"  name="eor_step" placeholder="1 ступень" aria-describedby="basic-addon1" required disabled>
+		  <span class="input-group-text" id="basic-addon1" style="width: 300px; background: #E7F1FA;">Ступень обучения</span>
+		  <input type="text" class="form-control user_data" id="eor_step"style="background: #E7F1FA;"  name="eor_step" placeholder="1 ступень" aria-describedby="basic-addon1" required disabled>
 		</div>
 		
 		<div class="input-group mb-3"  style="max-width: 400px;">
-		  <span class="input-group-text" id="basic-addon1" style="width: 160px;">Подразделение</span>
-		  <input type="text" class="form-control" id="eor_kaf"  name="eor_kaf" placeholder="кафедра Менеджмента"  aria-describedby="basic-addon1" required disabled>
+		  <span class="input-group-text" id="basic-addon1" style="width: 300px; background: #E7F1FA;">Подразделение</span>
+		  <input type="text" class="form-control user_data" id="eor_kaf" style="background: #E7F1FA;"  name="eor_kaf" placeholder="кафедра Менеджмента"  aria-describedby="basic-addon1" required disabled>
 		</div>
 		<div class="input-group">
-  <span class="input-group-text" style="width: 300px;">ФИО разработчика(-ов) полностью,<br>наличие учетной записи в СЭО</span>
-  <textarea class="form-control" aria-label="With textarea"  id="eor_author"  name="eor_author" rows="3" required disabled></textarea>
+  <span class="input-group-text" style="width: 300px; background: #E7F1FA;">ФИО разработчика(-ов) полностью,<br>наличие учетной записи в СЭО</span>
+  <textarea class="form-control user_data" aria-label="With textarea" style="background: #E7F1FA;"  id="eor_author"  name="eor_author" rows="3" required disabled></textarea>
 </div>
 <div id="grouphelp" class="form-text">Если у разработчиков ЭОР отсутствуют аккаунты в СЭО, технические специалисты смогут их создать.</div>
 </div>
@@ -394,7 +394,7 @@ function clearForm()
 		 </div>	
 		<div class="mb-3">
 
-		 <button type="submit" class="btn btn-primary"  id="btnSent"  name = "sendMail1" disabled >Отправить сообщение</button>
+		 <button type="submit" class="btn btn-primary" id="btnSent"  name = "sendMail1" disabled >Отправить сообщение</button>
 		 <button class="btn btn-outline-secondary" type="button"  onclick="clearForm();" >Очистить форму</button>		
 		 </div>
 		 
@@ -402,7 +402,52 @@ function clearForm()
 	
 	
 	</div>
-	
-	
+	<script type="text/javascript">
+
+		$('.user_data').click(function funct(){
+		        $(".user_data").removeClass('user_data_clicked');
+		        $(this).addClass('user_data_clicked');
+		});
+		$(document).mouseup(function (e){ // событие клика по веб-документу
+		    var div = $(".user_data"); // тут указываем ID элемента
+		    if (!div.is(e.target) // если клик был не по нашему блоку
+		        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+		            $(".user_data").removeClass('user_data_clicked');
+		    }
+		  });
+
+	</script>
+	<style type="text/css">
+		.btn::hover {
+			cursor: pointer;
+		}
+		.alert-info {
+			background: #E7F1FA !important;
+			border: 1px solid #E7F1FA;
+		}
+		.user_data {
+			background: rgba(255, 255, 255, 0.02);
+			border: 0.5px solid #1C3F77;
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
+			-webkit-box-shadow: inset 0px 0px 2px #2462C0;
+			        box-shadow: inset 0px 0px 2px #2462C0;
+			border-radius: 10px;
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: 0.15px;
+			color: rgba(0, 0, 0, 0.6);
+			-webkit-transition: .2s;
+			-o-transition: .2s;
+			transition: .2s;
+		}
+		.user_data_clicked {
+			-webkit-box-shadow: inset  0px 0px 1px 1.1px #1C3F77;
+			        box-shadow: inset 0px 0px 1px 1.1px #1C3F77;
+				-webkit-transition: .2s;
+			-o-transition: .2s;
+			transition: .2s;
+		}
+	</style>
   </body>
 </html>
