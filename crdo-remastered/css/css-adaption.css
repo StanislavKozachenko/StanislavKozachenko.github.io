@@ -417,9 +417,9 @@
 		    -ms-transform: none;
 		        transform: none;
 	}
-	.adapt_block_img_left {
+	/*.adapt_block_img_left {
 		width: 260px;
-	}
+	}*/
 
 	.logo_icon {
 		-webkit-transition: .2s;

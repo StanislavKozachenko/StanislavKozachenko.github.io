@@ -13,6 +13,7 @@
 	    -ms-transform: translateY(7px);
 	        transform: translateY(7px);
 }
+
 @media (max-width: 767px){
 	.middle_block_slider {
 		margin: 10px 0;
@@ -1445,5 +1446,11 @@
 @media(min-width: 360px) and (max-width: 767px){
 	.container  {
 		max-width: 360px !important;
+	}
+}
+@media(min-width: 350px) and (max-width: 767px){
+	.adapt_block_img_left {
+		content: url(../img/topImage_mobile.svg) !important;
+		left: -27px !important;
 	}
 }
