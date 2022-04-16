@@ -28,7 +28,7 @@
 	<script src="js/script.js" defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 	<link rel="stylesheet" type="text/css" href="css/css-feedback&access.css">
-	<title>ЦРДО</title>
+	<title>Обратная связь</title>
 </head>
 <script>
 var role = 1;
@@ -285,7 +285,7 @@ function clearForm()
 			</div>
 		</div>
 		<div class="container top_container">
-			<form id="client" action="send.php" method="post"  enctype="multipart/form-data">
+			<form id="client" action="php/send.php" method="post"  enctype="multipart/form-data">
 			
 				<div class="input-group feedback_content_element">
 					<input id="name" name="from_name" aria-describedby="name" required type="name" name="user_fio" class="user_data" placeholder="Ф.И.О">
@@ -306,13 +306,11 @@ function clearForm()
 				
 		<div  id="place_user">
 
-						<div>
 					<div class="input-group feedback_content_element">
 						<input type="text" name="stGroup" class="user_data" id="group1" aria-describedby="group1" placeholder="000000">
 						<div class="feedback_content_element_add_text">Группа</div>
 					</div>
 					<div id="grouphelp" class="form-text">Если Вы не студент БГУИР, оставьте поле пустым.</div>
-			    </div>
 				
 					<div class="mb-4">
 					<div class="input-group">
@@ -370,7 +368,7 @@ function clearForm()
 		<div  id="place_other_form" style="display:none;">
 
 				<div class="input-group mb-3 feedback_content_element">
-					<textarea style="min-height: 100px;" name="mess" class="user_data" aria-label="Описание<br/>проблемы" rows="5" placeholder="Введите текст..."></textarea>
+					<textarea style="min-height: 100px; max-height:500px;" name="mess" class="user_data" aria-label="Описание<br/>проблемы" rows="5" placeholder="Введите текст..."></textarea>
 					<div class="feedback_content_element_add_text">Введите текст</div>
 				</div>	
 				
@@ -416,7 +414,7 @@ function clearForm()
 				  <div class="feedback_content_element_add_text">Подразделение</div>
 
 				</div>
-				<div class="input-group">  <textarea style="min-height: 100px;" class="user_data" aria-label="With textarea" placeholder="ФИО разработчика(-ов) полностью, наличие учетной записи в СЭО" id="eor_author"  name="eor_author" rows="3" required disabled></textarea>
+				<div class="input-group">  <textarea style="min-height: 100px; max-height: 500px;" class="user_data" aria-label="With textarea" placeholder="ФИО разработчика(-ов) полностью, наличие учетной записи в СЭО" id="eor_author"  name="eor_author" rows="3" required disabled></textarea>
 		  <div class="feedback_content_element_add_text">ФИО разработчика(-ов) полностью</div>
 		</div>
 		<div id="grouphelp" class="form-text">Если у разработчиков ЭОР отсутствуют аккаунты в СЭО, технические специалисты смогут их создать.</div>

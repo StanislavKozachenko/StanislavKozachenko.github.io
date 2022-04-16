@@ -1,15 +1,36 @@
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
-    <link rel="shortcut icon" href="img/site_logo.png" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" defer></script>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
+	<link rel="shortcut icon" href="img/site_logo.png" type="image/x-icon">
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/accompaniment.css">
+	<link rel="stylesheet" type="text/css" href="css/organization.css">
+	<link rel="stylesheet" type="text/css" href="css/course-examples.css">
+	<link rel="stylesheet" type="text/css" href="css/news-examples.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/educational-plans.css">
+	<link rel="stylesheet" type="text/css" href="css/css-adaption.css">
+	<link rel="stylesheet" type="text/css" href="css/css-adaption-development.css">
+	<link rel="stylesheet" type="text/css" href="css/adaptation-first-page.css">
+	<link rel="stylesheet" type="text/css" href="css/css-adaption-contact.css">
+	<link rel="stylesheet" type="text/css" href="css/css-adaption-education-plans.css">
+	<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="  crossorigin="anonymous"></script>
-    <title>Обратная связь</title>
-	<script>
+	<script src="js/onload.js" defer></script>
+	<script src="js/script.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<link rel="stylesheet" type="text/css" href="css/css-feedback&access.css">
+	<title>Обратная связь</title>
+	</head>
+<script>
 
 function getval_1(sel1)
 {
@@ -150,267 +171,257 @@ function clearForm()
 		}	
 		
 </script>
-	
   </head>
- <body class="container" style="padding: 2em 0 0 0; background-repeat: no-repeat; background-position: center bottom" background="img/png-bsuir_forms.png" >
-  
-   <script>
+  <body>
+	<script>
 	        if (performance.navigation.type == 1) window.location.href = 'feedback.html';
 			if (String(window.performance.getEntriesByType("navigation")[0].type) === "back_forward") window.location.reload();
-  </script> 
-
-    
-	<div class="container">
-<form id="client" action="send.php" method="post"  enctype="multipart/form-data">
-<div class="alert alert-primary" role="alert">
-  Студентам, заключившим договор через <a href="https://iis.bsuir.by/login" target="_blank" class="alert-link">личный кабинет</a> в ИИС БГУИР, доступ предоставляется <b>автоматически в течении трёх рабочих дней</b>.</div> <img src="img/site_logo_forms.png" style=" float:left; margin: 0 10px 10px 0; "><h4 style="padding: 20px 0 0 0;"><b>Обратная связь</b>. Информация о заявителе:</h4>
-		<div class="input-group mb-3">
-			<span for="name" class="input-group-text" id="name-text"  style="background: #E7F1FA;">Ф. И. О.</span>
-			<input type="text" class="form-control user_data"  style="background: #E7F1FA;" id="name" name="from_name"  aria-describedby="name" placeholder="Иванов Иван Иванович" required>
-	    </div>
-	    <div class="input-group mb-3">
-		    <span for="email" class="input-group-text"  style="background: #E7F1FA;" id="email-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="margin-right:0.5em;" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/></svg> E-mail</span>
-		    <input type="email" name="from_email" class="form-control user_data"  style="background: #E7F1FA;" placeholder="example@bsuir.by" aria-label="email" aria-describedby="email" required>
-	    </div>
-		<div class="mb-3">
-			<div class="input-group">
-				<span for="grpup" class="input-group-text" id="group-text"  style="background: #E7F1FA;">Группа</span>
-				<input type="text" name="stGroup" class="form-control user_data"  style="background: #E7F1FA;" id="group" aria-describedby="group" placeholder="000000" >
-			</div>
-			<div id="grouphelp" class="form-text">Если Вы не являетесь студентом БГУИР, оставьте поле пустым.</div>
-	    </div>
-				<div class="mb-4">
-			<div class="input-group">
-				<span for="grpup" class="input-group-text" id="group-text"  style="background: #E7F1FA;">Номер студ. билета</span>
-				<input type="text" name="stBilet" class="form-control user_data"  style="background: #E7F1FA;" id="group" aria-describedby="group" placeholder="00000000">
-			</div>
-			<div id="grouphelp" class="form-text">Если номер студенческого билета Вам неизвестен, оставьте поле пустым.</div>
-	    </div>
-
-	    <h4>Цель доступа к дисциплинам:</h4>
-		<select name="opt_help1" class="form-select mb-4" aria-label="select" onchange="getval_1(this);" required>
-			<option selected>Выберите...</option>
-			<option value="1">Продолжение обучения студентов дистанционной формы</option>
-			<option value="2">Дополнительное обучение студентов дистанционной формы</option>
-			<option value="3">Ликвидация расхождения в учебных планах для студентов ИИТ БГУИР</option>
-		</select>
-		
-<div  id="place_ddate" style="display:none;">		
-<div class="mb-3"  >
-
-			<div class="input-group ">
-				<span for="grpup" class="input-group-text " id="group-text">Дата окончания действия договора</span>
-				<input type="date" name="ddate"class="form-control" id="group" aria-describedby="group" placeholder="00000000">
-			</div>
-			<div id="grouphelp" class="form-text">Заполнение данного поля ускорит предоставление доступа<br/></div>
-</div>
-	</div>
-<div class="mb-3" id="place_NameDisc" style="display:none;">				
-<div class="mb-4" >
-
-			<label for="exampleFormControlTextarea1"  class="form-label" ><h5>Необходимые дисциплины, часть (при наличии) с расшифровкой аббревиатур:</h5></label>
-			<textarea class="form-control" name="course" id="exampleFormControlTextarea1" rows="3" placeholder="Пример:
-Основы алгоритмизации и программирования. Часть 2
-Дискретная математика" required></textarea>
-</div></div>
-		
-<div id="place_Spec" style="display:none;">
-	
-		 <div class="mb-1">
-			<label for="exampleFormControlTextarea1" class="form-label" ><h5>Специальность, указанная в договоре:</h5></label>
-		</div>
-		
-		
-		<div class="mb-2">
-			<input class="form-check-input" type="checkbox"   name="disc1" id="flexCheck1" >
-			<label class="form-check-label" for="flexCheck1">
-				АСОИ
-			</label>
-		</div>
-		<div class="mb-2">
-			<input class="form-check-input" type="checkbox" name="disc2" id="flexCheck2">
-			<label class="form-check-label" for="flexCheck2">
-				ИПОИТ
-			</label>
-		</div>
-				<div class="mb-2">
-			<input class="form-check-input" type="checkbox"  name="disc3" id="flexCheck3">
-			<label class="form-check-label" for="flexCheck3">
-				ИСиТ (БМ)
-			</label>
-		</div>
-		<div class="mb-2">
-			<input class="form-check-input" type="checkbox"  name="disc4" id="flexCheck4">
-			<label class="form-check-label" for="flexCheck4">
-				ИСиТ (ОПБ)
-			</label>
-		</div>
-				<div class="mb-2">
-			<input class="form-check-input" type="checkbox"  name="disc5" id="flexCheck5">
-			<label class="form-check-label" for="flexCheck5">
-				ИСиТ (Э)
-			</label>
-		</div>
-		<div class="mb-2">
-			<input class="form-check-input" type="checkbox"  name="disc6" id="flexCheck6">
-			<label class="form-check-label" for="flexCheck6">
-				ИиТП
-			</label>
-		</div>
-				<div class="mb-2">
-			<input class="form-check-input" type="checkbox"  name="disc7" id="flexCheck7">
-			<label class="form-check-label" for="flexCheck7">
-				ПМС
-			</label>
-		</div>
-		<div class="mb-2">
-			<input class="form-check-input" type="checkbox"  name="disc8" id="flexCheck8">
-			<label class="form-check-label" for="flexCheck8">
-				ПОИТ
-			</label>
-		</div>
-				<div class="mb-2">
-			<input class="form-check-input" type="checkbox"  name="disc9" id="flexCheck9">
-			<label class="form-check-label" for="flexCheck9">
-				ЭМ
-			</label>
-		</div>
-		<div class="mb-3">
-			<input class="form-check-input" type="checkbox"  name="disc0" id="flexCheck0">
-			<label class="form-check-label" for="flexCheck0">
-				ЭЭБ
-			</label>
-		</div>
-</div>	
-		
-<div id="place_pass" style="display:none;">	
-	
-		 <div class="mb-1 row">
- 
-			<label for="exampleFormControlTextarea1" class="form-label" ><h5>Известен ли Вам пароль от студенческого билета?</h5></label>
-		</div>	
-			<div class="form-check">
-			<input class="form-check-input" type="radio" name="authRadioX" id="authRadio11" value="1"  onchange="getval_2(this);" checked>
-			<label class="form-check-label" for="authRadio11">Да</label>
-		</div>
-		<div class="form-check mb-3">
-			<input class="form-check-input" type="radio" name="authRadioX" id="authRadio21" value="2"  onchange="getval_2(this);">
-			<label class="form-check-label" for="authRadio21">Нет</label>
-		</div>	
-</div>	
-
-<div id="place_pass_y" style="display:none;">	
-
-				<div class="alert alert-info" role="alert">
-			В качестве доступа Вам необходимо будет использовать номер студенческого билета и соотвутствующий ему пароль.</div>
-</div>	
-
-	
-<div class="mb-3 " id="place_pass_n" style="display:none;">	
-
-			<div class="alert alert-warning" role="alert" >
-  На указанный Вами адрес электронной почты будет отправлено письмо с данными для доступа в СЭО (логин и пароль).
-После успешного входа Вам будет предложено изменить пароль, который в дальнейшем будет использоваться для доступа в Личный кабинет.   
-  </div>
-</div>			
-		 
-<div class="mb-3 "  id="place_rec" style="display:none;">	
-			<label for="exampleFormControlTextarea1" class="form-label" ><h5>Предоставить доступ на основании заключённого(-ых) договора(-ов) и</h5></label>
-		
 			
-					<div class="form-check">
-			<input class="form-check-input" type="radio" name="authRadio2" id="authRadio1" value="1"  onchange="getval_3(this);" checked>
-			<label class="form-check-label" for="authRadio1">Квитанции об оплате</label>
+  </script>
+	<div class="loader">
+			<div class="preloader" id="preloaderID">
+	<!--CSS Spinner-->
+	<div class="spinner-wrapper">
+	 <div class="spinner">
+	  <div class="sk-folding-cube">
+	   <div class="sk-cube1 sk-cube"></div>
+	   <div class="sk-cube2 sk-cube"></div>
+	   <div class="sk-cube4 sk-cube"></div>
+	   <div class="sk-cube3 sk-cube"></div>
+	  </div>
+	 </div>
+	</div>
+	</div>
+	</div>
+	<div class="anchor"><img src="img/arrow-up.png"></div>
+	<section class="wrapper">
+		<header class="container-fluid top_header scrolled"></header>
+		<div class="examples_top_block">
+			<div class="top_block_examples container-fluid">
+				<div class="top_block_examples_content container">
+					Обратная связь. Информация о заявителе
+				</div>
+			</div>
 		</div>
-		<div class="form-check mb-3">
-			<input class="form-check-input" type="radio" name="authRadio2" id="authRadio2" value="2"  onchange="getval_3(this);">
-			<label class="form-check-label" for="authRadio2">Квитанция не требуется</label>
-		</div>
-</div>
-<div class="mb-3" id="place_file" style="display:none;">
-<div class="mb-3">
-		<label for="FilePath" class="form-label">Выберите файл</label>
-		<div class="input-group">
-		<input name = "xfile" type="file" class="form-control" id="FilePath" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
-		<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" onclick="clearInput();" >Удалить</button>
-		</div>
-</div>
-
-
-</div>	
-	
-<div  id="place_cost" style="display:none;" >		
-	<div class="mb-3"  >
+			<div class="container top_container">
+		<form id="client" action="php/send.php" method="post"  enctype="multipart/form-data">
+		<div class="alert" style="background: #E7F1FA;" role="alert">
+		  Студентам, заключившим договор через <a href="https://iis.bsuir.by/login" target="_blank" class="alert-link">личный кабинет</a> в ИИС БГУИР, доступ предоставляется <b>автоматически в течении трёх рабочих дней</b>.</div>
+				<div class="input-group feedback_content_element">
+					<input id="name" name="from_name" aria-describedby="name" required type="name" name="user_fio" class="user_data" placeholder="Ф.И.О">
+					<div class="feedback_content_element_add_text">Ф.И.О</div>
+			    </div>
+			    <div class="input-group feedback_content_element">
+				    <input type="email" name="from_email" class="user_data" placeholder="example@bsuir.by" aria-label="email" aria-describedby="email" required>
+				    <div class="feedback_content_element_add_text">E-mail</div>
+			    </div>		
+				<div class="input-group feedback_content_element">
+						<input type="text" name="stGroup" class="user_data" id="group1" aria-describedby="group1" placeholder="000000">
+						<div class="feedback_content_element_add_text">Группа</div>
+					</div>
+					<div id="grouphelp" class="form-text">Если Вы не студент БГУИР, оставьте поле пустым.</div>
+				
+					<div class="mb-4">
+					<div class="input-group">
+						<input type="text"  name="stBilet" class="user_data" id="group2" aria-describedby="group2" placeholder="">
+						<div class="feedback_content_element_add_text">Номер студенческого билета</div>
+					</div>
+					<div id="grouphelp" class="form-text">Если у Вас нет студенческого билета или он Вам неизвестен, оставьте поле пустым.</div>
+				</div>
+			    <h4>Цель доступа к дисциплинам:</h4>
+				<select name="opt_help1" class="form-select user_data selectFrom " aria-label="select" onchange="getval_1(this);" required>
+					<option selected>Выберите...</option>
+					<option value="1">Продолжение обучения студентов дистанционной формы</option>
+					<option value="2">Дополнительное обучение студентов дистанционной формы</option>
+					<option value="3">Ликвидация расхождения в учебных планах для студентов ИИТ БГУИР</option>
+				</select>
+				
+		<div  id="place_ddate" style="display:none;">		
+		<div class="mb-3"  >
 
 					<div class="input-group">
-		  <span class="input-group-text">Укажите причину</span>
-		  <textarea  name= "cost" class="form-control" id="cost" required></textarea>
+						<input type="date" name="ddate"class="user_data" style="min-height: 60px;" id="group" aria-describedby="group" placeholder="00000000">
+						<div class="feedback_content_element_add_text">Дата окончания действия договора</div>
+					</div>
+					<div id="grouphelp" class="form-text">Заполнение данного поля ускорит предоставление доступа<br/></div>
 		</div>
-	</div>
-</div>	
-<div class="mb-3">
-	<div class="g-recaptcha" data-sitekey="6LeSkb4dAAAAAPr6LM5vJIHD6i0QBQ5bOITsZ-Al"></div><br>
-				 <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"  name = "agreement" required>
-  <label class="form-check-label" for="flexCheckIndeterminate">Нажимая кнопку "Отправить сообщение", Вы подтверждаете свою осведомленность и согласие на обработку Ваших персональных данных для формирования ответа на Ваш запрос, в том числе на их предоставление посредством электронной почты, указанным Вами способом.
-  </label>
-</div>
-		 </div>	
-	<div class="mb-3">
+			</div>
+		<div class="mb-3" id="place_NameDisc" style="display:none;">				
+		<div class="mb-4" >
 
-		 <button type="submit" class="btn btn-primary"  id="btnSent"  name = "sendMail2" disabled  >Отправить сообщение</button>
-		 <button class="btn btn-outline-secondary" type="button"  onclick="clearForm();" >Очистить форму</button>		
-		 </div>
-	</form> <div class="mb-5"></div>
-	</div>
-	
-<script type="text/javascript">
+					<textarea class="user_data" style="min-height: 150px; max-height: 500px; max-width: 100%; margin-top: 5px !important;" name="course" id="exampleFormControlTextarea1" rows="3" placeholder="Пример:
+		Основы алгоритмизации и программирования. Часть 2
+		Дискретная математика" required></textarea>
+		<div class="feedback_content_element_add_text">Необходимые дисциплины, часть (при наличии) с расшифровкой аббревиатур</div>
+		</div></div>
+				
+		<div id="place_Spec" style="display:none;">
+			
+				 <div class="mb-1">
+					<label for="exampleFormControlTextarea1" class="form-label" ><h5>Специальность, указанная в договоре:</h5></label>
+				</div>
+				
+				
+				<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"   name="disc1" id="flexCheck1" >
+					<label class="form-check-label" for="flexCheck1">
+						АСОИ
+					</label>
+				</div>
+				<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox" name="disc2" id="flexCheck2">
+					<label class="form-check-label" for="flexCheck2">
+						ИПОИТ
+					</label>
+				</div>
+						<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc3" id="flexCheck3">
+					<label class="form-check-label" for="flexCheck3">
+						ИСиТ (БМ)
+					</label>
+				</div>
+				<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc4" id="flexCheck4">
+					<label class="form-check-label" for="flexCheck4">
+						ИСиТ (ОПБ)
+					</label>
+				</div>
+						<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc5" id="flexCheck5">
+					<label class="form-check-label" for="flexCheck5">
+						ИСиТ (Э)
+					</label>
+				</div>
+				<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc6" id="flexCheck6">
+					<label class="form-check-label" for="flexCheck6">
+						ИиТП
+					</label>
+				</div>
+						<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc7" id="flexCheck7">
+					<label class="form-check-label" for="flexCheck7">
+						ПМС
+					</label>
+				</div>
+				<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc8" id="flexCheck8">
+					<label class="form-check-label" for="flexCheck8">
+						ПОИТ
+					</label>
+				</div>
+						<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc9" id="flexCheck9">
+					<label class="form-check-label" for="flexCheck9">
+						ЭМ
+					</label>
+				</div>
+				<div class="mb-3">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc0" id="flexCheck0">
+					<label class="form-check-label" for="flexCheck0">
+						ЭЭБ
+					</label>
+				</div>
+		</div>	
+				
+		<div id="place_pass" style="display:none;">	
+			
+				 <div class="mb-1">
+		 
+					<label for="exampleFormControlTextarea1" class="form-label" ><h5>Известен ли Вам пароль от студенческого билета?</h5></label>
+				</div>	
+					<div class="form-check">
+					<input class="form-check-input custom-radio" type="radio" name="authRadioX" id="authRadio11" value="1"  onchange="getval_2(this);" checked>
+					<label class="form-check-label" for="authRadio11">Да</label>
+				</div>
+				<div class="form-check mb-3">
+					<input class="form-check-input custom-radio" type="radio" name="authRadioX" id="authRadio21" value="2"  onchange="getval_2(this);">
+					<label class="form-check-label" for="authRadio21">Нет</label>
+				</div>	
+		</div>	
 
+		<div id="place_pass_y" style="display:none;">	
+
+						<div class="alert" style="background: #E7F1FA;" role="alert">
+					В качестве доступа Вам необходимо будет использовать номер студенческого билета и соотвутствующий ему пароль.</div>
+		</div>	
+
+			
+		<div class="mb-3 " id="place_pass_n" style="display:none;">	
+
+					<div class="alert" style="background: #E7F1FA;" role="alert" >
+		  На указанный Вами адрес электронной почты будет отправлено письмо с данными для доступа в СЭО (логин и пароль).
+		После успешного входа Вам будет предложено изменить пароль, который в дальнейшем будет использоваться для доступа в Личный кабинет.   
+		  </div>
+		</div>			
+				 
+		<div class="mb-3 "  id="place_rec" style="display:none;">	
+					<label for="exampleFormControlTextarea1" class="form-label" ><h5>Предоставить доступ на основании заключённого(-ых) договора(-ов) и</h5></label>
+				
+					
+							<div class="form-check">
+					<input class="form-check-input custom-radio" type="radio" name="authRadio2" id="authRadio1" value="1"  onchange="getval_3(this);" checked>
+					<label class="form-check-label" for="authRadio1">Квитанции об оплате</label>
+				</div>
+				<div class="form-check mb-3">
+					<input class="form-check-input custom-radio" type="radio" name="authRadio2" id="authRadio2" value="2"  onchange="getval_3(this);">
+					<label class="form-check-label" for="authRadio2">Квитанция не требуется</label>
+				</div>
+		</div>
+		<div class="mb-3" id="place_file" style="display:none;">
+		<div class="mb-3" style="display: flex;">
+				<label style="margin-bottom: 0" for="FilePath" class="form-label btn middle_block_2_button middle_block_2_button_1">Выберите файл</label>
+				<div class="input-group">
+				<input name = "xfile" type="file" id="FilePath" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+				<button class="btn btn-outline-secondary clickFileSearch" type="button" id="inputGroupFileAddon04" onclick="clearInput();" >Удалить</button>
+				</div>
+		</div>
+
+
+		</div>	
+			
+		<div  id="place_cost" style="display:none;" >		
+			<div class="mb-3"  >
+
+							<div class="input-group">
+				  <textarea  name= "cost" class="user_data" placeholder="Укажите причину" style="min-height: 100px; max-height: 500px;" id="cost" required></textarea>
+				  <div class="feedback_content_element_add_text">Укажите причину</div>
+				</div>
+			</div>
+		</div>	
+		<div class="mb-3">
+			<div class="g-recaptcha" data-sitekey="6LeSkb4dAAAAAPr6LM5vJIHD6i0QBQ5bOITsZ-Al"></div><br>
+						 <div class="form-check">
+		  <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckIndeterminate"  name = "agreement" required>
+		  <label class="form-check-label" for="flexCheckIndeterminate">Нажимая кнопку "Отправить сообщение", Вы подтверждаете свою осведомленность и согласие на обработку Ваших персональных данных для формирования ответа на Ваш запрос, в том числе на их предоставление посредством электронной почты, указанным Вами способом.
+		  </label>
+		</div>
+				 </div>	
+			<div class="mb-3">
+
+				 <button type="submit" class="btn middle_block_2_button middle_block_2_button_1"  id="btnSent"  name = "sendMail2" disabled  >Отправить сообщение</button>
+				 <button class="btn btn-outline-secondary middle_block_2_button" type="button"  onclick="clearForm();" >Очистить форму</button>		
+				 </div>
+			</form> <div class="mb-5"></div>
+	</div>
+	<script type="text/javascript">
 		$('.user_data').click(function funct(){
 		        $(".user_data").removeClass('user_data_clicked');
+		        $('.feedback_content_element_add_text').css("opacity", "0");
+		        $('.feedback_content_element_add_text', $(this).parent()).css("opacity", "1");
+		        $('.feedback_content_element_add_text', $(this).parent()).css("transition", ".2s");
 		        $(this).addClass('user_data_clicked');
 		});
 		$(document).mouseup(function (e){ // событие клика по веб-документу
 		    var div = $(".user_data"); // тут указываем ID элемента
 		    if (!div.is(e.target) // если клик был не по нашему блоку
 		        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+		            $('.feedback_content_element_add_text', $(".user_data").parent()).css("opacity", "0");
+		            $('.feedback_content_element_add_text', $(".user_data").parent()).css("transition", ".2s");
 		            $(".user_data").removeClass('user_data_clicked');
 		    }
 		  });
-
 	</script>
-	<style type="text/css">
-		.btn::hover {
-			cursor: pointer;
-		}
-		.alert-info {
-			background: #E7F1FA !important;
-			border: 1px solid #E7F1FA;
-		}
-		.user_data {
-			background: rgba(255, 255, 255, 0.02);
-			border: 0.5px solid #1C3F77;
-			-webkit-box-sizing: border-box;
-			        box-sizing: border-box;
-			-webkit-box-shadow: inset 0px 0px 2px #2462C0;
-			        box-shadow: inset 0px 0px 2px #2462C0;
-			border-radius: 10px;
-			font-size: 16px;
-			line-height: 24px;
-			letter-spacing: 0.15px;
-			color: rgba(0, 0, 0, 0.6);
-			-webkit-transition: .2s;
-			-o-transition: .2s;
-			transition: .2s;
-		}
-		.user_data_clicked {
-			-webkit-box-shadow: inset  0px 0px 1px 1.1px #1C3F77;
-			        box-shadow: inset 0px 0px 1px 1.1px #1C3F77;
-				-webkit-transition: .2s;
-			-o-transition: .2s;
-			transition: .2s;
-		}
-	</style>
-	
-  </body>
-</html>
+		<footer class="footerClass"></footer>
+	</section>
+</body>
