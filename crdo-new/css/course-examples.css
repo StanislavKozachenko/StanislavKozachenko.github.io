@@ -53,7 +53,7 @@
 	padding-bottom: 18px;
 	max-width: 49%;
 	background: #E7F1FA;
-		box-shadow: 0px 7px 29px rgba(28, 63, 119, 0.25);
+		    box-shadow: 0px 5px 15px rgb(28 63 119 / 15%);
 	border-radius: 10px;
 
 	font-family: 'Montserrat';
