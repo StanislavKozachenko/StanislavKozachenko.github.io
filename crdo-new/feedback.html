@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+	</script>
+	<link rel="shortcut icon" href="img/site_logo.png" type="image/x-icon">
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/accompaniment.css">
+	<link rel="stylesheet" type="text/css" href="css/organization.css">
+	<link rel="stylesheet" type="text/css" href="css/course-examples.css">
+	<link rel="stylesheet" type="text/css" href="css/news-examples.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/educational-plans.css">
+	<link rel="stylesheet" type="text/css" href="css/css-adaption.css">
+	<link rel="stylesheet" type="text/css" href="css/css-adaption-development.css">
+	<link rel="stylesheet" type="text/css" href="css/adaptation-first-page.css">
+	<link rel="stylesheet" type="text/css" href="css/css-adaption-contact.css">
+	<link rel="stylesheet" type="text/css" href="css/css-adaption-education-plans.css">
+	<link rel="stylesheet" type="text/css" href="css/styleMain.css">
+	<link rel="stylesheet" type="text/css" href="css/adaptation-dev-page.css">
+	<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/onload.js" defer></script>
+	<script src="js/script.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<link rel="stylesheet" type="text/css" href="css/css-feedback&access.css">
+	<title>Обратная связь</title>
+	</head>
+<script>
+
+function getval_1(sel1)
+{
+	//alert('New value: ' + sel.value);
+	if (sel1.value == 1)	
+		{ 
+		document.getElementById("authRadio11").checked=true;
+		document.getElementById("authRadio1").checked=true;
+		document.getElementById("place_ddate").style.display = "none"; 
+		document.getElementById("place_NameDisc").style.display = "inline"; 
+		document.getElementById("place_Spec").style.display = "none"; 
+		document.getElementById("place_pass").style.display = "inline"; 
+		document.getElementById("place_pass_y").style.display = "inline"; 
+		document.getElementById("place_pass_n").style.display = "none"; 
+		document.getElementById("place_rec").style.display = "inline"; 
+		document.getElementById("place_file").style.display = "inline";
+        document.getElementById("btnSent").disabled = false;	
+		document.getElementById("FilePath").disabled = false;	
+		document.getElementById("cost").disabled = true;
+		document.getElementById("place_cost").style.display = "none";			
+		}
+	else if (sel1.value == 2)	
+		{ 
+		document.getElementById("authRadio11").checked=true;
+		document.getElementById("authRadio1").checked=true;
+		document.getElementById("place_ddate").style.display = "inline"; 
+		document.getElementById("place_NameDisc").style.display = "inline"; 
+		document.getElementById("place_Spec").style.display = "none"; 
+		document.getElementById("place_pass").style.display = "inline"; 
+		document.getElementById("place_pass_y").style.display = "inline"; 
+		document.getElementById("place_pass_n").style.display = "none"; 
+		document.getElementById("place_rec").style.display = "inline"; 
+		document.getElementById("place_file").style.display = "inline";
+        document.getElementById("btnSent").disabled = false;
+		document.getElementById("FilePath").disabled = false;	
+		document.getElementById("cost").disabled = true;
+		document.getElementById("place_cost").style.display = "none";			
+		}
+	else if (sel1.value == 3)	
+		{ 
+		document.getElementById("authRadio11").checked=true;
+		document.getElementById("authRadio1").checked=true;
+		document.getElementById("place_ddate").style.display = "inline"; 
+		document.getElementById("place_NameDisc").style.display = "inline"; 
+		document.getElementById("place_Spec").style.display = "inline"; 
+		document.getElementById("place_pass").style.display = "inline"; 
+		document.getElementById("place_pass_y").style.display = "inline"; 
+		document.getElementById("place_pass_n").style.display = "none"; 
+		document.getElementById("place_rec").style.display = "inline"; 
+		document.getElementById("place_file").style.display = "inline";
+        document.getElementById("btnSent").disabled = false;
+		document.getElementById("FilePath").disabled = false;	
+		document.getElementById("cost").disabled = true;
+		document.getElementById("place_cost").style.display = "none";			
+		
+		}
+	else 
+		{  
+		document.getElementById("authRadio11").checked=true;
+		document.getElementById("authRadio1").checked=true;
+		document.getElementById("place_ddate").style.display = "none"; 
+		document.getElementById("place_NameDisc").style.display = "none"; 
+		document.getElementById("place_Spec").style.display = "none"; 
+		document.getElementById("place_pass").style.display = "none"; 
+		document.getElementById("place_pass_y").style.display = "none"; 
+		document.getElementById("place_pass_n").style.display = "none"; 
+		document.getElementById("place_rec").style.display = "none"; 
+		document.getElementById("place_file").style.display = "none";
+        document.getElementById("btnSent").disabled = true;	
+		document.getElementById("FilePath").disabled = true;
+		document.getElementById("cost").disabled = true;
+		document.getElementById("place_cost").style.display = "none";	
+		
+		}	
+}
+
+function getval_2(sel2)
+{	
+	if (sel2.value == 1)	
+		{ 
+		document.getElementById("place_pass_y").style.display = "inline"; 
+		document.getElementById("place_pass_n").style.display = "none";
+
+		}
+	else 
+		{  
+		document.getElementById("place_pass_y").style.display = "none"; 
+
+		document.getElementById("place_pass_n").style.display = "inline";
+
+		}
+}
+
+function getval_3(sel3)
+{	
+	if (sel3.value == 1)
+		{	  
+		document.getElementById("place_file").style.display = "inline";
+		document.getElementById("FilePath").disabled = false;
+		document.getElementById("cost").disabled = true;
+		document.getElementById("place_cost").style.display = "none";
+		
+		place_cost
+		} 
+	else 
+		{
+		 document.getElementById("place_file").style.display = "none";
+		 document.getElementById("FilePath").disabled = true;
+		 document.getElementById("cost").disabled = false;
+		document.getElementById("place_cost").style.display = "inline";
+		 
+		}
+}
+
+function clearInput() 
+		{
+        document.getElementById("FilePath").value = null;  	    
+		}
+		
+function clearForm() 
+		{
+		document.getElementById("client").reset();
+		document.getElementById("authRadio11").checked=true;
+		document.getElementById("authRadio1").checked=true;
+		document.getElementById("place_ddate").style.display = "none"; 
+		document.getElementById("place_NameDisc").style.display = "none"; 
+		document.getElementById("place_Spec").style.display = "none"; 
+		document.getElementById("place_pass").style.display = "none"; 
+		document.getElementById("place_pass_y").style.display = "none"; 
+		document.getElementById("place_pass_n").style.display = "none"; 
+		document.getElementById("place_rec").style.display = "none"; 
+		document.getElementById("place_file").style.display = "none";
+        document.getElementById("btnSent").disabled = true;	
+      
+        document.getElementById("FilePath").disabled = true;	
+		document.getElementById("cost").disabled = true;
+		document.getElementById("place_cost").style.display = "none";		
+		}	
+		
+</script>
+  </head>
+  <body>
+	<script>
+	        if (performance.navigation.type == 1) window.location.href = 'feedback.html';
+			if (String(window.performance.getEntriesByType("navigation")[0].type) === "back_forward") window.location.reload();
+			
+  </script>
+	<div class="loader">
+			<div class="preloader" id="preloaderID">
+	<!--CSS Spinner-->
+	<div class="spinner-wrapper">
+	 <div class="spinner">
+	  <div class="sk-folding-cube">
+	   <div class="sk-cube1 sk-cube"></div>
+	   <div class="sk-cube2 sk-cube"></div>
+	   <div class="sk-cube4 sk-cube"></div>
+	   <div class="sk-cube3 sk-cube"></div>
+	  </div>
+	 </div>
+	</div>
+	</div>
+	</div>
+	<div class="anchor"><img src="img/arrow-up.png"></div>
+	<section class="wrapper">
+		<header class="container-fluid top_header scrolled"></header>
+		<div class="examples_top_block">
+			<div class="top_block_examples container">
+				<div class="top_block_examples_content container">
+					Обратная связь. Информация о заявителе
+				</div>
+			</div>
+		</div>
+			<div class="container top_container">
+		<form id="client" action="php/send.php" method="post"  enctype="multipart/form-data">
+		<div class="alert" style="background: #E7F1FA;" role="alert">
+		  Студентам, заключившим договор через <a href="https://iis.bsuir.by/login" target="_blank" class="alert-link">личный кабинет</a> в ИИС БГУИР, доступ предоставляется <b>автоматически в течении трёх рабочих дней</b>.</div>
+				<div class="input-group feedback_content_element">
+					<input id="name" name="from_name" aria-describedby="name" required type="name" name="user_fio" class="user_data" placeholder="Ф.И.О">
+					<div class="feedback_content_element_add_text">Ф.И.О</div>
+			    </div>
+			    <div class="input-group feedback_content_element">
+				    <input type="email" name="from_email" class="user_data" placeholder="example@bsuir.by" aria-label="email" aria-describedby="email" required>
+				    <div class="feedback_content_element_add_text">E-mail</div>
+			    </div>		
+				<div class="input-group feedback_content_element">
+						<input type="text" name="stGroup" class="user_data" id="group1" aria-describedby="group1" placeholder="000000">
+						<div class="feedback_content_element_add_text">Группа</div>
+					</div>
+					<div id="grouphelp" class="form-text">Если Вы не студент БГУИР, оставьте поле пустым.</div>
+				
+					<div class="mb-4">
+					<div class="input-group">
+						<input type="text"  name="stBilet" class="user_data" id="group2" aria-describedby="group2" placeholder="">
+						<div class="feedback_content_element_add_text">Номер студенческого билета</div>
+					</div>
+					<div id="grouphelp" class="form-text">Если у Вас нет студенческого билета или он Вам неизвестен, оставьте поле пустым.</div>
+				</div>
+			    <h4>Цель доступа к дисциплинам:</h4>
+				<select name="opt_help1" class="form-select user_data selectFrom " aria-label="select" onchange="getval_1(this);" required>
+					<option selected>Выберите...</option>
+					<option value="1">Продолжение обучения студентов дистанционной формы</option>
+					<option value="2">Дополнительное обучение студентов дистанционной формы</option>
+					<option value="3">Ликвидация расхождения в учебных планах для студентов ИИТ БГУИР</option>
+				</select>
+				
+		<div  id="place_ddate" style="display:none;">		
+		<div class="mb-3"  >
+
+					<div class="input-group">
+						<input type="date" name="ddate"class="user_data" style="min-height: 60px;" id="group" aria-describedby="group" placeholder="00000000">
+						<div class="feedback_content_element_add_text">Дата окончания действия договора</div>
+					</div>
+					<div id="grouphelp" class="form-text">Заполнение данного поля ускорит предоставление доступа<br/></div>
+		</div>
+			</div>
+		<div class="mb-3" id="place_NameDisc" style="display:none;">				
+		<div class="mb-4" >
+
+					<textarea class="user_data" style="min-height: 150px; max-height: 500px; max-width: 100%; margin-top: 5px !important;" name="course" id="exampleFormControlTextarea1" rows="3" placeholder="Пример:
+		Основы алгоритмизации и программирования. Часть 2
+		Дискретная математика" required></textarea>
+		<div class="feedback_content_element_add_text">Необходимые дисциплины, часть (при наличии) с расшифровкой аббревиатур</div>
+		</div></div>
+				
+		<div id="place_Spec" style="display:none;">
+			
+				 <div class="mb-1">
+					<label for="exampleFormControlTextarea1" class="form-label" ><h5>Специальность, указанная в договоре:</h5></label>
+				</div>
+				
+				
+				<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"   name="disc1" id="flexCheck1" >
+					<label class="form-check-label" for="flexCheck1">
+						АСОИ
+					</label>
+				</div>
+				<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox" name="disc2" id="flexCheck2">
+					<label class="form-check-label" for="flexCheck2">
+						ИПОИТ
+					</label>
+				</div>
+						<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc3" id="flexCheck3">
+					<label class="form-check-label" for="flexCheck3">
+						ИСиТ (БМ)
+					</label>
+				</div>
+				<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc4" id="flexCheck4">
+					<label class="form-check-label" for="flexCheck4">
+						ИСиТ (ОПБ)
+					</label>
+				</div>
+						<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc5" id="flexCheck5">
+					<label class="form-check-label" for="flexCheck5">
+						ИСиТ (Э)
+					</label>
+				</div>
+				<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc6" id="flexCheck6">
+					<label class="form-check-label" for="flexCheck6">
+						ИиТП
+					</label>
+				</div>
+						<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc7" id="flexCheck7">
+					<label class="form-check-label" for="flexCheck7">
+						ПМС
+					</label>
+				</div>
+				<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc8" id="flexCheck8">
+					<label class="form-check-label" for="flexCheck8">
+						ПОИТ
+					</label>
+				</div>
+						<div class="mb-2">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc9" id="flexCheck9">
+					<label class="form-check-label" for="flexCheck9">
+						ЭМ
+					</label>
+				</div>
+				<div class="mb-3">
+					<input class="form-check-input custom-checkbox" type="checkbox"  name="disc0" id="flexCheck0">
+					<label class="form-check-label" for="flexCheck0">
+						ЭЭБ
+					</label>
+				</div>
+		</div>	
+				
+		<div id="place_pass" style="display:none;">	
+			
+				 <div class="mb-1">
+		 
+					<label for="exampleFormControlTextarea1" class="form-label" ><h5>Известен ли Вам пароль от студенческого билета?</h5></label>
+				</div>	
+					<div class="form-check">
+					<input class="form-check-input custom-radio" type="radio" name="authRadioX" id="authRadio11" value="1"  onchange="getval_2(this);" checked>
+					<label class="form-check-label" for="authRadio11">Да</label>
+				</div>
+				<div class="form-check mb-3">
+					<input class="form-check-input custom-radio" type="radio" name="authRadioX" id="authRadio21" value="2"  onchange="getval_2(this);">
+					<label class="form-check-label" for="authRadio21">Нет</label>
+				</div>	
+		</div>	
+
+		<div id="place_pass_y" style="display:none;">	
+
+						<div class="alert" style="background: #E7F1FA;" role="alert">
+					В качестве доступа Вам необходимо будет использовать номер студенческого билета и соотвутствующий ему пароль.</div>
+		</div>	
+
+			
+		<div class="mb-3 " id="place_pass_n" style="display:none;">	
+
+					<div class="alert" style="background: #E7F1FA;" role="alert" >
+		  На указанный Вами адрес электронной почты будет отправлено письмо с данными для доступа в СЭО (логин и пароль).
+		После успешного входа Вам будет предложено изменить пароль, который в дальнейшем будет использоваться для доступа в Личный кабинет.   
+		  </div>
+		</div>			
+				 
+		<div class="mb-3 "  id="place_rec" style="display:none;">	
+					<label for="exampleFormControlTextarea1" class="form-label" ><h5>Предоставить доступ на основании заключённого(-ых) договора(-ов) и</h5></label>
+				
+					
+							<div class="form-check">
+					<input class="form-check-input custom-radio" type="radio" name="authRadio2" id="authRadio1" value="1"  onchange="getval_3(this);" checked>
+					<label class="form-check-label" for="authRadio1">Квитанции об оплате</label>
+				</div>
+				<div class="form-check mb-3">
+					<input class="form-check-input custom-radio" type="radio" name="authRadio2" id="authRadio2" value="2"  onchange="getval_3(this);">
+					<label class="form-check-label" for="authRadio2">Квитанция не требуется</label>
+				</div>
+		</div>
+		<div class="mb-3" id="place_file" style="display:none;">
+		<div class="mb-3" style="display: flex;">
+				<label style="margin-bottom: 0" for="FilePath" class="form-label btn middle_block_2_button middle_block_2_button_1">Выберите файл</label>
+				<div class="input-group">
+				<input name = "xfile" type="file" id="FilePath" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+				<button class="btn btn-outline-secondary clickFileSearch" type="button" id="inputGroupFileAddon04" onclick="clearInput();" >Удалить</button>
+				</div>
+		</div>
+
+
+		</div>	
+			
+		<div  id="place_cost" style="display:none;" >		
+			<div class="mb-3"  >
+
+							<div class="input-group">
+				  <textarea  name= "cost" class="user_data" placeholder="Укажите причину" style="min-height: 100px; max-height: 500px;" id="cost" required></textarea>
+				  <div class="feedback_content_element_add_text">Укажите причину</div>
+				</div>
+			</div>
+		</div>	
+		<div class="mb-3">
+			<div class="g-recaptcha" data-sitekey="6LeSkb4dAAAAAPr6LM5vJIHD6i0QBQ5bOITsZ-Al"></div><br>
+						 <div class="form-check">
+		  <input class="form-check-input custom-checkbox" type="checkbox" value="" id="flexCheckIndeterminate"  name = "agreement" required>
+		  <label class="form-check-label" for="flexCheckIndeterminate">Нажимая кнопку "Отправить сообщение", Вы подтверждаете свою осведомленность и согласие на обработку Ваших персональных данных для формирования ответа на Ваш запрос, в том числе на их предоставление посредством электронной почты, указанным Вами способом.
+		  </label>
+		</div>
+				 </div>	
+			<div class="mb-3">
+
+				 <button type="submit" class="btn middle_block_2_button middle_block_2_button_1"  id="btnSent"  name = "sendMail2" disabled  >Отправить сообщение</button>
+				 <button class="btn btn-outline-secondary middle_block_2_button" type="button"  onclick="clearForm();" >Очистить форму</button>		
+				 </div>
+			</form> <div class="mb-5"></div>
+	</div>
+	<script type="text/javascript">
+		$('.user_data').click(function funct(){
+		        $(".user_data").removeClass('user_data_clicked');
+		        $('.feedback_content_element_add_text').css("opacity", "0");
+		        $('.feedback_content_element_add_text', $(this).parent()).css("opacity", "1");
+		        $('.feedback_content_element_add_text', $(this).parent()).css("transition", ".2s");
+		        $(this).addClass('user_data_clicked');
+		});
+		$(document).mouseup(function (e){ // событие клика по веб-документу
+		    var div = $(".user_data"); // тут указываем ID элемента
+		    if (!div.is(e.target) // если клик был не по нашему блоку
+		        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+		            $('.feedback_content_element_add_text', $(".user_data").parent()).css("opacity", "0");
+		            $('.feedback_content_element_add_text', $(".user_data").parent()).css("transition", ".2s");
+		            $(".user_data").removeClass('user_data_clicked');
+		    }
+		  });
+	</script>
+		<footer class="footerClass"></footer>
+	</section>
+</body>
