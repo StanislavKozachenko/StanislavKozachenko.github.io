@@ -1,6 +1,11 @@
 .adapt_block_img_left {
 	display: none !important;
 }
+@media(min-width: 1440px) and (max-width: 1480px){
+	.feedback_left_side_text_main {
+	    padding-left: 230px;
+	}
+}
 @media (max-width: 767px){ /*440*/
 	.middle_block_2_middle_side br {
 		display: none;
