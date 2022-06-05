@@ -307,7 +307,7 @@
 	.first_block_dev_content_top {
 		font-family: Montserrat;
 		font-style: normal;
-		font-weight: 600;
+		font-weight: lighter;
 		font-size: 14px;
 		line-height: 17px;
 		color: #1C3F77;
@@ -388,7 +388,7 @@
 	.first_block_dev_content_top {
 		font-family: Montserrat;
 		font-style: normal;
-		font-weight: 600;
+		font-weight: lighter;
 		font-size: 18px;
 		line-height: 22px;
 		color: #1C3F77;
@@ -444,7 +444,7 @@
 	.first_block_dev_content_top {
 		font-family: Montserrat;
 		font-style: normal;
-		font-weight: 600;
+		font-weight: lighter;
 		font-size: 25px;
 		line-height: 30px;
 		color: #1C3F77;
