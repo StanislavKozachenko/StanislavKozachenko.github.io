@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none !important;
+}
+.top_container {
+	margin-top: 20px;
+}
+.user_data {
+	width: 600px;
+	max-width: 600px;
+	height: 60px;
+}
+.left_side_label {
+	max-height: 50px;
+	margin: 14px 14px 5px 0px;
+}
+.feedback_content_element_add_text {
+  top: 9px;
+}
+.input-group-text {
+	justify-content: center;
+}
+.selectFrom {
+	max-width: 100%;
+	cursor: pointer;
+	padding: 5px;
+	padding-left: 10px;
+	width: 600px;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	background-position: calc(100% - 12px) center !important;
+    background: url("../img/nav_bottom_arrow_active.svg") no-repeat;
+    padding: 8px 32px 8px 16px;
+}
+.selectFrom::-ms-expand {
+  display: none;
+}
+select::focus, select::active, select::hover {
+	border: 0px !important;
+  	outline: 0px !important;
+}
+option {
+	cursor: pointer;
+}
+#FilePath {
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+.input-group {
+	width: auto !important;
+}
+.clickFileSearch {
+	border-radius: 10px;
+	margin-left: 5px;
+}
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-checkbox:checked+label::before {
+  border-color: #1C3F77;
+  background-color: #1C3F77;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #1C3F77;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: #1C3F77;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
+  .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #1C3F77;
+    cursor: pointer;
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #1C3F77;
+    border-color: #1C3F77;
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border-color: #1C3F77;
+    background-color: #1C3F77;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  }
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+  }
+  .form-check {
+  	padding-left: 0 !important;
+  }
+  @media (max-width: 767px){
+  	.middle_block_2_button_1 {
+  		margin-bottom: 10px;
+  	}
+  }

@@ -1,0 +1,119 @@
+@media (max-width: 767px){ /*440*/
+	.accompBackground {
+	    top: 30px;
+	    left: 50px;
+	    max-width: 521px;
+	    z-index: 0;
+	}
+	.accompTopImage {
+		left: unset;
+		top: 30px;
+	}
+	.top_block_img img {
+		max-width: 140px;	
+	}
+	.top_block_accomp {
+		min-height: 300px;
+	}
+	.accomp_second_block_content  {
+		max-width: 90vw !important;
+	}
+	.top_img_acc {
+		        max-width: 300px;
+	}
+	.top_block_text_up {
+		position: absolute;
+	}
+	.top_block_text_up {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 20px;
+		color: #25416C;
+	}
+	.top_block_text_bottom {
+		display: none;
+	}
+	.top_block_accomp {
+		padding-top: 100px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.accomp_second_block, .accomp_third_block {
+		margin-top: 20px;
+	}
+	.accomp_second_block_content_text_top {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: #1C3F77;
+	}
+	.accomp_second_block_content_text_bottom {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #1C3F77;
+	}
+	.accomp_third_block_text {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		color: #1C3F77;
+	}
+	.accomp_third_bottom {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.accomp_third_block_content_element {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.accomp_third_block_content_element_text {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #1C3F77;
+	}
+	.accomp_third_block_content_element_line {
+		height: 44px;
+	}
+	.off_side  {
+		display: block;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+	}
+	.accomp_third_bottom {
+		display: none;
+	}
+	.off_side .accomp_third_block_content_element_text {
+		text-align: right;
+		margin-right: 10px;
+		margin-left: 0;
+	}
+	.accomp_third_block_content {
+		margin-top: 15px;
+	}
+}
+@media(min-width: 768px) and (max-width: 1023px){
+	.top_block_text_bottom {
+		max-width: 400px;
+	}
+}

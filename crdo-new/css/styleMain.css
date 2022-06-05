@@ -1,0 +1,154 @@
+.businessman {
+	max-height: 520px;
+	z-index: 10;
+}
+.main_page_img {
+	justify-content: center;
+    display: flex;
+    position: relative;
+    margin-top: 150px;
+}
+.computer {
+	top: -167px;
+    position: absolute;
+    max-height: 456px;
+    right: -246px;
+}
+.topImage {
+	position: absolute;
+    max-height: 150px;
+    left: -170px;
+    top: 250px;
+}
+.top_block_image {
+	margin-right: 350px;
+}
+.lines {
+	max-height: 110%;
+	position: absolute;
+	width: 100%;
+	top: 50px;
+}
+.logo_icon {
+	content: url(../images/iconTop.svg);
+}
+.unserLines {
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	max-height: 100%;;
+}
+@media(max-width: 767px){
+	.computer {
+	    position: absolute;
+	    max-height: 136px;
+	    left: -154px;
+	    top: -281px;
+	}
+	.businessman {
+	    max-height: 238px;
+	    z-index: 10;
+	    top: -281px;
+	    left: -167px;
+	}
+	.topImage {
+	    position: absolute;
+	    max-height: 65px;
+	    left: -268px;
+	    top: -171px;
+	}
+	.top_block_image {
+		margin-right: 0;
+	}
+	.main_page_img {
+		min-width: unset;
+	}
+	.logo_icon {
+		max-height: 37px;
+	}
+	.top_block_content_main {
+		display: -webkit-box;
+	}
+	.main_page_img {
+		height: 0;
+		width: 0;
+	}
+	.nav_menu_burger span {
+		background: #1C3F77 !important;
+	}
+	.nav_menu_burger_active span {
+		background: #fff !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+	.top_block_content_text_1 {
+		max-width: 430px;
+	}
+	.middle_block_2_middle_side {
+		font-size: 17px;
+	}
+	.classAddMargin2, .classAddMargin {
+		margin: 0;
+	}
+	.businessman {
+		margin-left: 300px;
+    	margin-top: -100px;
+    	max-height: 400px;
+	}
+	.top_block_image {
+		margin-right: 145px;
+	}
+	.lines {
+		max-height: unset;
+	}
+	.topImage {
+	    position: absolute;
+	    max-height: 144px;
+	    top: 72px;
+	    left: 135px;
+	}
+	.computer {
+	    top: -168px;
+	    position: absolute;
+	    max-height: 258px;
+	    right: -138px;
+	}
+	.top_block_nav_text {
+		color: #1C3F77;
+		font-size: 26px;
+	}
+	.classAddMargin {
+		transform: none !important;
+	}
+	.main_page_img {
+		min-width: unset;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.lines {
+		max-height: 100%;
+	}
+	.top_block_image {
+	    margin-right: 274px;
+	}
+	.logo_icon  {
+		height: 50px;
+	}
+	.businessman {
+  	  margin-left: 0px;
+	    margin-top: -74px;
+	    max-height: 524px;
+	}
+	.topImage {
+	    position: absolute;
+	    max-height: 144px;
+	    top: 103px;
+	    left: -140px;
+	}
+	.computer {
+	    top: -116px;
+	    position: absolute;
+	    max-height: 314px;
+	    right: -183px;
+	}
+}
