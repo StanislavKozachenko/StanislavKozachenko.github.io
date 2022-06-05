@@ -649,7 +649,7 @@ nav {
 }
 .middle_block_element__1, .middle_block_element__2, .middle_block_element__3 {
 	background: #E7F1FA;
-	box-shadow: 0px 7px 29px rgba(28, 63, 119, 0.25);
+	box-shadow: 0px 5px 15px rgba(28, 63, 119, 0.15);
 	border-radius: 35px;
 	color: #FFFFFF;
 }
