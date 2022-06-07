@@ -835,9 +835,9 @@ nav {
     opacity: 0;
     position: absolute;
     z-index: 5;
-    top: 8px;
+    top:5px;
     left: 15px;
-    padding: 8px 2px;
+    padding: 2px 3px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -845,7 +845,7 @@ nav {
     line-height: 16px;
     letter-spacing: 0.4px;
     color: #1C3F77;
-    background-color: transparent;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(231,241,250,1) 100%);
     border-radius: 20px;
 	-webkit-box-shadow: 0px 24px 14px -15px rgba(36, 98, 192, 0.14);
 	        box-shadow: 0px 24px 14px -15px rgba(36, 98, 192, 0.14);

@@ -21,7 +21,7 @@
 	margin: 14px 14px 5px 0px;
 }
 .feedback_content_element_add_text {
-  top: 9px;
+  top: 4px;
 }
 .input-group-text {
 	justify-content: center;
@@ -162,5 +162,13 @@ option {
   	}
     .brAdapt {
       display: block;
+    }
+      .feedback_content_element_add_text {
+      top: 1px !important;
+    }
+  }
+  @media(min-width: 768px) and (max-width: 1023px){
+    .feedback_content_element_add_text {
+      top: -8px !important;
     }
   }
