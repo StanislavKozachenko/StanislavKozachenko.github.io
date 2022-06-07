@@ -116,6 +116,9 @@
 .accomp_third_bottom_side {
 	margin-top: 53px;
 }
+.accomp_second_block_content_text_bottom a {
+	text-decoration: underline !important;
+}
 .accomp_third_block {
 	display: -webkit-box;
 	display: -ms-flexbox;
