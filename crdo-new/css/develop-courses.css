@@ -54,7 +54,7 @@
 	        flex-direction: column;
 }
 .first_block_dev_content_top {
-	padding: 45px 58px 25px 60px;
+	padding: 30px 41px 25px 25px;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 600;
@@ -63,7 +63,7 @@
 	color: #1C3F77;
 }
 .first_block_dev_content_bottom {
-	padding: 0px 58px 45px 60px;
+	padding: 0px 62px 30px 25px;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;

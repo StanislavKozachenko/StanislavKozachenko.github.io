@@ -89,12 +89,11 @@
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: lighter;
-	font-size: 25px;
-	line-height: 30px;
+	font-size: 20px;
+	line-height: 25px;
 	text-align: justify;
 	color: #1C3F77;
-		padding: 0 60px;
-	padding-top: 40px;
+	padding: 30px 41px 25px 25px;
 }
 .accomp_second_block_content_text_bottom {
 	font-family: Montserrat;
@@ -102,15 +101,13 @@
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 25px;
-	line-height: 30px;
+	font-size: 20px;
+	line-height: 25px;
 	text-align: justify;
 	color: #1C3F77;
-	padding: 0 60px;
+	padding: 0 25px;
 }
-#lastBottomBlock {
-	padding-bottom: 40px;
-}
+
 .top_header_logo_content {
 	-webkit-box-pack: start;
 	    -ms-flex-pack: start;
