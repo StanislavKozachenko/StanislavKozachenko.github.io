@@ -381,7 +381,8 @@
 		margin-bottom: 10px;
 	}
 	.logo_footer {
-		content: url(../img/footer-img-mobile.svg);
+		height: 45px;
+		content: url(../images/logo_white.svg);
 		width: auto;
 		margin-right: 15px;
 	}
@@ -522,7 +523,7 @@
 		-o-transition: .4s;
 		transition: .4s;
 		width: 100%;
-		background-color: #1C3F77;
+		background: linear-gradient(93.02deg, #22629B -23.85%, #23539F 53.18%, #22629B 143.49%);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -544,6 +545,7 @@
 		        align-items: center;
 	}
 	.mobile_logo {
+		height: 25px;
 		margin-right: 4px;
 	}
 	.top_side_burger_menu {

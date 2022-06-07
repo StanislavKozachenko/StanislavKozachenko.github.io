@@ -46,7 +46,7 @@
 @media (max-width: 767px){
 	
 	.top_header {
-		background: #1C3F77;
+		background: linear-gradient(93.02deg, #22629B -23.85%, #23539F 53.18%, #22629B 143.49%);
 	}
 	.mobile_crdo_name {
 		color: #fff;
@@ -98,7 +98,8 @@
 		color: #1C3F77;
 	}
 	.logo_icon {
-		content: url(../img/320_top_block.png) !important;
+		height: 25px;
+		content: url(../images/logo_white.svg) !important;
 	}
 	.nav_menu_burger span {
 		background-color: #fff;

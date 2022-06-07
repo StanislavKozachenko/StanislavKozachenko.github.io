@@ -477,11 +477,10 @@ nav {
 	        box-sizing: border-box;
 	-webkit-box-shadow: inset 0px 0px 10px #2462C0;
 	        box-shadow: inset 0px 0px 10px #2462C0;
-	border-radius: 10px;
 	margin-bottom: 32px;
 	background: linear-gradient(111.99deg, #22629B -17.63%, #23539F 47.67%, #22629B 117.88%);
 	box-shadow: 0px 7px 29px rgba(28, 63, 119, 0.25);
-	border-radius: 30px;
+	border-radius: 10px;
 }
 .middle_block_element_padding_1 {
 	padding: 24px 15px;
@@ -650,7 +649,7 @@ nav {
 .middle_block_element__1, .middle_block_element__2, .middle_block_element__3 {
 	background: #E7F1FA;
 	box-shadow: 0px 5px 15px rgba(28, 63, 119, 0.15);
-	border-radius: 35px;
+	border-radius: 10px;
 	color: #FFFFFF;
 }
 .slider_section_top_text {
