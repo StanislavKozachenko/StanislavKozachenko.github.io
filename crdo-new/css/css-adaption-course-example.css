@@ -100,6 +100,9 @@
 	}
 }
 @media(max-width: 767px){
+	.info_block_elementMargin {
+		margin-bottom: 0;
+	}
 	.courses_examples_block {
 		margin-top: 15px;
 	}
