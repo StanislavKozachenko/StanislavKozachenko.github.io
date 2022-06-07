@@ -97,8 +97,14 @@
 	.top_block_org_content  {
 		padding-top: 100px;
 	}
+	.firstChild {
+		padding-top: 0 !important;
+	}
 }
 @media(min-width: 768px) and (max-width: 1023px){
+	.firstChild {
+		padding-top: 0 !important;
+	}
 	.organizationBackPage {
 	    width: 232px !important;
 	    left: 96px;
