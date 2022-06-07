@@ -37,6 +37,7 @@
 	        align-items: center;
 }
 .courses_examples_block_element_img img {
+	box-shadow: 0px 5px 15px rgb(28 63 119 / 15%);
 	max-width: 540px;
 	max-height: 100%;
 }
