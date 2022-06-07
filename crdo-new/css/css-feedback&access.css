@@ -5,6 +5,9 @@
 	        box-sizing: border-box;
 	outline: none !important;
 }
+.brAdapt {
+  display: none;
+}
 .top_container {
 	margin-top: 20px;
 }
@@ -157,4 +160,7 @@ option {
   	.middle_block_2_button_1 {
   		margin-bottom: 10px;
   	}
+    .brAdapt {
+      display: block;
+    }
   }
