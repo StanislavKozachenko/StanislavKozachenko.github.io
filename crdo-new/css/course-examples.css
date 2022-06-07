@@ -5,6 +5,9 @@
 	text-align: center;
 	padding-top: 100px !important;
 }
+.info_block_elementMargin {
+	margin-bottom: 15px;
+}
 .top_block_examples_content {
     font-family: 'Montserrat';
     font-style: normal;
