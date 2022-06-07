@@ -445,16 +445,16 @@
 		font-family: Montserrat;
 		font-style: normal;
 		font-weight: lighter;
-		font-size: 25px;
-		line-height: 30px;
+		font-size: 20px;
+   		line-height: 25px;
 		color: #1C3F77;
 	}
 	.first_block_dev_content_bottom {
 		font-family: Montserrat;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 25px;
-		line-height: 30px;
+		font-size: 20px;
+    	line-height: 25px;
 		color: #1C3F77;
 	}
 }
