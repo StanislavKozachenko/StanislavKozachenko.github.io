@@ -9,7 +9,8 @@
 		height: 35px;
 	}
 	.logo_icon {
-		content: url(../img/320_top_block.png) !important;
+		height: 25px;
+		content: url(../images/logo_white.svg) !important;
 	}
 	.nav_menu_burger span:last-child {
 		margin-bottom: 0;
