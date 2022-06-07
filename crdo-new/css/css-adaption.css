@@ -7,6 +7,9 @@
 	}
 }
 @media (max-width: 767px){ /*440*/
+	.middle_block_content_top_text {
+		margin-top: 10px;
+	}
 	.middle_block_2_middle_side br {
 		display: none;
 	}
