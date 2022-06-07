@@ -165,6 +165,9 @@
 	}
 }
 @media(max-width: 767px){
+	.top_block_org_img {
+		width: 150px;
+	}
 	.top_block_org_content  {
 		padding-top: 55px !important;
 	}
