@@ -44,7 +44,6 @@
 	position: absolute;
 }
 @media (max-width: 767px){
-	
 	.top_header {
 		background: linear-gradient(93.02deg, #22629B -23.85%, #23539F 53.18%, #22629B 143.49%);
 	}
