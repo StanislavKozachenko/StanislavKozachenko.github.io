@@ -761,7 +761,7 @@ nav {
 	-webkit-transition: .2s;
 	-o-transition: .2s;
 	transition: .2s;
-	background-color: #1C3F77 !important;
+	background: linear-gradient(111.99deg, #22629B -17.63%, #23539F 47.67%, #22629B 117.88%) !important;
 }
 .courses_slider_class {
 	display: -webkit-box !important;
