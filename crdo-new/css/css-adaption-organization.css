@@ -612,9 +612,6 @@
 	}
 }
 @media(min-width: 360px) and (max-width: 767px){
-	.top_block_org_img img {
-		width: 330px;
-	}
 	.telephone_icon {
 	    top: 67px;
 	    right: 27px;
