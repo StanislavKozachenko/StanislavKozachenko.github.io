@@ -213,11 +213,11 @@
 		height: 130px !important;
 	}
 	.two_img img {
-	    height: 88px !important;
+	    height: 100px !important;
 	}
 	.two_img {
-	    top: 331px;
-	    right: -20px;
+	    top: 328px;
+	    right: -68px;
 	}
 	.three_img img {
 	    height: 90px !important;
@@ -227,15 +227,15 @@
 	    right: 62px;
 	}
 	.four_img {
-		bottom: 173px;
-		left: 140px;
+	    bottom: 162px;
+	    left: 168px;
 	}
 	.five_img {
 	    bottom: 50px;
-	    right: 84px;
+	    right: 93px;
 	}
 	.five_img img {
-	    height: 77px !important;
+	    height: 82px !important;
 	}
 }
 @media(min-width: 1024px) and (max-width: 1439px){
