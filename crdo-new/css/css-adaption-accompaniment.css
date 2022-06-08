@@ -1,10 +1,5 @@
 @media (max-width: 767px){ /*440*/
-	.accompBackground {
-	    top: 30px;
-	    left: 50px;
-	    max-width: 521px;
-	    z-index: 0;
-	}
+	
 	.accompTopImage {
 		left: unset;
 		top: 30px;
@@ -14,6 +9,12 @@
 	}
 	.top_block_accomp {
 		min-height: 300px;
+	}
+	.accompBackground {
+	    top: 5px;
+	    left: 50px;
+	    max-width: 221px !important;
+	    z-index: 0;
 	}
 	.accomp_second_block_content  {
 		max-width: 90vw !important;

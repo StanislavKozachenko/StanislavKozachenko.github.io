@@ -76,13 +76,14 @@
 	}
 	.top_block_org_img img {
 		width: 150px;
+		margin-left: 40px;
 	}
 	.organizationTopPage {
 		margin-right: unset;
 	}
 	.organizationBackPage {
     	width: 200px !important;
-	    left: 84px;
+	    left: 50px;
 	    z-index: -1;
 	    top: 35px;
 	    width: 500px;
