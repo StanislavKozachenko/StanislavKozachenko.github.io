@@ -83,6 +83,9 @@
 	margin-top: 0;
 }
 @media(max-width: 767px){
+	.top_block_examples  {
+		padding-top: 25px !important;
+	}
 	.persons, .persons_bosses {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
@@ -106,6 +109,9 @@
 	}
 }
 @media(min-width: 767px) and (max-width: 1023px){
+	.top_block_examples_content  {
+		line-height: 40px !important;
+	}
 	.persons {
 		-ms-flex-pack: distribute;
 		    justify-content: space-between;
@@ -131,6 +137,9 @@
 	display: none;
 }
 @media(min-width: 1024px) and (max-width: 1439px){
+	.top_block_examples_content  {
+		line-height: 60px !important;
+	}
 	.persons {
 		-ms-flex-pack: distribute;
 		    -webkit-box-pack: justify;
