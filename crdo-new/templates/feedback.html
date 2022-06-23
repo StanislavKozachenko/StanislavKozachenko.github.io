@@ -1,4 +1,4 @@
-	<img src="images/linesUnderSide.svg" class="unserLines">
+	<img src="../images/linesUnderSide.svg" class="unserLines">
 			<div class="container feedback_content">
 			
 				<div class="feedback_left_side">
@@ -8,16 +8,16 @@
 							<span class="feedback_text_bottom">Обратная связь!</span>
 						</div>
 						<div class="feedback_lest_side_text_image">
-							<img src="images/contactUs.png" class="contactUsImage" alt="contactUs">
-							<div><img src="images/planes.svg" class="underPlanes"></div>
+							<img src="../images/contactUs.png" class="contactUsImage" alt="contactUs">
+							<div><img src="../images/planes.svg" class="underPlanes"></div>
 						</div>
 					</div>
 				</div>
-				<form>
+				<form action="php/feedback.php" method="post"  enctype="multipart/form-data">
 					<div class="feedback_right_side">
 						<div class="feedback_content_element">
 							<input type="name" name="user_fio" class="user_fio user_data" placeholder="Ф.И.О">
-							<div class="feedback_content_element_add_text">Ф.И.О</div>
+							<div class="feedback_content_element_add_text feedback_one">Ф.И.О</div>
 						</div>
 						<div class="feedback_content_element">
 							<input type="name" name="user_email" class="user_email user_data" placeholder="Ваша электронная почта">
