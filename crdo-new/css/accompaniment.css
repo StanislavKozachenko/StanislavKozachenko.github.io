@@ -195,46 +195,6 @@
 	border: 1px solid #1C3F77;
 	border-radius: 3px;
 }
-/*Animation*/
-@-webkit-keyframes girl_falling {
-	0% {
-		top: -500px;
-		left: 357px;
-	}
-	50% {
-		top: 40px;
-		left: 357px;
-	}
-	100% {
-		top: -500px;
-		left: 357px;
-	}
-}
-@keyframes girl_falling {
-	0% {
-		top: -500px;
-		left: 357px;
-	}
-	50% {
-		top: 40px;
-		left: 357px;
-	}
-	100% {
-		top: -500px;
-		left: 357px;
-	}
-}
-.girl_falling {
-	-webkit-animation: 6s infinite ease-in-out girl_falling;
-	        animation: 6s infinite ease-in-out girl_falling;
-	-webkit-animation-delay: .5s;
-	        animation-delay: .5s;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-	position: absolute;
-	top: -999px;
-	left: 357px;
-}
 .off_side {
 	display: none;
 }

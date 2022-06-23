@@ -22,6 +22,14 @@
 	padding: 9px 0;
 	padding-left: 18px;
 }
+.eduacation_plans_main_block_element_main_content table tr td a, .year_info a {
+	color: #25416C;
+	transition: .2s;
+}
+.eduacation_plans_main_block_element_main_content table tr td a:hover, .year_info a:hover {
+	color: #007bff;
+	transition: .2s;
+}
 .eduacation_plans_main_block_element_main_content table tr:first-child td{
 	background-color: #E7F1FA;
 }

@@ -1,0 +1,105 @@
+.statement_main_block_element ul {
+	margin-top: 35px !important;
+}
+.statement_main_block_element ul li {
+	list-style: none;
+	position: relative;
+	padding-left: 8px;
+	margin-bottom: 10px;
+}
+.statement_main_block_element ul li::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background: url(../img/list-style-image.svg);
+}
+.statement_main_block_element ul li, .statement_main_block_element ul li a, .otherQuestionsText a {
+	font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #25416C;
+}
+.statement_main_block_element ul li a:hover, .otherQuestionsText a:hover {
+	text-decoration: none;
+	color: #25416C;
+	font-weight: bold;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+.statement_main_block_element table {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+.statement_main_block_element table tr td, .otherQuestionsText {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 22px;
+	color: #25416C;
+	padding: 9px 0;
+	padding-left: 18px;
+}
+.otherQuestionsText {
+	padding-left: 0;
+	margin-bottom: 10px;
+}
+.statement_main_block_element table tr td a {
+	color: #25416C;
+	transition: .2s;
+}
+.statement_main_block_element table tr td {
+	height: 50px;
+}
+.statement_main_block_element table tr td a:hover {
+	color: #007bff;
+	transition: .2s;
+}
+.statement_main_block_element table tr:first-child td{
+	background-color: #E7F1FA;
+}
+.statement_main_block_element table {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+.name_sp {
+	text-align: left;
+}
+.statement_main_block_element table tr td:first-child {
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.statement_main_block_element table tr td:last-child {
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.table_hr {
+	background: #1C3F77;
+	border-radius: 10px;
+	height: 1px !important;
+	margin: 9px 0;
+	padding: 0 !important;
+}
+@media (max-width: 767px){
+	.statement_main_block_element table {
+		max-width: 100%;
+		overflow-x: scroll;
+	}
+	.statement_main_block_element table tr td {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 19px;
+    color: #25416C;
+    padding: 2px 0;
+    padding-left: 6px;
+}
+}
