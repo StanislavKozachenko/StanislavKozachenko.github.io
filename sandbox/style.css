@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif Arial;
+}
+header {
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background: #478ccd;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+}
+header nav ul li {
+    text-decoration: none;
+    padding: 30px 20px
+}
+header nav ul li a {
+    color: #fff;
+}
+header button {
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+header button:hover {
+    background: #e3e3e3;
+}
+.carousel-control-next, .carousel-control-prev {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cbcbcb;
+    background: #000;
+    width: auto;
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+.carousel-inner {
+    gap: 20px;
+}
+.modal-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-control-buttons {
+    width: fit-content;
+    gap: 10px;
+    display: flex;
+}
+.carousel-item label {
+    width: auto;
+}
+.carousel-item,
+.carousel-item.active {
+    transition: none !important;
+    transform: none !important;
+}
+.carousel-item-select-footer label input,
+.form-element-column input {
+    padding: 10px 15px;
+}
+.form-element-column input {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #777777;
+}
+.form-element-column {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+/*.carousel-item {*/
+/*    transition: -webkit-transform .2s ease;*/
+/*    transition: transform .2s ease;*/
+/*    transition: transform .2s ease, -webkit-transform .2s ease;*/
+/*}*/
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: max-content;
+        min-width: 600px;
+    }
+    .form-element {
+        max-width: 566px;
+    }
+}
+table td label,
+table td label input {
+    width: 100% !important;
+    margin: 0 !important;
+}
+.carousel-item-select-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.add-record-btn {
+    width: fit-content;
+}
+.carousel-item-select-footer textarea {
+    max-width: 100%;
+    min-width: 100%;
+    height: 140px;
+    resize: none;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+.carousel-inner {
+    transition: height 0.5s ease !important; /* Добавляем переход для высоты */
+}
+.hide-control {
+    display: none !important;
+}
+.carousel-item-input-checkbox input {
+    padding-right: 10px;
+}
+.carousel-last-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.carousel-last-item textarea {
+    padding: 10px 15px;
+    resize: none;
+    height: 100px;
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+.carousel-last-item button {
+    width: auto;
+}
