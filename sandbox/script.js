@@ -44,7 +44,7 @@ $(document).ready(function() {
     carousel.not(':first').hide();
 
     carousel.css('min-height', $('.carousel-item.active').height());
-
+    $('.carousel-inner').css('max-height', '600px')
     $('.carousel-control-next').click(function () {
         if (currentIndex < totalItems - 1) {
             currentIndex++;
@@ -52,20 +52,19 @@ $(document).ready(function() {
             carousel.eq(currentIndex).fadeIn('fast');
 
             let newHeight = carousel.eq(currentIndex).height();
-
             $('.carousel-inner').animate({ height: newHeight }, 'fast');
         }
         updateControlButtons();
     });
 
     $('.carousel-control-prev').click(function () {
+        $('.carousel-inner').css('max-height', 'max-content')
         if (currentIndex > 0) {
             currentIndex--;
             carousel.eq(currentIndex + 1).fadeOut('fast');
             carousel.eq(currentIndex).fadeIn('fast');
 
             let newHeight = $('.carousel-item').eq(currentIndex).height();
-
             $('.carousel-inner').animate({ height: newHeight }, 'fast');
         }
         updateControlButtons();
@@ -134,10 +133,7 @@ $(document).ready(function() {
             text: level
         }));
     });
-
-    // Обработчик добавления записи
-    $('.add-record-btn').click(function () {
-
+    function addSpecialist() {
         let selectedSpecialists = $('.specialist-select').map(function() {
             return $(this).val();
         }).get();
@@ -184,7 +180,13 @@ $(document).ready(function() {
 
         $('.carousel-item-select-content table tbody').append(newRow);
 
+    }
+    // Обработчик добавления записи
+    $('.add-record-btn').click(function () {
+        addSpecialist();
         let newHeight = $('.carousel-item').eq(currentIndex).height();
         $('.carousel-inner').animate({ height: newHeight }, 'fast');
     });
+    addSpecialist();
+    addSpecialist();
 });
