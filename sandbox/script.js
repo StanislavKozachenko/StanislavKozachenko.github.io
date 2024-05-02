@@ -44,7 +44,10 @@ $(document).ready(function() {
     carousel.not(':first').hide();
 
     carousel.css('min-height', $('.carousel-item.active').height());
-    $('.carousel-inner').css('max-height', '600px')
+
+    let newHeight = '540px';
+    $('.carousel-inner').animate({ height: newHeight }, 'fast');
+
     $('.carousel-control-next').click(function () {
         if (currentIndex < totalItems - 1) {
             currentIndex++;
@@ -58,7 +61,6 @@ $(document).ready(function() {
     });
 
     $('.carousel-control-prev').click(function () {
-        $('.carousel-inner').css('max-height', 'max-content')
         if (currentIndex > 0) {
             currentIndex--;
             carousel.eq(currentIndex + 1).fadeOut('fast');
