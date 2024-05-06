@@ -26,24 +26,6 @@ body {
     white-space: nowrap;
     overflow: visible;
 }
-.word {
-    position: relative;
-}
-.word .letter-absolute {
-    position: absolute;
-    top: -50%;
-    left: -10%;
-}
-.word .letter-absolute-2 {
-    position: absolute;
-    top: -50%;
-    left: 70%;
-}
-.word .letter-absolute-3 {
-    position: absolute;
-    top: -20%;
-    left: 30%;
-}
 .word .letter {
     cursor: pointer;
     font-size: 330px;

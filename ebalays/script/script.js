@@ -24,22 +24,5 @@ anime.timeline({ loop: false })
         delay: (el, i) => 100 * i,
         offset: '-=200',
         complete: function() {
-            var letters = document.querySelectorAll('.letter');
-
-            document.addEventListener('mousemove', function(e) {
-                letters.forEach(function(letter) {
-                    var rect = letter.getBoundingClientRect();
-                    var offsetX = (e.clientX - rect.left) / rect.width - 0.5;
-                    var offsetY = (e.clientY - rect.top) / rect.height - 0.5;
-
-                    anime({
-                        targets: letter,
-                        translateX: -offsetX * 20,
-                        translateY: -offsetY * 20,
-                        easing: 'easeOutQuad',
-                        duration: 1000
-                    });
-                });
-            });
         }
     });
