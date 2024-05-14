@@ -28,10 +28,15 @@ body {
 }
 .word .letter {
     cursor: pointer;
-    font-size: 330px;
     color: #fff;
     display: inline-block;
     transform-style: preserve-3d;
     perspective: 1000px;
     opacity: 0;
+}
+.letter {
+    font-size: 7vw;
+}
+.word .letter {
+    font-size: 19vw;
 }
